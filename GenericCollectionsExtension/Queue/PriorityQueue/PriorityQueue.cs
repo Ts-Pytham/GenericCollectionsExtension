@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GenericCollectionsExtension.Exceptions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,7 +70,11 @@ namespace GenericCollectionsExtension.Queue.PriorityQueue
             {
                 throw new ArgumentOutOfRangeException(nameof(Capacity));
             }
-                
+            
+            if(priority < 0)
+            {
+                throw new NegativeNumberException();
+            }
             var value = new PriorityObject<T> { Value = item, Priority = priority };
             if (_queue.Count == 0)
             {

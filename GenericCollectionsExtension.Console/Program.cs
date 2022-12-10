@@ -18,7 +18,7 @@ sortedList.ToList().ForEach(Console.WriteLine);
 Console.WriteLine("PriorityQueue: ");
 
 PriorityQueue<int> priorityQueue = new();
-priorityQueue.Enqueue(10, 1);
+priorityQueue.Enqueue(10, -1);
 priorityQueue.Enqueue(50, 2);
 priorityQueue.Enqueue(55, 2);
 priorityQueue.Enqueue(20, 3);
