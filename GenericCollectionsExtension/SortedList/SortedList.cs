@@ -79,7 +79,7 @@ namespace GenericCollectionsExtension.SortedList
         /// <summary>
         /// Adds an item and sorts it.
         /// </summary>
-        /// <param name="item"></param>
+        /// <param name="item">The object to be added</param>
         private void AddSorted(T item)
         {
             if (_criterion == Criterion.Ascending)
