@@ -8,7 +8,7 @@ namespace GenericCollectionsExtension.Queue
     {
         public int Capacity { get; }
 
-        public int Count { get; }
+        public int Count { get => _deque.Count; }
 
         public bool IsReadOnly => false;
 

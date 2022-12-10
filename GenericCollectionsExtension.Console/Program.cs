@@ -35,11 +35,11 @@ Console.WriteLine($"Contains: {contains}, {priorityQueue.Contains(contains)}");
 Console.WriteLine("Deque: ");
 
 Deque<int> deque = new();
-deque.PushLast(1);
+deque.PushFirst(1);
 deque.PushFirst(2);
 deque.PushFirst(5);
 
-
+Console.WriteLine($"Count: {deque.Count}");
 foreach(var item in deque)
 {
     Console.WriteLine(item);
