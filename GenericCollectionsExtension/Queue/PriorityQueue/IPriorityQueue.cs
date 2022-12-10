@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GenericCollectionsExtension.Queue.PriorityQueue
+namespace GenericCollectionsExtension.Queue
 {
     public interface IPriorityQueue<T> : IQueue<T>
     {

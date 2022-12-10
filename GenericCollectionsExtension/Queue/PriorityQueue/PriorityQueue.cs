@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GenericCollectionsExtension.Queue.PriorityQueue
+namespace GenericCollectionsExtension.Queue
 {
     public class PriorityQueue<T> : IPriorityQueue<T>, IEnumerable<T>, ICollection<T>
     {
