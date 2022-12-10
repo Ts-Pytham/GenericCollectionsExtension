@@ -1,6 +1,6 @@
 ﻿namespace GenericCollectionsExtension.Queue.PriorityQueue
 {
-    public class PriorityObject<T>
+    internal class PriorityObject<T>
     {
         public T Value { get; set; }
         public int Priority { get; set; }
