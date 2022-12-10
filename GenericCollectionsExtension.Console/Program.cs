@@ -1,5 +1,5 @@
 ﻿using GenericCollectionsExtension.SortedList;
-using GenericCollectionsExtension.Queue.PriorityQueue;
+using GenericCollectionsExtension.Queue;
 
 SortedList<int> sortedList = new(Criterion.Descending)
 {
@@ -18,7 +18,7 @@ sortedList.ToList().ForEach(Console.WriteLine);
 Console.WriteLine("PriorityQueue: ");
 
 PriorityQueue<int> priorityQueue = new();
-priorityQueue.Enqueue(10, -1);
+priorityQueue.Enqueue(10, 5);
 priorityQueue.Enqueue(50, 2);
 priorityQueue.Enqueue(55, 2);
 priorityQueue.Enqueue(20, 3);
@@ -32,7 +32,18 @@ Console.WriteLine($"Peek: {priorityQueue.Peek()}");
 int contains = 51;
 Console.WriteLine($"Contains: {contains}, {priorityQueue.Contains(contains)}");
 
+Console.WriteLine("Deque: ");
 
+Deque<int> deque = new();
+deque.PushLast(1);
+deque.PushFirst(2);
+deque.PushFirst(5);
+
+
+foreach(var item in deque)
+{
+    Console.WriteLine(item);
+}
 
 
 
