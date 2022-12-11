@@ -1,7 +1,7 @@
 ﻿using GenericCollectionsExtension.SortedList;
 using GenericCollectionsExtension.Queue;
 using GenericCollectionsExtension.Stack;
-using GenericCollectionsExtension.Tree.BinarySearchTree;
+using GenericCollectionsExtension.Tree;
 
 SortedList<int> sortedList = new(Criterion.Descending)
 {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GenericCollectionsExtension.Tree.BinarySearchTree
+namespace GenericCollectionsExtension.Tree
 {
     public class BinarySearchTree<T> : IBinarySearchTree<T>, IEnumerable<T>
         where T : IComparable<T>
