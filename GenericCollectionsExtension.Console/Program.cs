@@ -1,6 +1,7 @@
 ﻿using GenericCollectionsExtension.SortedList;
 using GenericCollectionsExtension.Queue;
 using GenericCollectionsExtension.Stack;
+using GenericCollectionsExtension.Tree.BinarySearchTree;
 
 SortedList<int> sortedList = new(Criterion.Descending)
 {
@@ -62,6 +63,50 @@ foreach(var item in stack)
 {
     Console.WriteLine(item);
 }
+
+
+Console.WriteLine("Binary Search Tree");
+
+BinarySearchTree<int> tree = new() { 5, 3, 4, 7, 6, 9, 8, 1, 2, 0, 14, 15};
+
+Console.WriteLine($"Count: {tree.Count}");
+Console.WriteLine($"Contains 5: {tree.Contains(5)}");
+Console.WriteLine($"Contains 12: {tree.Contains(12)}");
+var inOrder = tree.InOrder();
+Console.WriteLine($"Count InOrder: {inOrder.Count()}");
+
+foreach(var item in inOrder)
+{
+    Console.WriteLine(item);
+}
+
+var postOrder = tree.PostOrder();
+Console.WriteLine($"Count PostOrder: {postOrder.Count()}");
+
+foreach (var item in postOrder)
+{
+    Console.WriteLine(item);
+}
+
+var preOrder = tree.PreOrder();
+Console.WriteLine($"Count PreOrder: {preOrder.Count()}");
+
+foreach (var item in preOrder)
+{
+    Console.WriteLine(item);
+}
+int delete = 5;
+Console.WriteLine($"Delete leaf: {tree.Remove(delete)}, Value: {delete}");
+Console.WriteLine($"Count: {tree.Count}");
+
+preOrder = tree.PreOrder();
+Console.WriteLine($"Count PreOrder: {preOrder.Count()}");
+
+foreach (var item in preOrder)
+{
+    Console.WriteLine(item);
+}
+
 
 
 
