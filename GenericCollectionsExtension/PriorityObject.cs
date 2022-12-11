@@ -1,4 +1,4 @@
-﻿namespace GenericCollectionsExtension.Queue
+﻿namespace GenericCollectionsExtension
 {
     internal class PriorityObject<T>
     {

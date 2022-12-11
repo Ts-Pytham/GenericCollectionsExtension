@@ -1,5 +1,6 @@
 ﻿using GenericCollectionsExtension.SortedList;
 using GenericCollectionsExtension.Queue;
+using GenericCollectionsExtension.Stack;
 
 SortedList<int> sortedList = new(Criterion.Descending)
 {
@@ -41,6 +42,23 @@ deque.PushFirst(5);
 
 Console.WriteLine($"Count: {deque.Count}");
 foreach(var item in deque)
+{
+    Console.WriteLine(item);
+}
+
+
+Console.WriteLine("Priority Stack: ");
+
+PriorityStack<int> stack = new()
+{
+    4, 5, 3, 5
+};
+
+Console.WriteLine($"Count: {stack.Count}");
+
+Console.WriteLine($"Value: {stack.Peek()}");
+
+foreach(var item in stack)
 {
     Console.WriteLine(item);
 }
