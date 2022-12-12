@@ -1,7 +1,7 @@
 # GenericCollectionsExtension
 
 [![](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/Ts-Pytham/GenericCollectionsExtension)
-[![](https://img.shields.io/badge/License-MIT-green)](ttps://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt)
+[![](https://img.shields.io/badge/License-MIT-green)](https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt)
 [![PayPal-donate-button](https://img.shields.io/badge/paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
 
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
