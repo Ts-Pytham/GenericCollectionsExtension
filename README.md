@@ -246,3 +246,12 @@ Count InOrder: 12
 15
 */
 ```
+
+<h2>Possible future data structures</h2>
+
+More data structures are expected to be added in the future, among them are:
+
+* Graphs.
+* Red-Black Tree.
+* More...
+
