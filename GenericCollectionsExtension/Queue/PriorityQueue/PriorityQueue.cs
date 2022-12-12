@@ -19,9 +19,13 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         private readonly List<PriorityObject<T>> _queue;
 
+        /// <inheritdoc/>
         public int Count { get => _queue.Count; }
+
+        /// <inheritdoc/>
         public bool IsReadOnly { get => false; }
 
+        /// <inheritdoc/>
         public int Capacity 
         { 
             get;
@@ -68,16 +72,19 @@ namespace GenericCollectionsExtension.Queue
             _queue.Clear();
         }
 
+        /// <inheritdoc/>
         public bool Contains(T item)
         {
             return ExistsItem(item) != -1;
         }
 
+        /// <inheritdoc/>
         public void CopyTo(T[] array, int arrayIndex)
         {
             _queue.CopyTo(array.Select(x => new PriorityObject<T> { Priority = 0, Value = x}).ToArray(), arrayIndex);
         }
 
+        /// <inheritdoc/>
         public T Dequeue()
         {
             if (Count == 0)
@@ -88,6 +95,7 @@ namespace GenericCollectionsExtension.Queue
             return value;
         }
 
+        /// <inheritdoc/>
         public void Enqueue(T item, int priority)
         {
             if (Capacity != -1 && Capacity == Count)
@@ -138,6 +146,7 @@ namespace GenericCollectionsExtension.Queue
             return _queue.Select(x => x.Value).GetEnumerator();
         }
 
+        /// <inheritdoc/>
         public T Peek()
         {
             if (Count == 0)

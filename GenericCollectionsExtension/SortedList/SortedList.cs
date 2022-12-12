@@ -18,6 +18,7 @@ namespace GenericCollectionsExtension.SortedList
         /// </summary>
         private readonly Criterion _criterion;
 
+        /// <inheritdoc/>
         public T this[int index] 
         {
             get
@@ -38,11 +39,13 @@ namespace GenericCollectionsExtension.SortedList
             }
         }
 
+        /// <inheritdoc/>
         public int Count
         {
             get => _sortedList.Count;
         }
 
+        /// <inheritdoc/>
         public bool IsReadOnly => false;
 
         /// <summary>
@@ -64,7 +67,7 @@ namespace GenericCollectionsExtension.SortedList
             _criterion = criterion;
         }
 
-
+        /// <inheritdoc/>
         public void Add(T item)
         {
             if (Count == 0)
@@ -130,41 +133,49 @@ namespace GenericCollectionsExtension.SortedList
             }
         }
 
+        /// <inheritdoc/>
         public void Clear()
         {
             _sortedList.Clear();
         }
 
+        /// <inheritdoc/>
         public bool Contains(T item)
         {
             return _sortedList.Contains(item);
         }
 
+        /// <inheritdoc/>
         public void CopyTo(T[] array, int arrayIndex)
         {
             _sortedList.CopyTo(array, arrayIndex);
         }
 
+        /// <inheritdoc/>
         public IEnumerator<T> GetEnumerator()
         {
             return _sortedList.GetEnumerator();
         }
 
+        /// <inheritdoc/>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return _sortedList.GetEnumerator();
         }
 
+        /// <inheritdoc/>
         public int IndexOf(T item)
         {
             return _sortedList.IndexOf(item);
         }
 
+        /// <inheritdoc/>
         public bool Remove(T item)
         {
             return _sortedList.Remove(item);
         }
 
+        /// <inheritdoc/>
         public void RemoveAt(int index)
         {
             _sortedList.RemoveAt(index);

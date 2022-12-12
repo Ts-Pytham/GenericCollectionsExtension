@@ -17,10 +17,13 @@ namespace GenericCollectionsExtension.Stack
         /// </summary>
         private readonly List<PriorityObject<T>> _stack;
 
+        /// <inheritdoc/>
         public int Capacity { get; }
 
+        /// <inheritdoc/>
         public int Count { get => _stack.Count; }
 
+        /// <inheritdoc/>
         public bool IsReadOnly => false;
 
         /// <summary>
@@ -65,11 +68,13 @@ namespace GenericCollectionsExtension.Stack
             _stack.Clear();
         }
 
+        /// <inheritdoc/>
         public bool Contains(T item)
         {
             return ExistsItem(item) != -1;
         }
 
+        /// <inheritdoc/>
         public void CopyTo(T[] array, int arrayIndex)
         {
             _stack.CopyTo(array.Select(x => new PriorityObject<T> { Priority = 0, Value = x }).ToArray(), arrayIndex);
@@ -84,11 +89,13 @@ namespace GenericCollectionsExtension.Stack
             return _stack.Select(x => x.Value).Reverse().GetEnumerator();
         }
 
+        /// <inheritdoc/>
         public T Peek()
         {
             return _stack[Count - 1].Value;
         }
 
+        /// <inheritdoc/>
         public T Pop()
         {
             if (Count == 0)
@@ -99,6 +106,7 @@ namespace GenericCollectionsExtension.Stack
             return value;
         }
 
+        /// <inheritdoc/>
         public void Push(T item, int priority)
         {
             if (Capacity != -1 && Capacity == Count)

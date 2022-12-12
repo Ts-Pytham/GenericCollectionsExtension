@@ -17,6 +17,7 @@ namespace GenericCollectionsExtension.Tree
         /// </summary>
         public int Count { get; private set; }
 
+        /// <inheritdoc/>
         public bool IsReadOnly => false;
 
         /// <summary>
@@ -274,7 +275,7 @@ namespace GenericCollectionsExtension.Tree
             GetEnumerable().ToArray().CopyTo(array, arrayIndex);
         }
 
-
+        /// <inheritdoc/>
         public bool IsEmpty()
         {
             return _root is null;
