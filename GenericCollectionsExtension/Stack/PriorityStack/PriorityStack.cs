@@ -6,8 +6,15 @@ using System.Linq;
 
 namespace GenericCollectionsExtension.Stack
 {
+    /// <summary>
+    /// This is a PriorityStack class.
+    /// </summary>
+    /// <typeparam name="T">The type of data to be stored in the PriorityStack.</typeparam>
     public class PriorityStack<T> : IPriorityStack<T>, ICollection<T>, IEnumerable<T>
     {
+        /// <summary>
+        /// list of PriorityObjects that store the elements in the stack along with their priorities.
+        /// </summary>
         private readonly List<PriorityObject<T>> _stack;
 
         public int Capacity { get; }
@@ -16,12 +23,20 @@ namespace GenericCollectionsExtension.Stack
 
         public bool IsReadOnly => false;
 
+        /// <summary>
+        /// Constructs a new instance of the <see cref="PriorityStack{T}"/> class.
+        /// </summary>
         public PriorityStack()
         {
             _stack = new List<PriorityObject<T>>();
             Capacity = -1;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PriorityStack{T}"/>  class with the specified capacity.
+        /// </summary>
+        /// <param name="capacity">The maximum number of elements that the queue can hold.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown if the specified capacity is less than 1.</exception>
         public PriorityStack(int capacity)
         {
             if (capacity < 1)
@@ -33,11 +48,18 @@ namespace GenericCollectionsExtension.Stack
             Capacity = capacity;
         }
 
+        /// <summary>
+        /// Adds an element to the stack with the default priority (0).
+        /// </summary>
+        /// <param name="item">The element to add to the stack.</param>
         public void Add(T item)
         {
             Push(item, 0);
         }
 
+        /// <summary>
+        /// Removes all elements from the stack.
+        /// </summary>
         public void Clear()
         {
             _stack.Clear();
@@ -53,6 +75,10 @@ namespace GenericCollectionsExtension.Stack
             _stack.CopyTo(array.Select(x => new PriorityObject<T> { Priority = 0, Value = x }).ToArray(), arrayIndex);
         }
 
+        /// <summary>
+        /// Returns an enumerator that iterates through the stack.
+        /// </summary>
+        /// <returns>An enumerator that can be used to iterate through the stack.</returns>
         public IEnumerator<T> GetEnumerator()
         {
             return _stack.Select(x => x.Value).Reverse().GetEnumerator();
@@ -97,6 +123,12 @@ namespace GenericCollectionsExtension.Stack
             }
         }
 
+        /// <summary>
+        /// Adds a <see cref="PriorityObject{T}"/> item to a sorted stack while maintaining priority order.
+        /// If the item is more prioritized than any other in the stack, it is inserted at the first position.
+        /// If it is not more prioritized than any other, it is added to the end of the stack.
+        /// </summary>
+        /// <param name="item">The item to add to the stack.</param>
         private void Push(PriorityObject<T> item)
         {
             for (int index = 0; index != Count; ++index)
@@ -110,6 +142,11 @@ namespace GenericCollectionsExtension.Stack
             _stack.Add(item);
         }
 
+        /// <summary>
+        /// Removes the specified item from the stack.
+        /// </summary>
+        /// <param name="item">The item to remove from the stack.</param>
+        /// <returns>True if the item was successfully removed from the stack, or false if the item was not found in the stack.</returns>
         public bool Remove(T item)
         {
             if (Count == 0)
@@ -124,6 +161,10 @@ namespace GenericCollectionsExtension.Stack
             return true;
         }
 
+        /// <summary>
+        /// Returns an enumerator that iterates through the stack.
+        /// </summary>
+        /// <returns>An enumerator that can be used to iterate through the stack.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return _stack.Select(x => x.Value).Reverse().GetEnumerator();
