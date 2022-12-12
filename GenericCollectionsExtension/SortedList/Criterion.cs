@@ -5,7 +5,14 @@
     /// </summary>
     public enum Criterion
     {
+        /// <summary>
+        /// Sort the elements in ascending order.
+        /// </summary>
         Ascending,
-        Descending
+
+        /// <summary>
+        /// Sort the elements in descending order.
+        /// </summary>
+        Descending,
     }
 }
