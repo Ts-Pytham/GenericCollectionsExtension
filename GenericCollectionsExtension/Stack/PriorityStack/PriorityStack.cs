@@ -35,7 +35,7 @@ namespace GenericCollectionsExtension.Stack
         /// <summary>
         /// Initializes a new instance of the <see cref="PriorityStack{T}"/>  class with the specified capacity.
         /// </summary>
-        /// <param name="capacity">The maximum number of elements that the queue can hold.</param>
+        /// <param name="capacity">The maximum number of elements that the stack can hold.</param>
         /// <exception cref="ArgumentOutOfRangeException">Thrown if the specified capacity is less than 1.</exception>
         public PriorityStack(int capacity)
         {
@@ -170,6 +170,13 @@ namespace GenericCollectionsExtension.Stack
             return _stack.Select(x => x.Value).Reverse().GetEnumerator();
         }
 
+        /// <summary>
+        /// Determines if the specified element exists in the stack.
+        /// If the element exists, the method returns its index in the stack.
+        /// Otherwise, the method returns -1.
+        /// </summary>
+        /// <param name="item">The element to search for in the stack.</param>
+        /// <returns>The index of the element in the stack, or -1 if the element is not found.</returns>
         private int ExistsItem(T item)
         {
             for (int i = 0, j = Count - 1; i != Count && j >= 0; ++i, --j)
