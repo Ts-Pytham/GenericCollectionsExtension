@@ -201,19 +201,6 @@ Is a data structure consisting of linked nodes. Nodes can have one or more child
 **Example in code:**
 
 ```C#
-//Descending
-
-SortedList<int> sortedList = new(Criterion.Descending)
-{
-    1,
-    0,
-    -1,
-    495,
-    1,
-    19,
-    5
-};
-
 BinarySearchTree<int> tree = new() { 5, 3, 4, 7, 6, 9, 8, 1, 2, 0, 14, 15};
 
 Console.WriteLine($"Count: {tree.Count}");
