@@ -130,11 +130,11 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method performs a depth-first search (DFS) for the given item in the binary tree. 
+        /// This method performs a depth-first search (DFS) for the given item in the <see cref="BinarySearchTree{T}"/>. 
         /// It returns a reference to the node containing the item if it is found, or null if the item is not found.
         /// </summary>
-        /// <param name="r">The root of the binary tree to search.</param>
-        /// <param name="item">The item to search for in the binary tree.</param>
+        /// <param name="r">The root of the <see cref="BinarySearchTree{T}"/> to search.</param>
+        /// <param name="item">The item to search for in the <see cref="BinarySearchTree{T}"/>.</param>
         /// <returns>A reference to the node containing the item if it is found, or null if the item is not found.</returns>
         private IBinaryTreeNode<T> Search(IBinaryTreeNode<T> r, T item)
         {
@@ -317,9 +317,9 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method returns an enumerable collection of the elements in the binary tree in in-order traversal order.
+        /// This method returns an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in in-order traversal order.
         /// </summary>
-        /// <returns>An enumerable collection of the elements in the binary tree in in-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in in-order traversal order.</returns>
         public IEnumerable<T> InOrder()
         {
             if(_root is not null)
@@ -331,10 +331,10 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method recursively generates an enumerable collection of the elements in the binary tree in in-order traversal order.
+        /// This method recursively generates an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in in-order traversal order.
         /// </summary>
         /// <param name="r">The root of the subtree to generate the in-order traversal for.</param>
-        /// <returns>An enumerable collection of the elements in the binary tree in in-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in in-order traversal order.</returns>
         private IEnumerable<T> InOrder(IBinaryTreeNode<T> r)
         {
             if (r is not null)
@@ -348,9 +348,9 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method returns an enumerable collection of the elements in the binary tree in pre-order traversal order.
+        /// This method returns an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in pre-order traversal order.
         /// </summary>
-        /// <returns>An enumerable collection of the elements in the binary tree in pre-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in pre-order traversal order.</returns>
         public IEnumerable<T> PreOrder()
         {
             if (_root is not null)
@@ -362,10 +362,10 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method recursively generates an enumerable collection of the elements in the binary tree in pre-order traversal order.
+        /// This method recursively generates an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in pre-order traversal order.
         /// </summary>
         /// <param name="r">The root of the subtree to generate the pre-order traversal for.</param>
-        /// <returns>An enumerable collection of the elements in the binary tree in pre-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in pre-order traversal order.</returns>
         private IEnumerable<T> PreOrder(IBinaryTreeNode<T> r)
         {
             if (r is not null)
@@ -378,9 +378,9 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method returns an enumerable collection of the elements in the binary tree in post-order traversal order.
+        /// This method returns an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in post-order traversal order.
         /// </summary>
-        /// <returns>An enumerable collection of the elements in the binary tree in post-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in post-order traversal order.</returns>
         public IEnumerable<T> PostOrder()
         {
             if (_root is not null)
@@ -392,10 +392,10 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method recursively generates an enumerable collection of the elements in the binary tree in post-order traversal order.
+        /// This method recursively generates an enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in post-order traversal order.
         /// </summary>
         /// <param name="r">The root of the subtree to generate the post-order traversal for.</param>
-        /// <returns>An enumerable collection of the elements in the binary tree in post-order traversal order.</returns>
+        /// <returns>An enumerable collection of the elements in the <see cref="BinarySearchTree{T}"/> in post-order traversal order.</returns>
         private IEnumerable<T> PostOrder(IBinaryTreeNode<T> r)
         {
             if (r is not null)
