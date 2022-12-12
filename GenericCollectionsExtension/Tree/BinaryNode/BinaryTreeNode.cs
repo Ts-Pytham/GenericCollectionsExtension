@@ -4,6 +4,10 @@ using System.Text;
 
 namespace GenericCollectionsExtension.Tree
 {
+    /// <summary>
+    /// Represents the implementation Binary tree node.
+    /// </summary>
+    /// <typeparam name="T">T is generic.</typeparam>
     internal class BinaryTreeNode<T> : IBinaryTreeNode<T>
     {
         public IBinaryTreeNode<T> LeftChild { get; set; }
@@ -11,6 +15,10 @@ namespace GenericCollectionsExtension.Tree
         public IBinaryTreeNode<T> Parent { get; set; }
         public T Data { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the T:GenericCollectionsExtension.Tree.BinaryTreeNode class.
+        /// </summary>
+        /// <param name="data">Data to be added to node.</param>
         public BinaryTreeNode(T data)
         {
             Data = data;
@@ -19,6 +27,11 @@ namespace GenericCollectionsExtension.Tree
             Parent = null;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the T:GenericCollectionsExtension.Tree.BinaryTreeNode class.
+        /// </summary>
+        /// <param name="data">Data to be added to node.</param>
+        /// <param name="parent">Node parent.</param>
         public BinaryTreeNode(T data, IBinaryTreeNode<T> parent)
         {
             Data = data;
