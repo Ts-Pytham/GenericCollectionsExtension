@@ -6,9 +6,9 @@ using System.Linq;
 namespace GenericCollectionsExtension.Tree
 {
     /// <summary>
-    /// Represents a binary search tree implementation.
+    /// Represents a <see cref="BinarySearchTree{T}"/> implementation.
     /// </summary>
-    /// <typeparam name="T">T is type of element in the list and implements T:System.IComparable.</typeparam>
+    /// <typeparam name="T">T is type of element in the list and implements <see cref="IComparable{T}"/>.</typeparam>
     public class BinarySearchTree<T> : IBinarySearchTree<T>, IEnumerable<T>
         where T : IComparable<T>
     {
@@ -32,7 +32,7 @@ namespace GenericCollectionsExtension.Tree
         public Dictionary<T, int> RepeatedNodes { get; private set; }
 
         /// <summary>
-        /// Initializes a new instance of the BinarySearchTree class. 
+        /// Initializes a new instance of the <see cref="BinarySearchTree{T}"/> class. 
         /// <para>The traversal type is set to InOrder by default.</para>
         /// </summary>
         public BinarySearchTree()
@@ -42,7 +42,7 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// Initializes a new instance of the BinarySearchTree class with the specified traversal type.
+        /// Initializes a new instance of the <see cref="BinarySearchTree{T}"/> class with the specified traversal type.
         /// </summary>
         /// <param name="traversal">The traversal type to use for the tree.</param>
         public BinarySearchTree(TraversalType traversal)
@@ -52,7 +52,7 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// Adds the specified item to the binary search tree.
+        /// Adds the specified item to the <see cref="BinarySearchTree{T}"/>.
         /// </summary>
         /// <param name="item">The item to add to the tree.</param>
         public void Add(T item)
@@ -69,10 +69,10 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method adds the specified item of type T to a binary search tree. 
+        /// This method adds the specified item of type <see cref="{T}"/> to a <see cref="BinarySearchTree{T}"/>. 
         /// The root parameter specifies the root node of the tree, which should be of type IBinaryTreeNode.
         /// </summary>
-        /// <param name="item">This is the item to be added to the binary search tree. It should be of the type specified by the T type parameter.</param>
+        /// <param name="item">This is the item to be added to the <see cref="BinarySearchTree{T}"/>. It should be of the type specified by the T type parameter.</param>
         /// <param name="root"> where T is the same type as the item parameter. This parameter specifies where in the tree the item should be added.</param>
         private void Add(T item, IBinaryTreeNode<T> root)
         {
@@ -120,7 +120,7 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method checks whether the given item exists in the tree by calling the `Search` method and checking if the result is not `null`.
+        /// This method checks whether the given item exists in the tree by calling the Search method and checking if the result is not `null`.
         /// </summary>
         /// <param name="item">The item to search for in the tree.</param>
         /// <returns>A boolean value indicating whether the item was found in the tree.</returns>
@@ -173,9 +173,9 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method removes the given item from the binary tree.
+        /// This method removes the given item from the <see cref="BinarySearchTree{T}"/>.
         /// </summary>
-        /// <param name="item">The item to remove from the binary tree.</param>
+        /// <param name="item">The item to remove from the <see cref="BinarySearchTree{T}"/>.</param>
         /// <returns>A boolean value indicating whether the item was found and removed from the tree.</returns>
         public bool Remove(T item)
         {
@@ -265,9 +265,9 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method copies the elements in the binary tree to the given array, starting at the specified index in the array.
+        /// This method copies the elements in the <see cref="BinarySearchTree{T}"/> to the given array, starting at the specified index in the array.
         /// </summary>
-        /// <param name="array">The array to copy the elements of the binary tree to.</param>
+        /// <param name="array">The array to copy the elements of the <see cref="BinarySearchTree{T}"/> to.</param>
         /// <param name="arrayIndex">The index in the array at which to start copying elements.</param>
         public void CopyTo(T[] array, int arrayIndex)
         {
@@ -281,27 +281,27 @@ namespace GenericCollectionsExtension.Tree
         }
 
         /// <summary>
-        /// This method returns an enumerator for the elements in the binary tree.
+        /// This method returns an enumerator for the elements in the <see cref="BinarySearchTree{T}"/>.
         /// </summary>
-        /// <returns>An enumerator for the elements in the binary tree.</returns>
+        /// <returns>An enumerator for the elements in the <see cref="BinarySearchTree{T}"/>.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
         /// <summary>
-        /// This method returns an enumerator for the elements in the binary tree.
+        /// This method returns an enumerator for the elements in the <see cref="BinarySearchTree{T}"/>.
         /// </summary>
-        /// <returns>An enumerator for the elements in the binary tree.</returns>
+        /// <returns>An enumerator for the elements in the <see cref="BinarySearchTree{T}"/>.</returns>
         public IEnumerator<T> GetEnumerator()
         {
             return GetEnumerable().GetEnumerator();
         }
 
         /// <summary>
-        /// This method returns an enumerable for the elements in the binary tree.
+        /// This method returns an enumerable for the elements in the <see cref="BinarySearchTree{T}"/>.
         /// </summary>
-        /// <returns>An enumerable for the elements in the binary tree.</returns>
+        /// <returns>An enumerable for the elements in the <see cref="BinarySearchTree{T}"/>.</returns>
         public IEnumerable<T> GetEnumerable()
         {
             if (Traversal == TraversalType.PreOrder)

@@ -7,7 +7,7 @@ namespace GenericCollectionsExtension.SortedList
     /// <summary>
     /// Represents a sorted list each time you enter an item in the list.
     /// </summary>
-    /// <typeparam name="T">T is type of element in the list and implements IComparable.</typeparam>
+    /// <typeparam name="T">T is type of element in the list and implements <see cref="IComparable{T}"/>.</typeparam>
     public class SortedList<T> : ISortedList<T>, ICollection<T>, IEnumerable<T>, IReadOnlyList<T>
         where T : IComparable<T>
     {
@@ -46,7 +46,7 @@ namespace GenericCollectionsExtension.SortedList
         public bool IsReadOnly => false;
 
         /// <summary>
-        /// Initializes a new instance of the SortedList class and initialize the criterion to ascending by default.
+        /// Initializes a new instance of the <see cref="SortedList{T}"/> class and initialize the criterion to ascending by default.
         /// </summary>
         public SortedList()
         {
@@ -55,7 +55,7 @@ namespace GenericCollectionsExtension.SortedList
         }
 
         /// <summary>
-        /// Initializes a new instance of the SortedList class and initializes the criterion.
+        /// Initializes a new instance of the <see cref="SortedList{T}"/> class and initializes the criterion.
         /// </summary>
         /// <param name="criterion">Can be ascending or descending.</param>
         public SortedList(Criterion criterion)

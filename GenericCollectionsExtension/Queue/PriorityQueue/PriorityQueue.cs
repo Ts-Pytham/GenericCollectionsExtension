@@ -28,7 +28,7 @@ namespace GenericCollectionsExtension.Queue
         }
 
         /// <summary>
-        /// Initializes a new instance of the PriorityQueue class with default capacity.
+        /// Initializes a new instance of the <see cref="PriorityQueue{T}"/> class with default capacity.
         /// </summary>
         public PriorityQueue()
         {
@@ -37,7 +37,7 @@ namespace GenericCollectionsExtension.Queue
         }
 
         /// <summary>
-        /// Initializes a new instance of the PriorityQueue class with the specified capacity.
+        /// Initializes a new instance of the <see cref="PriorityQueue{T}"/>  class with the specified capacity.
         /// </summary>
         /// <param name="capacity">The maximum number of elements that the queue can hold.</param>
         /// <exception cref="ArgumentOutOfRangeException">Thrown if the specified capacity is less than 1.</exception>
