@@ -3,7 +3,28 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
 	  <LangVersion>latest</LangVersion>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Authors>Ts-Pytham</Authors>
+	  <Copyright>Ts Pytham</Copyright>
+	  <PackageProjectUrl>https://github.com/Ts-Pytham/GenericCollectionsExtension</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Title>$(AssemblyName)</Title>
+	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <RepositoryUrl>https://github.com/Ts-Pytham/GenericCollectionsExtension</RepositoryUrl>
+	  <Description>Generic Collections Extension is a class library and an extension of the data structures in .NET.</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="docfx.console" Version="2.59.4">
