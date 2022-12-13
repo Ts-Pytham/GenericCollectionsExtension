@@ -7,7 +7,7 @@
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
 These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.
 
-<h2>Data structure</h2>
+## Data structure
 New data structures were added that are derived from the traditional data structures, these are:
 
 * Deque.
@@ -16,14 +16,14 @@ New data structures were added that are derived from the traditional data struct
 * Binary Search Tree.
 * SortedList.
 
-<h3>Queue</h3>
+### Queue
 
 A queue is a data structure that stores and retrieves items in a first-in-first-out (FIFO) manner. 
 This means that the first item that is added to the queue is also the first item that is removed from the queue. 
 Queues are useful for storing and managing data in applications where items need to be processed in the order in which they are received. 
 For example, a queue could be used to hold tasks that need to be executed in the order in which they are received, or to hold messages that need to be sent in the order in which they were received.
 
-<h4>Queue Type:</h4>
+#### Queue Type:
 
 * Deque: Is a double-ended queue, which is a type of data structure that allows items to be added and removed from either end of the queue. 
 This means that items can be added to the front or back of the queue, and can also be removed from the front or back of the queue.
@@ -85,7 +85,7 @@ Contains: 51, False
 */
 ```
 
-<h3>Stack</h3>
+### Stack
 
 A stack is a data structure that stores and retrieves items in a last-in-first-out (LIFO) manner. 
 This means that the last item that is added to the stack is also the first item that is removed from the stack. 
@@ -122,7 +122,7 @@ Value: 5
 4
 */
 ```
-<h3>List</h3>
+### List
 
 Is a data structure that stores a collection of items in a specific order. Lists allow items to be added, removed, and accessed by their position in the list. They are often used to store collections of data that need to be organized and accessed in a specific order.
 
@@ -187,12 +187,12 @@ total items: 7
 495
 */
 ```
-<h5>NOTE</h5>
+##### NOTE
 
 This implementation is different from the one implemented in System.Collections.Generic because this implementation does not use a key, and any class to be used must inherit the IComparable interface. Very important to look at this implementation and documentation.
 
 
-<h3> Tree </h3>
+### Tree
 Is a data structure consisting of linked nodes. Nodes can have one or more children and each node can have a relationship with other nodes in the tree. 
 
 
@@ -234,7 +234,7 @@ Count InOrder: 12
 */
 ```
 
-<h2>Possible future data structures</h2>
+## Possible future data structures
 
 More data structures are expected to be added in the future, among them are:
 
