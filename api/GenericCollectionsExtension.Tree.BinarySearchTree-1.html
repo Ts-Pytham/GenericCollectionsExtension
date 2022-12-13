@@ -1,0 +1,787 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BinarySearchTree&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BinarySearchTree&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1">
+  
+  
+  <h1 id="GenericCollectionsExtension_Tree_BinarySearchTree_1" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1" class="text-break">Class BinarySearchTree&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BinarySearchTree&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GenericCollectionsExtension.Tree.IBinarySearchTree-1.html">IBinarySearchTree</a>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GenericCollectionsExtension.Tree.html">GenericCollectionsExtension.Tree</a></h6>
+  <h6><strong>Assembly</strong>: GenericCollectionsExtension.dll</h6>
+  <h5 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BinarySearchTree&lt;T&gt; : IBinarySearchTree&lt;T&gt;, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>T is type of element in the list and implements <span class="xref">System.IComparable`1</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L39">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor">BinarySearchTree()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> class.</p>
+<p>The traversal type is set to InOrder by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinarySearchTree()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_GenericCollectionsExtension_Tree_TraversalType_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.%23ctor(GenericCollectionsExtension.Tree.TraversalType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L49">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_GenericCollectionsExtension_Tree_TraversalType_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)">BinarySearchTree(TraversalType)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> class with the specified traversal type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinarySearchTree(TraversalType traversal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Tree.TraversalType.html">TraversalType</a></td>
+        <td><span class="parametername">traversal</span></td>
+        <td><p>The traversal type to use for the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Count.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L18">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Count_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Count*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Count" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Number of data in the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_IsReadOnly.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L21">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_IsReadOnly_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_IsReadOnly" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_RepeatedNodes.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.RepeatedNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L33">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_RepeatedNodes_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_RepeatedNodes" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes">RepeatedNodes</h4>
+  <div class="markdown level1 summary"><p>Represents a property that returns a dictionary containing the number of times each element appears in the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;T, int&gt; RepeatedNodes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;T, <span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Traversal.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Traversal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L28">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Traversal_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Traversal" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal">Traversal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TraversalType Traversal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Tree.TraversalType.html">TraversalType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Add__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L59">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Add_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Add*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Add__0_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified item to the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to add to the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Clear.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L118">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Clear_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Clear" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Deletes all data from the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Contains__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Contains(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L128">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Contains_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Contains__0_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>This method checks whether the given item exists in the tree by calling the Search method and checking if the result is not <code>null</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for in the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A boolean value indicating whether the item was found in the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L273">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_CopyTo_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_CopyTo__0___System_Int32_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)">CopyTo(T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>This method copies the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> to the given array, starting at the specified index in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The array to copy the elements of the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The index in the array at which to start copying elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerable.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.GetEnumerable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L306">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerable_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerable" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable">GetEnumerable()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerable for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetEnumerable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>An enumerable for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L297">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerator_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerator" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerator for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;T&gt;</td>
+        <td><p>An enumerator for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_InOrder.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.InOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L324">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_InOrder_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_InOrder" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder">InOrder()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in in-order traversal order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; InOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>An enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in in-order traversal order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_IsEmpty.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L279">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_IsEmpty_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_IsEmpty" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>Check if the tree is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If the tree is empty, returns true, otherwise returns false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_PostOrder.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.PostOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L385">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_PostOrder_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_PostOrder" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder">PostOrder()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in post-order traversal order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; PostOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>An enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in post-order traversal order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_PreOrder.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.PreOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L355">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_PreOrder_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_PreOrder" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder">PreOrder()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in pre-order traversal order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; PreOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>An enumerable collection of the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a> in pre-order traversal order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_Remove__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.Remove(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L181">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Remove_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_Remove__0_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>This method removes the given item from the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove from the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A boolean value indicating whether the item was found and removed from the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L288">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Tree_BinarySearchTree_1_System_Collections_IEnumerable_GetEnumerator_" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_Tree_BinarySearchTree_1_System_Collections_IEnumerable_GetEnumerator" data-uid="GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>This method returns an enumerator for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>An enumerator for the elements in the <a class="xref" href="GenericCollectionsExtension.Tree.BinarySearchTree-1.html">BinarySearchTree&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GenericCollectionsExtension.Tree.IBinarySearchTree-1.html">IBinarySearchTree&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Tree_BinarySearchTree_1.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Tree.BinarySearchTree%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
