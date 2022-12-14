@@ -35,7 +35,61 @@ namespace GenericCollectionsExtension.SortedList
                 {
                     throw new ArgumentOutOfRangeException();
                 }
-                _sortedList[index] = value; 
+
+                if(value.CompareTo(_sortedList[index]) == 0)
+                {
+                    return;
+                }
+
+                if(index == 0)
+                {
+                    if (value.CompareTo(this[1]) <= 0 && _criterion == Criterion.Ascending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else if (value.CompareTo(this[1]) >= 0 && _criterion == Criterion.Descending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else
+                    {
+                        _sortedList.RemoveAt(index);
+                        Add(value);
+                    }
+                }
+                else if(index == Count - 1)
+                {
+                    if (value.CompareTo(this[Count - 2]) >= 0 && _criterion == Criterion.Ascending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else if (value.CompareTo(this[Count - 2]) <= 0 && _criterion == Criterion.Descending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else
+                    {
+                        _sortedList.RemoveAt(index);
+                        Add(value);
+                    }
+                }
+                else
+                {
+                    if (value.CompareTo(this[index-1]) >= 0 && value.CompareTo(this[index+1]) <= 0 && _criterion == Criterion.Ascending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else if (value.CompareTo(this[index - 1]) <= 0 && value.CompareTo(this[index + 1]) >= 0 && _criterion == Criterion.Descending)
+                    {
+                        _sortedList[index] = value;
+                    }
+                    else
+                    {
+                        _sortedList.RemoveAt(index);
+                        Add(value);
+                    }
+                }
+                
             }
         }
 
@@ -169,6 +223,51 @@ namespace GenericCollectionsExtension.SortedList
             return _sortedList.IndexOf(item);
         }
 
+        /// <summary>
+        /// Performs a binary search on a sorted list to find a specific element.
+        /// </summary>
+        /// <param name="item">The element to search for in the list.</param>
+        /// <returns>The index of the element in the list if found, or -1 if not found.</returns>
+        public int BinarySearch(T item)
+        {
+            int low = 0;
+            int high = _sortedList.Count - 1;
+
+            while(low <= high)
+            {
+                int mid = low + (high - low) / 2;
+
+                if(item.CompareTo(_sortedList[mid]) == 0)
+                {
+                    return mid;
+                }
+                else if (item.CompareTo(_sortedList[mid]) < 0)
+                {
+                    if(_criterion == Criterion.Ascending)
+                    {
+                        high = mid - 1;
+                    }
+                    else
+                    {
+                        low = mid + 1;
+                    }
+                }
+                else
+                {
+                    if (_criterion == Criterion.Ascending)
+                    {
+                        low = mid + 1;
+                    }
+                    else
+                    {
+                        high = mid - 1;
+                    }
+                }
+            }
+
+            return -1;
+        }
+
         /// <inheritdoc/>
         public bool Remove(T item)
         {
@@ -180,5 +279,7 @@ namespace GenericCollectionsExtension.SortedList
         {
             _sortedList.RemoveAt(index);
         }
+
+
     }
 }

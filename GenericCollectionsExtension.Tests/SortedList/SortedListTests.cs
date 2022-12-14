@@ -63,4 +63,106 @@ public class SortedListTests
 
         Assert.True(equalsList);
     }
+
+    [Fact]
+    public void SetValueInIndexerCaseOne()
+    {
+        var sortedListA = new SortedList<int>(Criterion.Ascending)
+        {
+            20, 10, 40
+        };
+
+        var sortedListD = new SortedList<int>(Criterion.Descending)
+        {
+            20, 10, 40
+        };
+
+        sortedListA[0] = 19; // 19, 20, 40
+        sortedListD[0] = 25; // 25, 20, 10
+
+        List<int> listA = new() { 19, 20, 40 };
+        List<int> listD = new() { 25, 20, 10 };
+
+        Assert.Equal(listA, sortedListA);
+        Assert.Equal(listD, sortedListD);
+
+
+        sortedListA[0] = 100; // 20, 40, 100
+        sortedListD[0] = 0; // 20, 10, 0
+
+        Assert.Equal(new List<int>() { 20, 40, 100 }, sortedListA);
+        Assert.Equal(new List<int>() { 20, 10, 0 }, sortedListD);
+
+    }
+
+
+    [Fact]
+    public void SetValueInIndexerCaseTwo()
+    {
+        var sortedListA = new SortedList<int>(Criterion.Ascending)
+        {
+            20, 10, 40
+        };
+
+        var sortedListD = new SortedList<int>(Criterion.Descending)
+        {
+            20, 10, 40
+        };
+
+        sortedListA[2] = 21; // 10, 20, 21
+        sortedListD[2] = 19; // 40, 20, 19
+
+        List<int> listA = new() { 10, 20, 21 };
+        List<int> listD = new() { 40, 20, 19 };
+
+        Assert.Equal(listA, sortedListA);
+        Assert.Equal(listD, sortedListD);
+
+        sortedListA[2] = 0; // 0, 10, 20
+        sortedListD[2] = 94; // 94, 40, 20
+
+        Assert.Equal(new List<int>() { 0, 10, 20 }, sortedListA);
+        Assert.Equal(new List<int>() { 94, 40, 20 }, sortedListD);
+    }
+
+    [Fact]
+    public void SetValueInIndexerCaseThree()
+    {
+        var sortedListA = new SortedList<int>(Criterion.Ascending)
+        {
+            20, 10, 40, 59, 100, 0
+        };
+
+        var sortedListD = new SortedList<int>(Criterion.Descending)
+        {
+            20, 10, 40, 59, 100, 0
+        };
+
+        sortedListA[3] = 105; // 0, 10, 20, 59, 100, 105
+        sortedListD[3] = 19; // 100, 59, 40, 19, 10, 0
+
+        List<int> listA = new() { 0, 10, 20, 59, 100, 105 };
+        List<int> listD = new() { 100, 59, 40, 19, 10, 0 };
+
+        Assert.Equal(listA, sortedListA);
+        Assert.Equal(listD, sortedListD);
+    }
+
+    [Fact]
+    public void BinarySearchAscending()
+    {
+        SortedList<int> list = new() { 10, 29, 0, -19, -390, 5 };
+
+        Assert.True(list.BinarySearch(29) != -1);
+        Assert.True(list.BinarySearch(500) == -1);
+    }
+
+    [Fact]
+    public void BinarySearchDescending()
+    {
+        SortedList<int> list = new(Criterion.Descending) { 10, 29, 0, -19, -390, 5 };
+
+        Assert.True(list.BinarySearch(29) != -1);
+        Assert.True(list.BinarySearch(500) == -1);
+    }
 }
