@@ -16,9 +16,8 @@ namespace GenericCollectionsExtension.SortedList
         /// <summary>
         /// Criterion for sorting the list.
         /// </summary>
-        private readonly Criterion _criterion;
+        public Criterion Criterion { get; }
 
-        /// <inheritdoc/>
         public T this[int index] 
         {
             get
@@ -43,11 +42,11 @@ namespace GenericCollectionsExtension.SortedList
 
                 if(index == 0)
                 {
-                    if (value.CompareTo(this[1]) <= 0 && _criterion == Criterion.Ascending)
+                    if (value.CompareTo(this[1]) <= 0 && Criterion == Criterion.Ascending)
                     {
                         _sortedList[index] = value;
                     }
-                    else if (value.CompareTo(this[1]) >= 0 && _criterion == Criterion.Descending)
+                    else if (value.CompareTo(this[1]) >= 0 && Criterion == Criterion.Descending)
                     {
                         _sortedList[index] = value;
                     }
@@ -59,11 +58,11 @@ namespace GenericCollectionsExtension.SortedList
                 }
                 else if(index == Count - 1)
                 {
-                    if (value.CompareTo(this[Count - 2]) >= 0 && _criterion == Criterion.Ascending)
+                    if (value.CompareTo(this[Count - 2]) >= 0 && Criterion == Criterion.Ascending)
                     {
                         _sortedList[index] = value;
                     }
-                    else if (value.CompareTo(this[Count - 2]) <= 0 && _criterion == Criterion.Descending)
+                    else if (value.CompareTo(this[Count - 2]) <= 0 && Criterion == Criterion.Descending)
                     {
                         _sortedList[index] = value;
                     }
@@ -75,11 +74,11 @@ namespace GenericCollectionsExtension.SortedList
                 }
                 else
                 {
-                    if (value.CompareTo(this[index-1]) >= 0 && value.CompareTo(this[index+1]) <= 0 && _criterion == Criterion.Ascending)
+                    if (value.CompareTo(this[index-1]) >= 0 && value.CompareTo(this[index+1]) <= 0 && Criterion == Criterion.Ascending)
                     {
                         _sortedList[index] = value;
                     }
-                    else if (value.CompareTo(this[index - 1]) <= 0 && value.CompareTo(this[index + 1]) >= 0 && _criterion == Criterion.Descending)
+                    else if (value.CompareTo(this[index - 1]) <= 0 && value.CompareTo(this[index + 1]) >= 0 && Criterion == Criterion.Descending)
                     {
                         _sortedList[index] = value;
                     }
@@ -93,13 +92,11 @@ namespace GenericCollectionsExtension.SortedList
             }
         }
 
-        /// <inheritdoc/>
         public int Count
         {
             get => _sortedList.Count;
         }
 
-        /// <inheritdoc/>
         public bool IsReadOnly => false;
 
         /// <summary>
@@ -108,7 +105,7 @@ namespace GenericCollectionsExtension.SortedList
         public SortedList()
         {
             _sortedList = new List<T>();
-            _criterion = Criterion.Ascending;
+            Criterion = Criterion.Ascending;
         }
 
         /// <summary>
@@ -118,10 +115,13 @@ namespace GenericCollectionsExtension.SortedList
         public SortedList(Criterion criterion)
         {
             _sortedList = new List<T>();
-            _criterion = criterion;
+            Criterion = criterion;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Adds an item and sorts it.
+        /// </summary>
+        /// <param name="item">The object to be added</param>
         public void Add(T item)
         {
             if (Count == 0)
@@ -139,7 +139,7 @@ namespace GenericCollectionsExtension.SortedList
         /// <param name="item">The object to be added</param>
         private void AddSorted(T item)
         {
-            if (_criterion == Criterion.Ascending)
+            if (Criterion == Criterion.Ascending)
             {
                 if (item.CompareTo(_sortedList[0]) == -1) // Initial Position
                 {
@@ -187,37 +187,31 @@ namespace GenericCollectionsExtension.SortedList
             }
         }
 
-        /// <inheritdoc/>
         public void Clear()
         {
             _sortedList.Clear();
         }
 
-        /// <inheritdoc/>
         public bool Contains(T item)
         {
             return _sortedList.Contains(item);
         }
 
-        /// <inheritdoc/>
         public void CopyTo(T[] array, int arrayIndex)
         {
             _sortedList.CopyTo(array, arrayIndex);
         }
 
-        /// <inheritdoc/>
         public IEnumerator<T> GetEnumerator()
         {
             return _sortedList.GetEnumerator();
         }
 
-        /// <inheritdoc/>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return _sortedList.GetEnumerator();
         }
 
-        /// <inheritdoc/>
         public int IndexOf(T item)
         {
             return _sortedList.IndexOf(item);
@@ -243,7 +237,7 @@ namespace GenericCollectionsExtension.SortedList
                 }
                 else if (item.CompareTo(_sortedList[mid]) < 0)
                 {
-                    if(_criterion == Criterion.Ascending)
+                    if(Criterion == Criterion.Ascending)
                     {
                         high = mid - 1;
                     }
@@ -254,7 +248,7 @@ namespace GenericCollectionsExtension.SortedList
                 }
                 else
                 {
-                    if (_criterion == Criterion.Ascending)
+                    if (Criterion == Criterion.Ascending)
                     {
                         low = mid + 1;
                     }
@@ -268,18 +262,27 @@ namespace GenericCollectionsExtension.SortedList
             return -1;
         }
 
-        /// <inheritdoc/>
         public bool Remove(T item)
         {
             return _sortedList.Remove(item);
         }
 
-        /// <inheritdoc/>
         public void RemoveAt(int index)
         {
             _sortedList.RemoveAt(index);
         }
 
-
+        /// <summary>
+        /// Reverses the order of the elements in the sorted list and changes the Criterion property accordingly.
+        /// </summary>
+        public void Reverse()
+        {
+            Criterion = Criterion == Criterion.Ascending ? Criterion.Descending : Criterion.Ascending;
+            
+            for (int i = 0, j = Count - 1; i <= j; ++i, --j)
+            {
+                (_sortedList[j], _sortedList[i]) = (_sortedList[i], _sortedList[j]);
+            }
+        }
     }
 }

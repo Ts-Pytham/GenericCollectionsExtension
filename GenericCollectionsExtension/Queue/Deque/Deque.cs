@@ -91,13 +91,12 @@ namespace GenericCollectionsExtension.Queue
             return _deque.Contains(item);
         }
 
-        /// <inheritdoc/>
         public void CopyTo(T[] array, int arrayIndex)
         {
             _deque.CopyTo(array, arrayIndex);
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IQueue{T}.Dequeue"/>
         public T Dequeue()
         {
             if (Count == 0)
@@ -108,7 +107,7 @@ namespace GenericCollectionsExtension.Queue
             return value;
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IDeque{T}.PopLast"/>
         public T PopLast()
         {
             if (Count == 0)
@@ -128,7 +127,7 @@ namespace GenericCollectionsExtension.Queue
             return _deque.GetEnumerator();
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IQueue{T}.Peek"/>
         public T Peek()
         {
             if (Count == 0)
@@ -137,7 +136,7 @@ namespace GenericCollectionsExtension.Queue
             return _deque[0];
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IDeque{T}.PeekLast"/>
         public T PeekLast()
         {
             if (Count == 0)
@@ -146,7 +145,7 @@ namespace GenericCollectionsExtension.Queue
             return _deque[Count - 1];
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IDeque{T}.PushFirst(T)"/>
         public void PushFirst(T item)
         {
             if (Capacity != -1 && Capacity == Count)
@@ -157,7 +156,7 @@ namespace GenericCollectionsExtension.Queue
             _deque.Insert(0, item);
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IDeque{T}.PushLast(T)"/>
         public void PushLast(T item)
         {
             if (Capacity != -1 && Capacity == Count)

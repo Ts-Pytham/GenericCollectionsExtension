@@ -165,4 +165,40 @@ public class SortedListTests
         Assert.True(list.BinarySearch(29) != -1);
         Assert.True(list.BinarySearch(500) == -1);
     }
+
+    [Fact]
+    public void ReverseOdd()
+    {
+        SortedList<int> list = new()
+        {
+            30, 9, -1, 8, 2
+        };
+
+        SortedList<int> listD = new(Criterion.Descending)
+        {
+            30, 9, -1, 8, 2
+        };
+
+        list.Reverse();
+
+        Assert.Equal(listD, list);
+    }
+
+    [Fact]
+    public void ReverseEven()
+    {
+        SortedList<int> list = new()
+        {
+            30, 9, -1, 8
+        };
+
+        SortedList<int> listD = new(Criterion.Descending)
+        {
+            30, 9, -1, 8
+        };
+
+        list.Reverse();
+
+        Assert.Equal(listD, list);
+    }
 }

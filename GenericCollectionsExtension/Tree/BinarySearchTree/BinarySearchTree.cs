@@ -17,7 +17,6 @@ namespace GenericCollectionsExtension.Tree
         /// </summary>
         public int Count { get; private set; }
 
-        /// <inheritdoc/>
         public bool IsReadOnly => false;
 
         /// <summary>
@@ -25,6 +24,7 @@ namespace GenericCollectionsExtension.Tree
         /// </summary>
         private IBinaryTreeNode<T> _root;
 
+        /// <inheritdoc cref="IBinarySearchTree{T}.Traversal"/>
         public TraversalType Traversal { get; set; }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace GenericCollectionsExtension.Tree
             GetEnumerable().ToArray().CopyTo(array, arrayIndex);
         }
 
-        /// <inheritdoc/>
+        /// <inheritdoc cref="IBinarySearchTree{T}.IsEmpty"/>
         public bool IsEmpty()
         {
             return _root is null;

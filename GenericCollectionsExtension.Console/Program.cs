@@ -14,6 +14,7 @@ SortedList<int> sortedList = new(Criterion.Descending)
     5
 };
 
+sortedList.Reverse();
 Console.WriteLine($"total items: {sortedList.Count}");
 sortedList.ToList().ForEach(Console.WriteLine);
 
