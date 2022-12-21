@@ -187,6 +187,17 @@ namespace GenericCollectionsExtension.SortedList
             }
         }
 
+        /// <summary>
+        /// Adds a range of values to the collection in a sorted order.
+        /// </summary>
+        /// <param name="values">The values to be added to the collection.</param>
+        public void AddRange(IEnumerable<T> values)
+        {
+            foreach(var value in values)
+            {
+                Add(value);
+            }
+        }
         public void Clear()
         {
             _sortedList.Clear();

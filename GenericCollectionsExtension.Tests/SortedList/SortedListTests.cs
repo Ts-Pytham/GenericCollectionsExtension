@@ -201,4 +201,14 @@ public class SortedListTests
 
         Assert.Equal(listD, list);
     }
+
+    [Fact]
+    public void AddRange()
+    {
+        SortedList<int> list = new();
+
+        list.AddRange(new[] { 59, 10, 2, 5, -2});
+
+        Assert.Equal(new[] { -2, 2, 5, 10, 59 }, list);
+    }
 }
