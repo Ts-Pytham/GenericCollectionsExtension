@@ -16,7 +16,7 @@ namespace GenericCollectionsExtension.SortedList
         /// <summary>
         /// Criterion for sorting the list.
         /// </summary>
-        public Criterion Criterion { get; }
+        public Criterion Criterion { get; private set; }
 
         public T this[int index] 
         {
