@@ -1,4 +1,4 @@
-﻿namespace GenericCollectionsExtension.SortedList
+﻿namespace GenericCollectionsExtension.List
 {
     /// <summary>
     /// Represents an enum for the sort criterion.

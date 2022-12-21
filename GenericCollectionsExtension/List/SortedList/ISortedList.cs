@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GenericCollectionsExtension.SortedList
+namespace GenericCollectionsExtension.List
 {
     /// <summary>
     /// Represents SortedList Interface.

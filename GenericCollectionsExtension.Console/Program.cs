@@ -1,4 +1,4 @@
-﻿using GenericCollectionsExtension.SortedList;
+﻿using GenericCollectionsExtension.List;
 using GenericCollectionsExtension.Queue;
 using GenericCollectionsExtension.Stack;
 using GenericCollectionsExtension.Tree;

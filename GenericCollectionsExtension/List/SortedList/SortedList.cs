@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace GenericCollectionsExtension.SortedList
+namespace GenericCollectionsExtension.List
 {
     /// <summary>
     /// Represents a sorted list each time you enter an item in the list.
@@ -18,29 +18,29 @@ namespace GenericCollectionsExtension.SortedList
         /// </summary>
         public Criterion Criterion { get; private set; }
 
-        public T this[int index] 
+        public T this[int index]
         {
             get
             {
-                if(index >= Count)
+                if (index >= Count)
                 {
                     throw new ArgumentOutOfRangeException();
                 }
                 return _sortedList[index];
             }
-            set 
+            set
             {
                 if (index >= Count)
                 {
                     throw new ArgumentOutOfRangeException();
                 }
 
-                if(value.CompareTo(_sortedList[index]) == 0)
+                if (value.CompareTo(_sortedList[index]) == 0)
                 {
                     return;
                 }
 
-                if(index == 0)
+                if (index == 0)
                 {
                     if (value.CompareTo(this[1]) <= 0 && Criterion == Criterion.Ascending)
                     {
@@ -56,7 +56,7 @@ namespace GenericCollectionsExtension.SortedList
                         Add(value);
                     }
                 }
-                else if(index == Count - 1)
+                else if (index == Count - 1)
                 {
                     if (value.CompareTo(this[Count - 2]) >= 0 && Criterion == Criterion.Ascending)
                     {
@@ -74,7 +74,7 @@ namespace GenericCollectionsExtension.SortedList
                 }
                 else
                 {
-                    if (value.CompareTo(this[index-1]) >= 0 && value.CompareTo(this[index+1]) <= 0 && Criterion == Criterion.Ascending)
+                    if (value.CompareTo(this[index - 1]) >= 0 && value.CompareTo(this[index + 1]) <= 0 && Criterion == Criterion.Ascending)
                     {
                         _sortedList[index] = value;
                     }
@@ -88,7 +88,7 @@ namespace GenericCollectionsExtension.SortedList
                         Add(value);
                     }
                 }
-                
+
             }
         }
 
@@ -193,7 +193,7 @@ namespace GenericCollectionsExtension.SortedList
         /// <param name="values">The values to be added to the collection.</param>
         public void AddRange(IEnumerable<T> values)
         {
-            foreach(var value in values)
+            foreach (var value in values)
             {
                 Add(value);
             }
@@ -238,17 +238,17 @@ namespace GenericCollectionsExtension.SortedList
             int low = 0;
             int high = _sortedList.Count - 1;
 
-            while(low <= high)
+            while (low <= high)
             {
                 int mid = low + (high - low) / 2;
 
-                if(item.CompareTo(_sortedList[mid]) == 0)
+                if (item.CompareTo(_sortedList[mid]) == 0)
                 {
                     return mid;
                 }
                 else if (item.CompareTo(_sortedList[mid]) < 0)
                 {
-                    if(Criterion == Criterion.Ascending)
+                    if (Criterion == Criterion.Ascending)
                     {
                         high = mid - 1;
                     }
@@ -289,7 +289,7 @@ namespace GenericCollectionsExtension.SortedList
         public void Reverse()
         {
             Criterion = Criterion == Criterion.Ascending ? Criterion.Descending : Criterion.Ascending;
-            
+
             for (int i = 0, j = Count - 1; i <= j; ++i, --j)
             {
                 (_sortedList[j], _sortedList[i]) = (_sortedList[i], _sortedList[j]);
