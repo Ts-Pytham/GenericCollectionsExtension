@@ -2,7 +2,8 @@
 
 [![](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/Ts-Pytham/GenericCollectionsExtension)
 [![](https://img.shields.io/badge/License-MIT-green)](https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt)
-[![PayPal-donate-button](https://img.shields.io/badge/paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
+[![](https://img.shields.io/badge/Nuget-1.2.0-blue)](https://www.nuget.org/packages/GenericCollectionsExtension/)
+[![PayPal-donate-button](https://img.shields.io/badge/Paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
 
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
 These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.
@@ -15,6 +16,7 @@ New data structures were added that are derived from the traditional data struct
 * PriorityStack.
 * Binary Search Tree.
 * SortedList.
+* DoublyLinkedList.
 
 <h3>Queue</h3>
 
@@ -128,7 +130,9 @@ Is a data structure that stores a collection of items in a specific order. Lists
 
 * Sorted List: Is a data structure that is similar to a regular list, but maintains its items in a sorted order. This means that when items are added to the list, they are automatically placed in the correct position based on their sorting order. Sorted lists are useful in situations where it is necessary to access items in a specific order, such as in applications that require efficient search and retrieval of data.
 
-**Example in code:**
+* DoublyLinkedList: Is  a data structure that consists of a set of nodes, where each node has two pointers: one pointing to the previous node in the list and one pointing to the next node in the list. This allows for efficient insertion and deletion of elements from the list, as well as the ability to traverse the list in both directions (from the beginning to the end and from the end to the beginning).
+
+**Example of SortedList in code:**
 
 ```C#
 //Descending

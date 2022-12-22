@@ -2,12 +2,13 @@
 
 [![](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/Ts-Pytham/GenericCollectionsExtension)
 [![](https://img.shields.io/badge/License-MIT-green)](https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt)
-[![PayPal-donate-button](https://img.shields.io/badge/paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
+[![](https://img.shields.io/badge/Nuget-1.2.0-blue)](https://www.nuget.org/packages/GenericCollectionsExtension/)
+[![PayPal-donate-button](https://img.shields.io/badge/Paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
 
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
 These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.
 
-## Data structure
+<h2>Data structure</h2>
 New data structures were added that are derived from the traditional data structures, these are:
 
 * Deque.
@@ -15,15 +16,16 @@ New data structures were added that are derived from the traditional data struct
 * PriorityStack.
 * Binary Search Tree.
 * SortedList.
+* DoublyLinkedList.
 
-### Queue
+<h3>Queue</h3>
 
 A queue is a data structure that stores and retrieves items in a first-in-first-out (FIFO) manner. 
 This means that the first item that is added to the queue is also the first item that is removed from the queue. 
 Queues are useful for storing and managing data in applications where items need to be processed in the order in which they are received. 
 For example, a queue could be used to hold tasks that need to be executed in the order in which they are received, or to hold messages that need to be sent in the order in which they were received.
 
-#### Queue Type:
+<h4>Queue Type:</h4>
 
 * Deque: Is a double-ended queue, which is a type of data structure that allows items to be added and removed from either end of the queue. 
 This means that items can be added to the front or back of the queue, and can also be removed from the front or back of the queue.
@@ -85,7 +87,7 @@ Contains: 51, False
 */
 ```
 
-### Stack
+<h3>Stack</h3>
 
 A stack is a data structure that stores and retrieves items in a last-in-first-out (LIFO) manner. 
 This means that the last item that is added to the stack is also the first item that is removed from the stack. 
@@ -122,13 +124,15 @@ Value: 5
 4
 */
 ```
-### List
+<h3>List</h3>
 
 Is a data structure that stores a collection of items in a specific order. Lists allow items to be added, removed, and accessed by their position in the list. They are often used to store collections of data that need to be organized and accessed in a specific order.
 
 * Sorted List: Is a data structure that is similar to a regular list, but maintains its items in a sorted order. This means that when items are added to the list, they are automatically placed in the correct position based on their sorting order. Sorted lists are useful in situations where it is necessary to access items in a specific order, such as in applications that require efficient search and retrieval of data.
 
-**Example in code:**
+* DoublyLinkedList: Is  a data structure that consists of a set of nodes, where each node has two pointers: one pointing to the previous node in the list and one pointing to the next node in the list. This allows for efficient insertion and deletion of elements from the list, as well as the ability to traverse the list in both directions (from the beginning to the end and from the end to the beginning).
+
+**Example of SortedList in code:**
 
 ```C#
 //Descending
@@ -187,12 +191,12 @@ total items: 7
 495
 */
 ```
-##### NOTE
+<h5>NOTE</h5>
 
 This implementation is different from the one implemented in System.Collections.Generic because this implementation does not use a key, and any class to be used must inherit the IComparable interface. Very important to look at this implementation and documentation.
 
 
-### Tree
+<h3> Tree </h3>
 Is a data structure consisting of linked nodes. Nodes can have one or more children and each node can have a relationship with other nodes in the tree. 
 
 
@@ -234,7 +238,7 @@ Count InOrder: 12
 */
 ```
 
-## Possible future data structures
+<h2>Possible future data structures</h2>
 
 More data structures are expected to be added in the future, among them are:
 
