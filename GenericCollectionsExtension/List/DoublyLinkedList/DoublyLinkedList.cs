@@ -53,7 +53,7 @@ namespace GenericCollectionsExtension.List
         /// <summary>
         /// Constructs a new instance of the <see cref="DoublyLinkedList{T}"/> class and adds the given item to the list.
         /// </summary>
-        /// <param name="item">The item to be added to the list.</param
+        /// <param name="item">The item to be added to the list.</param>
         public DoublyLinkedList(T item)
         {
             Count = 0;
@@ -159,7 +159,7 @@ namespace GenericCollectionsExtension.List
 
             if (_tail.Value.Equals(item)) return Count - 1;
 
-            var aux = _head;
+            var aux = _head.Next;
 
             for (int i = 1; i != Count - 1; ++i)
             {
@@ -328,7 +328,7 @@ namespace GenericCollectionsExtension.List
 
             if (index == Count - 1) _tail.Value = value;
 
-            var aux = _head;
+            var aux = _head.Next;
 
             for (int i = 1; i != Count - 1; ++i)
             {

@@ -56,8 +56,12 @@ public class DoublyLinkedListTests
         Assert.Equal(3, list.GetLast());
     }
 
-    [Fact]
-    public void GetValue()
+    [Theory]
+    [InlineData("World", true)]
+    [InlineData("Hello", true)]
+    [InlineData("Pytham", false)]
+    [InlineData("Dave", false)]
+    public void ExistsValue(string Value, bool expected)
     {
         var list = new DoublyLinkedList<string>();
 
@@ -65,7 +69,7 @@ public class DoublyLinkedListTests
         list.Add("World");
         list.Add("WoW");
 
-        Assert.Contains("WoW", list);
+        Assert.True(list.Contains(Value) == expected);
     }
 
     [Fact]
@@ -108,5 +112,24 @@ public class DoublyLinkedListTests
 
         Assert.Equal(result, expected);
         Assert.Equal(4, list.Count);
+    }
+
+    [Theory]
+    [InlineData(0, 2)]
+    [InlineData(3, 10)]
+    [InlineData(2, 3)]
+    public void SetValue(int index, int value)
+    {
+        var list = new DoublyLinkedList<int>();
+        list.AddLast(1);
+        list.AddLast(0);
+        list.AddLast(-1);
+        list.AddLast(5);
+
+
+        list[index] = value;
+
+        Assert.Equal(value, list[index]);
+        Assert.True(list.Find(value) == index);
     }
 }
