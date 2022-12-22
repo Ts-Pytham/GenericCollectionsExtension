@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.List.Criterion
+  commentId: T:GenericCollectionsExtension.List.Criterion
+  id: Criterion
+  parent: GenericCollectionsExtension.List
+  children:
+  - GenericCollectionsExtension.List.Criterion.Ascending
+  - GenericCollectionsExtension.List.Criterion.Descending
+  langs:
+  - csharp
+  - vb
+  name: Criterion
+  nameWithType: Criterion
+  fullName: GenericCollectionsExtension.List.Criterion
+  type: Enum
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/Criterion.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Criterion
+    path: List/SortedList/Criterion.cs
+    startLine: 5
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nRepresents an enum for the sort criterion.\n"
+  example: []
+  syntax:
+    content: public enum Criterion
+    content.vb: Public Enum Criterion
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: GenericCollectionsExtension.List.Criterion.Ascending
+  commentId: F:GenericCollectionsExtension.List.Criterion.Ascending
+  id: Ascending
+  parent: GenericCollectionsExtension.List.Criterion
+  langs:
+  - csharp
+  - vb
+  name: Ascending
+  nameWithType: Criterion.Ascending
+  fullName: GenericCollectionsExtension.List.Criterion.Ascending
+  type: Field
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/Criterion.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Ascending
+    path: List/SortedList/Criterion.cs
+    startLine: 10
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nSort the elements in ascending order.\n"
+  example: []
+  syntax:
+    content: Ascending = 0
+    return:
+      type: GenericCollectionsExtension.List.Criterion
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: GenericCollectionsExtension.List.Criterion.Descending
+  commentId: F:GenericCollectionsExtension.List.Criterion.Descending
+  id: Descending
+  parent: GenericCollectionsExtension.List.Criterion
+  langs:
+  - csharp
+  - vb
+  name: Descending
+  nameWithType: Criterion.Descending
+  fullName: GenericCollectionsExtension.List.Criterion.Descending
+  type: Field
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/Criterion.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Descending
+    path: List/SortedList/Criterion.cs
+    startLine: 15
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nSort the elements in descending order.\n"
+  example: []
+  syntax:
+    content: Descending = 1
+    return:
+      type: GenericCollectionsExtension.List.Criterion
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: GenericCollectionsExtension.List
+  commentId: N:GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List
+- uid: GenericCollectionsExtension.List.Criterion
+  commentId: T:GenericCollectionsExtension.List.Criterion
+  parent: GenericCollectionsExtension.List
+  name: Criterion
+  nameWithType: Criterion
+  fullName: GenericCollectionsExtension.List.Criterion

@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Stack
+  commentId: N:GenericCollectionsExtension.Stack
+  id: GenericCollectionsExtension.Stack
+  children:
+  - GenericCollectionsExtension.Stack.IPriorityStack`1
+  - GenericCollectionsExtension.Stack.IStack`1
+  - GenericCollectionsExtension.Stack.PriorityStack`1
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.Stack
+  nameWithType: GenericCollectionsExtension.Stack
+  fullName: GenericCollectionsExtension.Stack
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.Stack.IStack`1
+  commentId: T:GenericCollectionsExtension.Stack.IStack`1
+  name: IStack<T>
+  nameWithType: IStack<T>
+  fullName: GenericCollectionsExtension.Stack.IStack<T>
+  nameWithType.vb: IStack(Of T)
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T)
+  name.vb: IStack(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Stack.IStack`1
+    name: IStack
+    nameWithType: IStack
+    fullName: GenericCollectionsExtension.Stack.IStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Stack.IStack`1
+    name: IStack
+    nameWithType: IStack
+    fullName: GenericCollectionsExtension.Stack.IStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Stack.IPriorityStack`1
+  commentId: T:GenericCollectionsExtension.Stack.IPriorityStack`1
+  name: IPriorityStack<T>
+  nameWithType: IPriorityStack<T>
+  fullName: GenericCollectionsExtension.Stack.IPriorityStack<T>
+  nameWithType.vb: IPriorityStack(Of T)
+  fullName.vb: GenericCollectionsExtension.Stack.IPriorityStack(Of T)
+  name.vb: IPriorityStack(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Stack.IPriorityStack`1
+    name: IPriorityStack
+    nameWithType: IPriorityStack
+    fullName: GenericCollectionsExtension.Stack.IPriorityStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Stack.IPriorityStack`1
+    name: IPriorityStack
+    nameWithType: IPriorityStack
+    fullName: GenericCollectionsExtension.Stack.IPriorityStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1
+  commentId: T:GenericCollectionsExtension.Stack.PriorityStack`1
+  name: PriorityStack<T>
+  nameWithType: PriorityStack<T>
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>
+  nameWithType.vb: PriorityStack(Of T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T)
+  name.vb: PriorityStack(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Stack.PriorityStack`1
+    name: PriorityStack
+    nameWithType: PriorityStack
+    fullName: GenericCollectionsExtension.Stack.PriorityStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Stack.PriorityStack`1
+    name: PriorityStack
+    nameWithType: PriorityStack
+    fullName: GenericCollectionsExtension.Stack.PriorityStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

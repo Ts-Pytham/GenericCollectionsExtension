@@ -1,0 +1,983 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  commentId: T:GenericCollectionsExtension.List.IDoublyLinkedList`1
+  id: IDoublyLinkedList`1
+  parent: GenericCollectionsExtension.List
+  children:
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast(`0)
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1.Find(`0)
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1.Item(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IDoublyLinkedList<T>
+  nameWithType: IDoublyLinkedList<T>
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>
+  type: Interface
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IDoublyLinkedList
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 8
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nRepresents a doubly linked list data structure that stores a collection of items.\n"
+  example: []
+  syntax:
+    content: 'public interface IDoublyLinkedList<T> : ICollection<T>, IEnumerable<T>, IEnumerable'
+    typeParameters:
+    - id: T
+      description: The type of elements in the linked list.
+    content.vb: >-
+      Public Interface IDoublyLinkedList(Of T)
+
+          Inherits ICollection(Of T), IEnumerable(Of T)
+  inheritedMembers:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  - System.Collections.Generic.ICollection{{T}}.Count
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: IDoublyLinkedList(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T)
+  name.vb: IDoublyLinkedList(Of T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Item(System.Int32)
+  commentId: P:GenericCollectionsExtension.List.IDoublyLinkedList`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: IDoublyLinkedList<T>.Item[Int32]
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: this[]
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 15
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nGets or sets the element at the specified index.\n"
+  example: []
+  syntax:
+    content: T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: '{T}'
+      description: The element at the specified index.
+    content.vb: Property Item(index As Integer) As T
+  overload: GenericCollectionsExtension.List.IDoublyLinkedList`1.Item*
+  nameWithType.vb: IDoublyLinkedList(Of T).Item(Int32)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast(`0)
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast(`0)
+  id: AddLast(`0)
+  parent: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  langs:
+  - csharp
+  - vb
+  name: AddLast(T)
+  nameWithType: IDoublyLinkedList<T>.AddLast(T)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.AddLast(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddLast
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 21
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nAdds an item to the end of the linked list.\n"
+  example: []
+  syntax:
+    content: void AddLast(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to add to the linked list.
+    content.vb: Sub AddLast(item As T)
+  overload: GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast*
+  nameWithType.vb: IDoublyLinkedList(Of T).AddLast(T)
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).AddLast(T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Find(`0)
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.Find(`0)
+  id: Find(`0)
+  parent: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  langs:
+  - csharp
+  - vb
+  name: Find(T)
+  nameWithType: IDoublyLinkedList<T>.Find(T)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Find(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Find
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 28
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nFinds the index of the specified item in the linked list.\n"
+  example: []
+  syntax:
+    content: int Find(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for in the linked list.
+    return:
+      type: System.Int32
+      description: The index of the item if found, or -1 if the item is not found.
+    content.vb: Function Find(item As T) As Integer
+  overload: GenericCollectionsExtension.List.IDoublyLinkedList`1.Find*
+  nameWithType.vb: IDoublyLinkedList(Of T).Find(T)
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Find(T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  id: GetLast
+  parent: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  langs:
+  - csharp
+  - vb
+  name: GetLast()
+  nameWithType: IDoublyLinkedList<T>.GetLast()
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetLast()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetLast
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 34
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nGets the last item in the linked list.\n"
+  example: []
+  syntax:
+    content: T GetLast()
+    return:
+      type: '{T}'
+      description: The last item in the linked list.
+    content.vb: Function GetLast As T
+  overload: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast*
+  nameWithType.vb: IDoublyLinkedList(Of T).GetLast()
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetLast()
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  id: GetFirst
+  parent: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  langs:
+  - csharp
+  - vb
+  name: GetFirst()
+  nameWithType: IDoublyLinkedList<T>.GetFirst()
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetFirst()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/DoublyLinkedList/IDoublyLinkedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetFirst
+    path: List/DoublyLinkedList/IDoublyLinkedList.cs
+    startLine: 40
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nGets the first item in the linked list.\n"
+  example: []
+  syntax:
+    content: T GetFirst()
+    return:
+      type: '{T}'
+      description: The first item in the linked list.
+    content.vb: Function GetFirst As T
+  overload: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst*
+  nameWithType.vb: IDoublyLinkedList(Of T).GetFirst()
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetFirst()
+references:
+- uid: GenericCollectionsExtension.List
+  commentId: N:GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Item*
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.Item
+  name: Item
+  nameWithType: IDoublyLinkedList<T>.Item
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Item
+  nameWithType.vb: IDoublyLinkedList(Of T).Item
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Item
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast*
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast
+  name: AddLast
+  nameWithType: IDoublyLinkedList<T>.AddLast
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.AddLast
+  nameWithType.vb: IDoublyLinkedList(Of T).AddLast
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).AddLast
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Find*
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.Find
+  name: Find
+  nameWithType: IDoublyLinkedList<T>.Find
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Find
+  nameWithType.vb: IDoublyLinkedList(Of T).Find
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Find
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast*
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  name: GetLast
+  nameWithType: IDoublyLinkedList<T>.GetLast
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetLast
+  nameWithType.vb: IDoublyLinkedList(Of T).GetLast
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetLast
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst*
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  name: GetFirst
+  nameWithType: IDoublyLinkedList<T>.GetFirst
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetFirst
+  nameWithType.vb: IDoublyLinkedList(Of T).GetFirst
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetFirst

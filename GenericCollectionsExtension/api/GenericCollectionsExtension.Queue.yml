@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Queue
+  commentId: N:GenericCollectionsExtension.Queue
+  id: GenericCollectionsExtension.Queue
+  children:
+  - GenericCollectionsExtension.Queue.Deque`1
+  - GenericCollectionsExtension.Queue.IDeque`1
+  - GenericCollectionsExtension.Queue.IPriorityQueue`1
+  - GenericCollectionsExtension.Queue.IQueue`1
+  - GenericCollectionsExtension.Queue.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.Queue
+  nameWithType: GenericCollectionsExtension.Queue
+  fullName: GenericCollectionsExtension.Queue
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.Queue.Deque`1
+  commentId: T:GenericCollectionsExtension.Queue.Deque`1
+  name: Deque<T>
+  nameWithType: Deque<T>
+  fullName: GenericCollectionsExtension.Queue.Deque<T>
+  nameWithType.vb: Deque(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T)
+  name.vb: Deque(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.Deque`1
+    name: Deque
+    nameWithType: Deque
+    fullName: GenericCollectionsExtension.Queue.Deque
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.Deque`1
+    name: Deque
+    nameWithType: Deque
+    fullName: GenericCollectionsExtension.Queue.Deque
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IDeque`1
+  commentId: T:GenericCollectionsExtension.Queue.IDeque`1
+  name: IDeque<T>
+  nameWithType: IDeque<T>
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>
+  nameWithType.vb: IDeque(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T)
+  name.vb: IDeque(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IDeque`1
+    name: IDeque
+    nameWithType: IDeque
+    fullName: GenericCollectionsExtension.Queue.IDeque
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IDeque`1
+    name: IDeque
+    nameWithType: IDeque
+    fullName: GenericCollectionsExtension.Queue.IDeque
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue`1
+  commentId: T:GenericCollectionsExtension.Queue.IQueue`1
+  name: IQueue<T>
+  nameWithType: IQueue<T>
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>
+  nameWithType.vb: IQueue(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T)
+  name.vb: IQueue(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IPriorityQueue`1
+  commentId: T:GenericCollectionsExtension.Queue.IPriorityQueue`1
+  name: IPriorityQueue<T>
+  nameWithType: IPriorityQueue<T>
+  fullName: GenericCollectionsExtension.Queue.IPriorityQueue<T>
+  nameWithType.vb: IPriorityQueue(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.IPriorityQueue(Of T)
+  name.vb: IPriorityQueue(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IPriorityQueue`1
+    name: IPriorityQueue
+    nameWithType: IPriorityQueue
+    fullName: GenericCollectionsExtension.Queue.IPriorityQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IPriorityQueue`1
+    name: IPriorityQueue
+    nameWithType: IPriorityQueue
+    fullName: GenericCollectionsExtension.Queue.IPriorityQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1
+  commentId: T:GenericCollectionsExtension.Queue.PriorityQueue`1
+  name: PriorityQueue<T>
+  nameWithType: PriorityQueue<T>
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>
+  nameWithType.vb: PriorityQueue(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T)
+  name.vb: PriorityQueue(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.PriorityQueue`1
+    name: PriorityQueue
+    nameWithType: PriorityQueue
+    fullName: GenericCollectionsExtension.Queue.PriorityQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.PriorityQueue`1
+    name: PriorityQueue
+    nameWithType: PriorityQueue
+    fullName: GenericCollectionsExtension.Queue.PriorityQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,2658 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.List.SortedList`1
+  commentId: T:GenericCollectionsExtension.List.SortedList`1
+  id: SortedList`1
+  parent: GenericCollectionsExtension.List
+  children:
+  - GenericCollectionsExtension.List.SortedList`1.#ctor
+  - GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)
+  - GenericCollectionsExtension.List.SortedList`1.Add(`0)
+  - GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)
+  - GenericCollectionsExtension.List.SortedList`1.Clear
+  - GenericCollectionsExtension.List.SortedList`1.Contains(`0)
+  - GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)
+  - GenericCollectionsExtension.List.SortedList`1.Count
+  - GenericCollectionsExtension.List.SortedList`1.Criterion
+  - GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  - GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)
+  - GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  - GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)
+  - GenericCollectionsExtension.List.SortedList`1.Remove(`0)
+  - GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)
+  - GenericCollectionsExtension.List.SortedList`1.Reverse
+  - GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: SortedList<T>
+  nameWithType: SortedList<T>
+  fullName: GenericCollectionsExtension.List.SortedList<T>
+  type: Class
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: SortedList
+    path: List/SortedList/SortedList.cs
+    startLine: 10
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nRepresents a sorted list each time you enter an item in the list.\n"
+  example: []
+  syntax:
+    content: 'public class SortedList<T> : ISortedList<T>, ICollection<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable where T : IComparable<T>'
+    typeParameters:
+    - id: T
+      description: T is type of element in the list and implements <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      Public Class SortedList(Of T As IComparable(Of T))
+
+          Implements ISortedList(Of T), ICollection(Of T), IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - GenericCollectionsExtension.List.ISortedList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: SortedList(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T)
+  name.vb: SortedList(Of T)
+- uid: GenericCollectionsExtension.List.SortedList`1.Criterion
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Criterion
+  id: Criterion
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Criterion
+  nameWithType: SortedList<T>.Criterion
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Criterion
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Criterion
+    path: List/SortedList/SortedList.cs
+    startLine: 18
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nCriterion for sorting the list.\n"
+  example: []
+  syntax:
+    content: public Criterion Criterion { get; }
+    parameters: []
+    return:
+      type: GenericCollectionsExtension.List.Criterion
+    content.vb: Public ReadOnly Property Criterion As Criterion
+  overload: GenericCollectionsExtension.List.SortedList`1.Criterion*
+  nameWithType.vb: SortedList(Of T).Criterion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Criterion
+- uid: GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: SortedList<T>.Item[Int32]
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: this[]
+    path: List/SortedList/SortedList.cs
+    startLine: 20
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Property Item(index As Integer) As T
+  overload: GenericCollectionsExtension.List.SortedList`1.Item*
+  implements:
+  - GenericCollectionsExtension.List.ISortedList{{T}}.Item(System.Int32)
+  - System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  nameWithType.vb: SortedList(Of T).Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.Count
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Count
+  id: Count
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: SortedList<T>.Count
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Count
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Count
+    path: List/SortedList/SortedList.cs
+    startLine: 94
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: GenericCollectionsExtension.List.SortedList`1.Count*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  - System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  nameWithType.vb: SortedList(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Count
+- uid: GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  id: IsReadOnly
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: SortedList<T>.IsReadOnly
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IsReadOnly
+    path: List/SortedList/SortedList.cs
+    startLine: 99
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: GenericCollectionsExtension.List.SortedList`1.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  nameWithType.vb: SortedList(Of T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.#ctor
+  id: '#ctor'
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: SortedList()
+  nameWithType: SortedList<T>.SortedList()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList()
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: List/SortedList/SortedList.cs
+    startLine: 104
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nInitializes a new instance of the <xref href=\"GenericCollectionsExtension.List.SortedList%601\" data-throw-if-not-resolved=\"false\"></xref> class and initialize the criterion to ascending by default.\n"
+  example: []
+  syntax:
+    content: public SortedList()
+    content.vb: Public Sub New
+  overload: GenericCollectionsExtension.List.SortedList`1.#ctor*
+  nameWithType.vb: SortedList(Of T).SortedList()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList()
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)
+  id: '#ctor(GenericCollectionsExtension.List.Criterion)'
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: SortedList(Criterion)
+  nameWithType: SortedList<T>.SortedList(Criterion)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList(GenericCollectionsExtension.List.Criterion)
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: List/SortedList/SortedList.cs
+    startLine: 114
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nInitializes a new instance of the <xref href=\"GenericCollectionsExtension.List.SortedList%601\" data-throw-if-not-resolved=\"false\"></xref> class and initializes the criterion.\n"
+  example: []
+  syntax:
+    content: public SortedList(Criterion criterion)
+    parameters:
+    - id: criterion
+      type: GenericCollectionsExtension.List.Criterion
+      description: Can be ascending or descending.
+    content.vb: Public Sub New(criterion As Criterion)
+  overload: GenericCollectionsExtension.List.SortedList`1.#ctor*
+  nameWithType.vb: SortedList(Of T).SortedList(Criterion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList(GenericCollectionsExtension.List.Criterion)
+- uid: GenericCollectionsExtension.List.SortedList`1.Add(`0)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Add(`0)
+  id: Add(`0)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: SortedList<T>.Add(T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Add
+    path: List/SortedList/SortedList.cs
+    startLine: 124
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nAdds an item and sorts it.\n"
+  example: []
+  syntax:
+    content: public void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to be added
+    content.vb: Public Sub Add(item As T)
+  overload: GenericCollectionsExtension.List.SortedList`1.Add*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  nameWithType.vb: SortedList(Of T).Add(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Add(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<T>)
+  nameWithType: SortedList<T>.AddRange(IEnumerable<T>)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddRange
+    path: List/SortedList/SortedList.cs
+    startLine: 193
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nAdds a range of values to the collection in a sorted order.\n"
+  example: []
+  syntax:
+    content: public void AddRange(IEnumerable<T> values)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The values to be added to the collection.
+    content.vb: Public Sub AddRange(values As IEnumerable(Of T))
+  overload: GenericCollectionsExtension.List.SortedList`1.AddRange*
+  nameWithType.vb: SortedList(Of T).AddRange(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AddRange(IEnumerable(Of T))
+- uid: GenericCollectionsExtension.List.SortedList`1.Clear
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Clear
+  id: Clear
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: SortedList<T>.Clear()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Clear
+    path: List/SortedList/SortedList.cs
+    startLine: 200
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: GenericCollectionsExtension.List.SortedList`1.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  nameWithType.vb: SortedList(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Clear()
+- uid: GenericCollectionsExtension.List.SortedList`1.Contains(`0)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Contains(`0)
+  id: Contains(`0)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: SortedList<T>.Contains(T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Contains
+    path: List/SortedList/SortedList.cs
+    startLine: 205
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: GenericCollectionsExtension.List.SortedList`1.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  nameWithType.vb: SortedList(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Contains(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  nameWithType: SortedList<T>.CopyTo(T[], Int32)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: CopyTo
+    path: List/SortedList/SortedList.cs
+    startLine: 210
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+  overload: GenericCollectionsExtension.List.SortedList`1.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  nameWithType.vb: SortedList(Of T).CopyTo(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  id: GetEnumerator
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: SortedList<T>.GetEnumerator()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetEnumerator
+    path: List/SortedList/SortedList.cs
+    startLine: 215
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+    content.vb: Public Function GetEnumerator As IEnumerator(Of T)
+  overload: GenericCollectionsExtension.List.SortedList`1.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: SortedList(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: SortedList<T>.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: List/SortedList/SortedList.cs
+    startLine: 220
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: SortedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: SortedList<T>.IndexOf(T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IndexOf
+    path: List/SortedList/SortedList.cs
+    startLine: 225
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public int IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Int32
+    content.vb: Public Function IndexOf(item As T) As Integer
+  overload: GenericCollectionsExtension.List.SortedList`1.IndexOf*
+  implements:
+  - GenericCollectionsExtension.List.ISortedList{{T}}.IndexOf({T})
+  nameWithType.vb: SortedList(Of T).IndexOf(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IndexOf(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)
+  id: BinarySearch(`0)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: BinarySearch(T)
+  nameWithType: SortedList<T>.BinarySearch(T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.BinarySearch(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: BinarySearch
+    path: List/SortedList/SortedList.cs
+    startLine: 235
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nPerforms a binary search on a sorted list to find a specific element.\n"
+  example: []
+  syntax:
+    content: public int BinarySearch(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to search for in the list.
+    return:
+      type: System.Int32
+      description: The index of the element in the list if found, or -1 if not found.
+    content.vb: Public Function BinarySearch(item As T) As Integer
+  overload: GenericCollectionsExtension.List.SortedList`1.BinarySearch*
+  nameWithType.vb: SortedList(Of T).BinarySearch(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).BinarySearch(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.Remove(`0)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Remove(`0)
+  id: Remove(`0)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: SortedList<T>.Remove(T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Remove
+    path: List/SortedList/SortedList.cs
+    startLine: 275
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public bool Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(item As T) As Boolean
+  overload: GenericCollectionsExtension.List.SortedList`1.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  nameWithType.vb: SortedList(Of T).Remove(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Remove(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(Int32)
+  nameWithType: SortedList<T>.RemoveAt(Int32)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RemoveAt
+    path: List/SortedList/SortedList.cs
+    startLine: 280
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: GenericCollectionsExtension.List.SortedList`1.RemoveAt*
+  implements:
+  - GenericCollectionsExtension.List.ISortedList{{T}}.RemoveAt(System.Int32)
+  nameWithType.vb: SortedList(Of T).RemoveAt(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).RemoveAt(System.Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.Reverse
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Reverse
+  id: Reverse
+  parent: GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: Reverse()
+  nameWithType: SortedList<T>.Reverse()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Reverse()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/List/SortedList/SortedList.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Reverse
+    path: List/SortedList/SortedList.cs
+    startLine: 288
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.List
+  summary: "\nReverses the order of the elements in the sorted list and changes the Criterion property accordingly.\n"
+  example: []
+  syntax:
+    content: public void Reverse()
+    content.vb: Public Sub Reverse
+  overload: GenericCollectionsExtension.List.SortedList`1.Reverse*
+  nameWithType.vb: SortedList(Of T).Reverse()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Reverse()
+references:
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+- uid: GenericCollectionsExtension.List
+  commentId: N:GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: GenericCollectionsExtension.List.ISortedList{{T}}
+  commentId: T:GenericCollectionsExtension.List.ISortedList{`0}
+  parent: GenericCollectionsExtension.List
+  definition: GenericCollectionsExtension.List.ISortedList`1
+  name: ISortedList<T>
+  nameWithType: ISortedList<T>
+  fullName: GenericCollectionsExtension.List.ISortedList<T>
+  nameWithType.vb: ISortedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T)
+  name.vb: ISortedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GenericCollectionsExtension.List.ISortedList`1
+  commentId: T:GenericCollectionsExtension.List.ISortedList`1
+  name: ISortedList<T>
+  nameWithType: ISortedList<T>
+  fullName: GenericCollectionsExtension.List.ISortedList<T>
+  nameWithType.vb: ISortedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T)
+  name.vb: ISortedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: GenericCollectionsExtension.List.SortedList`1.Criterion*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Criterion
+  name: Criterion
+  nameWithType: SortedList<T>.Criterion
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Criterion
+  nameWithType.vb: SortedList(Of T).Criterion
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Criterion
+- uid: GenericCollectionsExtension.List.Criterion
+  commentId: T:GenericCollectionsExtension.List.Criterion
+  parent: GenericCollectionsExtension.List
+  name: Criterion
+  nameWithType: Criterion
+  fullName: GenericCollectionsExtension.List.Criterion
+- uid: GenericCollectionsExtension.List.SortedList`1.Item*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Item
+  name: Item
+  nameWithType: SortedList<T>.Item
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Item
+  nameWithType.vb: SortedList(Of T).Item
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Item
+- uid: GenericCollectionsExtension.List.ISortedList{{T}}.Item(System.Int32)
+  commentId: P:GenericCollectionsExtension.List.ISortedList{`0}.Item(System.Int32)
+  parent: GenericCollectionsExtension.List.ISortedList{{T}}
+  definition: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: ISortedList<T>.Item[Int32]
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.Item[System.Int32]
+  nameWithType.vb: ISortedList(Of T).Item(Int32)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+    name: Item
+    nameWithType: ISortedList<T>.Item
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+    name: Item
+    nameWithType: ISortedList(Of T).Item
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList{`0}.Item(System.Int32)
+  parent: System.Collections.Generic.IReadOnlyList{{T}}
+  definition: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList<T>.Item
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList(Of T).Item
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+  commentId: P:GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: ISortedList<T>.Item[Int32]
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.Item[System.Int32]
+  nameWithType.vb: ISortedList(Of T).Item(Int32)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+    name: Item
+    nameWithType: ISortedList<T>.Item
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+    name: Item
+    nameWithType: ISortedList(Of T).Item
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList<T>.Item
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList(Of T).Item
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: GenericCollectionsExtension.List.SortedList`1.Count*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Count
+  name: Count
+  nameWithType: SortedList<T>.Count
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Count
+  nameWithType.vb: SortedList(Of T).Count
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{`0}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{{T}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: GenericCollectionsExtension.List.SortedList`1.IsReadOnly*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: SortedList<T>.IsReadOnly
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IsReadOnly
+  nameWithType.vb: SortedList(Of T).IsReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.SortedList`1
+  commentId: T:GenericCollectionsExtension.List.SortedList`1
+  name: SortedList<T>
+  nameWithType: SortedList<T>
+  fullName: GenericCollectionsExtension.List.SortedList<T>
+  nameWithType.vb: SortedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T)
+  name.vb: SortedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.SortedList`1
+    name: SortedList
+    nameWithType: SortedList
+    fullName: GenericCollectionsExtension.List.SortedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.SortedList`1
+    name: SortedList
+    nameWithType: SortedList
+    fullName: GenericCollectionsExtension.List.SortedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.#ctor
+  name: SortedList
+  nameWithType: SortedList<T>.SortedList
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList
+  nameWithType.vb: SortedList(Of T).SortedList
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList
+- uid: GenericCollectionsExtension.List.SortedList`1.Add*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Add
+  name: Add
+  nameWithType: SortedList<T>.Add
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Add
+  nameWithType.vb: SortedList(Of T).Add
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Add
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.AddRange*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.AddRange
+  name: AddRange
+  nameWithType: SortedList<T>.AddRange
+  fullName: GenericCollectionsExtension.List.SortedList<T>.AddRange
+  nameWithType.vb: SortedList(Of T).AddRange
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).AddRange
+- uid: GenericCollectionsExtension.List.SortedList`1.Clear*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Clear
+  name: Clear
+  nameWithType: SortedList<T>.Clear
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Clear
+  nameWithType.vb: SortedList(Of T).Clear
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Clear
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.Contains*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Contains
+  name: Contains
+  nameWithType: SortedList<T>.Contains
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Contains
+  nameWithType.vb: SortedList(Of T).Contains
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Contains
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.CopyTo*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.CopyTo
+  name: CopyTo
+  nameWithType: SortedList<T>.CopyTo
+  fullName: GenericCollectionsExtension.List.SortedList<T>.CopyTo
+  nameWithType.vb: SortedList(Of T).CopyTo
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).CopyTo
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: SortedList<T>.GetEnumerator
+  fullName: GenericCollectionsExtension.List.SortedList<T>.GetEnumerator
+  nameWithType.vb: SortedList(Of T).GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator
+  nameWithType: SortedList<T>.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.List.SortedList<T>.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: SortedList(Of T).System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: GenericCollectionsExtension.List.SortedList`1.IndexOf*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.IndexOf
+  name: IndexOf
+  nameWithType: SortedList<T>.IndexOf
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IndexOf
+  nameWithType.vb: SortedList(Of T).IndexOf
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IndexOf
+- uid: GenericCollectionsExtension.List.ISortedList{{T}}.IndexOf({T})
+  commentId: M:GenericCollectionsExtension.List.ISortedList{`0}.IndexOf(`0)
+  parent: GenericCollectionsExtension.List.ISortedList{{T}}
+  definition: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+  name: IndexOf(T)
+  nameWithType: ISortedList<T>.IndexOf(T)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf(T)
+  nameWithType.vb: ISortedList(Of T).IndexOf(T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ISortedList<T>.IndexOf
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ISortedList(Of T).IndexOf
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+  commentId: M:GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+  name: IndexOf(T)
+  nameWithType: ISortedList<T>.IndexOf(T)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf(T)
+  nameWithType.vb: ISortedList(Of T).IndexOf(T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ISortedList<T>.IndexOf
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ISortedList(Of T).IndexOf
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.BinarySearch*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.BinarySearch
+  name: BinarySearch
+  nameWithType: SortedList<T>.BinarySearch
+  fullName: GenericCollectionsExtension.List.SortedList<T>.BinarySearch
+  nameWithType.vb: SortedList(Of T).BinarySearch
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).BinarySearch
+- uid: GenericCollectionsExtension.List.SortedList`1.Remove*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Remove
+  name: Remove
+  nameWithType: SortedList<T>.Remove
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Remove
+  nameWithType.vb: SortedList(Of T).Remove
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Remove
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.RemoveAt*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.RemoveAt
+  name: RemoveAt
+  nameWithType: SortedList<T>.RemoveAt
+  fullName: GenericCollectionsExtension.List.SortedList<T>.RemoveAt
+  nameWithType.vb: SortedList(Of T).RemoveAt
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).RemoveAt
+- uid: GenericCollectionsExtension.List.ISortedList{{T}}.RemoveAt(System.Int32)
+  commentId: M:GenericCollectionsExtension.List.ISortedList{`0}.RemoveAt(System.Int32)
+  parent: GenericCollectionsExtension.List.ISortedList{{T}}
+  definition: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: ISortedList<T>.RemoveAt(Int32)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: ISortedList(Of T).RemoveAt(Int32)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ISortedList<T>.RemoveAt
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ISortedList(Of T).RemoveAt
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+  commentId: M:GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: ISortedList<T>.RemoveAt(Int32)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: ISortedList(Of T).RemoveAt(Int32)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ISortedList<T>.RemoveAt
+    fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ISortedList(Of T).RemoveAt
+    fullName: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1.Reverse*
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Reverse
+  name: Reverse
+  nameWithType: SortedList<T>.Reverse
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Reverse
+  nameWithType.vb: SortedList(Of T).Reverse
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Reverse

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Exceptions
+  commentId: N:GenericCollectionsExtension.Exceptions
+  id: GenericCollectionsExtension.Exceptions
+  children:
+  - GenericCollectionsExtension.Exceptions.NegativeNumberException
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.Exceptions
+  nameWithType: GenericCollectionsExtension.Exceptions
+  fullName: GenericCollectionsExtension.Exceptions
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.Exceptions.NegativeNumberException
+  commentId: T:GenericCollectionsExtension.Exceptions.NegativeNumberException
+  name: NegativeNumberException
+  nameWithType: NegativeNumberException
+  fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException

@@ -1,0 +1,2354 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  commentId: T:GenericCollectionsExtension.Tree.BinarySearchTree`1
+  id: BinarySearchTree`1
+  parent: GenericCollectionsExtension.Tree
+  children:
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  langs:
+  - csharp
+  - vb
+  name: BinarySearchTree<T>
+  nameWithType: BinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>
+  type: Class
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: BinarySearchTree
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 11
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nRepresents a <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> implementation.\n"
+  example: []
+  syntax:
+    content: 'public class BinarySearchTree<T> : IBinarySearchTree<T>, ICollection<T>, IEnumerable<T>, IEnumerable where T : IComparable<T>'
+    typeParameters:
+    - id: T
+      description: T is type of element in the list and implements <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      Public Class BinarySearchTree(Of T As IComparable(Of T))
+
+          Implements IBinarySearchTree(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: BinarySearchTree(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T)
+  name.vb: BinarySearchTree(Of T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  id: Count
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: BinarySearchTree<T>.Count
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Count
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Count
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 17
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nNumber of data in the tree.\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Count*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  nameWithType.vb: BinarySearchTree(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Count
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  id: IsReadOnly
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: BinarySearchTree<T>.IsReadOnly
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IsReadOnly
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 19
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  nameWithType.vb: BinarySearchTree(Of T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  id: Traversal
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Traversal
+  nameWithType: BinarySearchTree<T>.Traversal
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Traversal
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Traversal
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 27
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  example: []
+  syntax:
+    content: public TraversalType Traversal { get; set; }
+    parameters: []
+    return:
+      type: GenericCollectionsExtension.Tree.TraversalType
+    content.vb: Public Property Traversal As TraversalType
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal*
+  implements:
+  - GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}.Traversal
+  nameWithType.vb: BinarySearchTree(Of T).Traversal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  id: RepeatedNodes
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: RepeatedNodes
+  nameWithType: BinarySearchTree<T>.RepeatedNodes
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.RepeatedNodes
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RepeatedNodes
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 32
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nRepresents a property that returns a dictionary containing the number of times each element appears in the tree.\n"
+  example: []
+  syntax:
+    content: public Dictionary<T, int> RepeatedNodes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{{T},System.Int32}
+    content.vb: Public ReadOnly Property RepeatedNodes As Dictionary(Of T, Integer)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes*
+  nameWithType.vb: BinarySearchTree(Of T).RepeatedNodes
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).RepeatedNodes
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  id: '#ctor'
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: BinarySearchTree()
+  nameWithType: BinarySearchTree<T>.BinarySearchTree()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree()
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 38
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nInitializes a new instance of the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> class. \n<p>The traversal type is set to InOrder by default.</p>\n"
+  example: []
+  syntax:
+    content: public BinarySearchTree()
+    content.vb: Public Sub New
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)
+  id: '#ctor(GenericCollectionsExtension.Tree.TraversalType)'
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: BinarySearchTree(TraversalType)
+  nameWithType: BinarySearchTree<T>.BinarySearchTree(TraversalType)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree(GenericCollectionsExtension.Tree.TraversalType)
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 48
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nInitializes a new instance of the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> class with the specified traversal type.\n"
+  example: []
+  syntax:
+    content: public BinarySearchTree(TraversalType traversal)
+    parameters:
+    - id: traversal
+      type: GenericCollectionsExtension.Tree.TraversalType
+      description: The traversal type to use for the tree.
+    content.vb: Public Sub New(traversal As TraversalType)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree(TraversalType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree(GenericCollectionsExtension.Tree.TraversalType)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)
+  id: Add(`0)
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: BinarySearchTree<T>.Add(T)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Add
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 58
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nAdds the specified item to the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to add to the tree.
+    content.vb: Public Sub Add(item As T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Add*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  nameWithType.vb: BinarySearchTree(Of T).Add(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Add(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  id: Clear
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: BinarySearchTree<T>.Clear()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Clear
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 117
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nDeletes all data from the tree.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  nameWithType.vb: BinarySearchTree(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Clear()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)
+  id: Contains(`0)
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: BinarySearchTree<T>.Contains(T)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Contains
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 127
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method checks whether the given item exists in the tree by calling the Search method and checking if the result is not `null`.\n"
+  example: []
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for in the tree.
+    return:
+      type: System.Boolean
+      description: A boolean value indicating whether the item was found in the tree.
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  nameWithType.vb: BinarySearchTree(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Contains(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)
+  id: Remove(`0)
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: BinarySearchTree<T>.Remove(T)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Remove
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 180
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method removes the given item from the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public bool Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to remove from the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: A boolean value indicating whether the item was found and removed from the tree.
+    content.vb: Public Function Remove(item As T) As Boolean
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  nameWithType.vb: BinarySearchTree(Of T).Remove(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Remove(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  nameWithType: BinarySearchTree<T>.CopyTo(T[], Int32)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: CopyTo
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 272
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method copies the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> to the given array, starting at the specified index in the array.\n"
+  example: []
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The array to copy the elements of the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref> to.
+    - id: arrayIndex
+      type: System.Int32
+      description: The index in the array at which to start copying elements.
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  nameWithType.vb: BinarySearchTree(Of T).CopyTo(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  id: IsEmpty
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty()
+  nameWithType: BinarySearchTree<T>.IsEmpty()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsEmpty()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IsEmpty
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 278
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  example: []
+  syntax:
+    content: public bool IsEmpty()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEmpty As Boolean
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty*
+  implements:
+  - GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}.IsEmpty
+  nameWithType.vb: BinarySearchTree(Of T).IsEmpty()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsEmpty()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: BinarySearchTree<T>.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 287
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerator for the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator for the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  id: GetEnumerator
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: BinarySearchTree<T>.GetEnumerator()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetEnumerator
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 296
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerator for the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An enumerator for the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetEnumerator As IEnumerator(Of T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  id: GetEnumerable
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerable()
+  nameWithType: BinarySearchTree<T>.GetEnumerable()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerable()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetEnumerable
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 305
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerable for the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<T> GetEnumerable()
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable for the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetEnumerable As IEnumerable(Of T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable*
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerable()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerable()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  id: InOrder
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: InOrder()
+  nameWithType: BinarySearchTree<T>.InOrder()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.InOrder()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: InOrder
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 323
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerable collection of the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> in in-order traversal order.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<T> InOrder()
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable collection of the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref> in in-order traversal order.
+    content.vb: Public Function InOrder As IEnumerable(Of T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder*
+  nameWithType.vb: BinarySearchTree(Of T).InOrder()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).InOrder()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  id: PreOrder
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: PreOrder()
+  nameWithType: BinarySearchTree<T>.PreOrder()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PreOrder()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PreOrder
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 354
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerable collection of the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> in pre-order traversal order.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<T> PreOrder()
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable collection of the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref> in pre-order traversal order.
+    content.vb: Public Function PreOrder As IEnumerable(Of T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder*
+  nameWithType.vb: BinarySearchTree(Of T).PreOrder()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PreOrder()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  id: PostOrder
+  parent: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  langs:
+  - csharp
+  - vb
+  name: PostOrder()
+  nameWithType: BinarySearchTree<T>.PostOrder()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PostOrder()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/BinarySearchTree/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PostOrder
+    path: Tree/BinarySearchTree/BinarySearchTree.cs
+    startLine: 384
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis method returns an enumerable collection of the elements in the <xref href=\"GenericCollectionsExtension.Tree.BinarySearchTree%601\" data-throw-if-not-resolved=\"false\"></xref> in post-order traversal order.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<T> PostOrder()
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable collection of the elements in the <xref href="GenericCollectionsExtension.Tree.BinarySearchTree%601" data-throw-if-not-resolved="false"></xref> in post-order traversal order.
+    content.vb: Public Function PostOrder As IEnumerable(Of T)
+  overload: GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder*
+  nameWithType.vb: BinarySearchTree(Of T).PostOrder()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PostOrder()
+references:
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  commentId: T:GenericCollectionsExtension.Tree.BinarySearchTree`1
+  name: BinarySearchTree<T>
+  nameWithType: BinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>
+  nameWithType.vb: BinarySearchTree(Of T)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T)
+  name.vb: BinarySearchTree(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+    name: BinarySearchTree
+    nameWithType: BinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.BinarySearchTree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+    name: BinarySearchTree
+    nameWithType: BinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.BinarySearchTree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+- uid: GenericCollectionsExtension.Tree
+  commentId: N:GenericCollectionsExtension.Tree
+  name: GenericCollectionsExtension.Tree
+  nameWithType: GenericCollectionsExtension.Tree
+  fullName: GenericCollectionsExtension.Tree
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}
+  commentId: T:GenericCollectionsExtension.Tree.IBinarySearchTree{`0}
+  parent: GenericCollectionsExtension.Tree
+  definition: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  name: IBinarySearchTree<T>
+  nameWithType: IBinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>
+  nameWithType.vb: IBinarySearchTree(Of T)
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T)
+  name.vb: IBinarySearchTree(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  commentId: T:GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  name: IBinarySearchTree<T>
+  nameWithType: IBinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>
+  nameWithType.vb: IBinarySearchTree(Of T)
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T)
+  name.vb: IBinarySearchTree(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Count*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  name: Count
+  nameWithType: BinarySearchTree<T>.Count
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Count
+  nameWithType.vb: BinarySearchTree(Of T).Count
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: BinarySearchTree<T>.IsReadOnly
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsReadOnly
+  nameWithType.vb: BinarySearchTree(Of T).IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  commentId: P:GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  name: Traversal
+  nameWithType: IBinarySearchTree<T>.Traversal
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.Traversal
+  nameWithType.vb: IBinarySearchTree(Of T).Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  name: Traversal
+  nameWithType: BinarySearchTree<T>.Traversal
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Traversal
+  nameWithType.vb: BinarySearchTree(Of T).Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}.Traversal
+  commentId: P:GenericCollectionsExtension.Tree.IBinarySearchTree{`0}.Traversal
+  parent: GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}
+  definition: GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  name: Traversal
+  nameWithType: IBinarySearchTree<T>.Traversal
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.Traversal
+  nameWithType.vb: IBinarySearchTree(Of T).Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.TraversalType
+  commentId: T:GenericCollectionsExtension.Tree.TraversalType
+  parent: GenericCollectionsExtension.Tree
+  name: TraversalType
+  nameWithType: TraversalType
+  fullName: GenericCollectionsExtension.Tree.TraversalType
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  name: RepeatedNodes
+  nameWithType: BinarySearchTree<T>.RepeatedNodes
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.RepeatedNodes
+  nameWithType.vb: BinarySearchTree(Of T).RepeatedNodes
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).RepeatedNodes
+- uid: System.Collections.Generic.Dictionary{{T},System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{`0,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<T, Int32>
+  nameWithType: Dictionary<T, Int32>
+  fullName: System.Collections.Generic.Dictionary<T, System.Int32>
+  nameWithType.vb: Dictionary(Of T, Int32)
+  fullName.vb: System.Collections.Generic.Dictionary(Of T, System.Int32)
+  name.vb: Dictionary(Of T, Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  name: BinarySearchTree
+  nameWithType: BinarySearchTree<T>.BinarySearchTree
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Add*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Add
+  name: Add
+  nameWithType: BinarySearchTree<T>.Add
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Add
+  nameWithType.vb: BinarySearchTree(Of T).Add
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Add
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  name: Clear
+  nameWithType: BinarySearchTree<T>.Clear
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Clear
+  nameWithType.vb: BinarySearchTree(Of T).Clear
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Clear
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains
+  name: Contains
+  nameWithType: BinarySearchTree<T>.Contains
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Contains
+  nameWithType.vb: BinarySearchTree(Of T).Contains
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Contains
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove
+  name: Remove
+  nameWithType: BinarySearchTree<T>.Remove
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Remove
+  nameWithType.vb: BinarySearchTree(Of T).Remove
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Remove
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo
+  name: CopyTo
+  nameWithType: BinarySearchTree<T>.CopyTo
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.CopyTo
+  nameWithType.vb: BinarySearchTree(Of T).CopyTo
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).CopyTo
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  commentId: M:GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  name: IsEmpty()
+  nameWithType: IBinarySearchTree<T>.IsEmpty()
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty()
+  nameWithType.vb: IBinarySearchTree(Of T).IsEmpty()
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+    name: IsEmpty
+    nameWithType: IBinarySearchTree<T>.IsEmpty
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+    name: IsEmpty
+    nameWithType: IBinarySearchTree(Of T).IsEmpty
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  name: IsEmpty
+  nameWithType: BinarySearchTree<T>.IsEmpty
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsEmpty
+  nameWithType.vb: BinarySearchTree(Of T).IsEmpty
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}.IsEmpty
+  commentId: M:GenericCollectionsExtension.Tree.IBinarySearchTree{`0}.IsEmpty
+  parent: GenericCollectionsExtension.Tree.IBinarySearchTree{{T}}
+  definition: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  name: IsEmpty()
+  nameWithType: IBinarySearchTree<T>.IsEmpty()
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty()
+  nameWithType.vb: IBinarySearchTree(Of T).IsEmpty()
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+    name: IsEmpty
+    nameWithType: IBinarySearchTree<T>.IsEmpty
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+    name: IsEmpty
+    nameWithType: IBinarySearchTree(Of T).IsEmpty
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator
+  nameWithType: BinarySearchTree<T>.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: BinarySearchTree<T>.GetEnumerator
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  name: GetEnumerable
+  nameWithType: BinarySearchTree<T>.GetEnumerable
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerable
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerable
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerable
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  name: InOrder
+  nameWithType: BinarySearchTree<T>.InOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.InOrder
+  nameWithType.vb: BinarySearchTree(Of T).InOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).InOrder
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  name: PreOrder
+  nameWithType: BinarySearchTree<T>.PreOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PreOrder
+  nameWithType.vb: BinarySearchTree(Of T).PreOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PreOrder
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder*
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  name: PostOrder
+  nameWithType: BinarySearchTree<T>.PostOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PostOrder
+  nameWithType.vb: BinarySearchTree(Of T).PostOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PostOrder

@@ -1,0 +1,1131 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Queue.IDeque`1
+  commentId: T:GenericCollectionsExtension.Queue.IDeque`1
+  id: IDeque`1
+  parent: GenericCollectionsExtension.Queue
+  children:
+  - GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  - GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  - GenericCollectionsExtension.Queue.IDeque`1.PushFirst(`0)
+  - GenericCollectionsExtension.Queue.IDeque`1.PushLast(`0)
+  langs:
+  - csharp
+  - vb
+  name: IDeque<T>
+  nameWithType: IDeque<T>
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>
+  type: Interface
+  source:
+    remote:
+      path: GenericCollectionsExtension/Queue/Deque/IDeque.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IDeque
+    path: Queue/Deque/IDeque.cs
+    startLine: 11
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Queue
+  summary: "\nThis interface represents a double-ended queue (deque).\nA deque is a queue that supports adding and removing elements from both ends of the queue.\n"
+  example: []
+  syntax:
+    content: 'public interface IDeque<T> : IQueue<T>, ICollection<T>, IEnumerable<T>, IEnumerable'
+    typeParameters:
+    - id: T
+      description: The type of elements in the deque.
+    content.vb: >-
+      Public Interface IDeque(Of T)
+
+          Inherits IQueue(Of T)
+  inheritedMembers:
+  - GenericCollectionsExtension.Queue.IQueue{{T}}.Capacity
+  - GenericCollectionsExtension.Queue.IQueue{{T}}.Dequeue
+  - GenericCollectionsExtension.Queue.IQueue{{T}}.Peek
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  - System.Collections.Generic.ICollection{{T}}.Count
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: IDeque(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T)
+  name.vb: IDeque(Of T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushFirst(`0)
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PushFirst(`0)
+  id: PushFirst(`0)
+  parent: GenericCollectionsExtension.Queue.IDeque`1
+  langs:
+  - csharp
+  - vb
+  name: PushFirst(T)
+  nameWithType: IDeque<T>.PushFirst(T)
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushFirst(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Queue/Deque/IDeque.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PushFirst
+    path: Queue/Deque/IDeque.cs
+    startLine: 17
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Queue
+  summary: "\nAdds the specified element to the front of the deque.\n"
+  example: []
+  syntax:
+    content: void PushFirst(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the front of the deque.
+    content.vb: Sub PushFirst(item As T)
+  overload: GenericCollectionsExtension.Queue.IDeque`1.PushFirst*
+  nameWithType.vb: IDeque(Of T).PushFirst(T)
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushFirst(T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushLast(`0)
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PushLast(`0)
+  id: PushLast(`0)
+  parent: GenericCollectionsExtension.Queue.IDeque`1
+  langs:
+  - csharp
+  - vb
+  name: PushLast(T)
+  nameWithType: IDeque<T>.PushLast(T)
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushLast(T)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Queue/Deque/IDeque.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PushLast
+    path: Queue/Deque/IDeque.cs
+    startLine: 23
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Queue
+  summary: "\nAdds the specified element to the back of the deque.\n"
+  example: []
+  syntax:
+    content: void PushLast(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the back of the deque.
+    content.vb: Sub PushLast(item As T)
+  overload: GenericCollectionsExtension.Queue.IDeque`1.PushLast*
+  nameWithType.vb: IDeque(Of T).PushLast(T)
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushLast(T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  id: PopLast
+  parent: GenericCollectionsExtension.Queue.IDeque`1
+  langs:
+  - csharp
+  - vb
+  name: PopLast()
+  nameWithType: IDeque<T>.PopLast()
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PopLast()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Queue/Deque/IDeque.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PopLast
+    path: Queue/Deque/IDeque.cs
+    startLine: 29
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Queue
+  summary: "\nRemoves and returns the last element in the deque.\n"
+  example: []
+  syntax:
+    content: T PopLast()
+    return:
+      type: '{T}'
+      description: The last element in the deque.
+    content.vb: Function PopLast As T
+  overload: GenericCollectionsExtension.Queue.IDeque`1.PopLast*
+  nameWithType.vb: IDeque(Of T).PopLast()
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PopLast()
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  id: PeekLast
+  parent: GenericCollectionsExtension.Queue.IDeque`1
+  langs:
+  - csharp
+  - vb
+  name: PeekLast()
+  nameWithType: IDeque<T>.PeekLast()
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PeekLast()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Queue/Deque/IDeque.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PeekLast
+    path: Queue/Deque/IDeque.cs
+    startLine: 35
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Queue
+  summary: "\nReturns the last element in the deque without removing it.\n"
+  example: []
+  syntax:
+    content: T PeekLast()
+    return:
+      type: '{T}'
+      description: The last element in the deque.
+    content.vb: Function PeekLast As T
+  overload: GenericCollectionsExtension.Queue.IDeque`1.PeekLast*
+  nameWithType.vb: IDeque(Of T).PeekLast()
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PeekLast()
+references:
+- uid: GenericCollectionsExtension.Queue
+  commentId: N:GenericCollectionsExtension.Queue
+  name: GenericCollectionsExtension.Queue
+  nameWithType: GenericCollectionsExtension.Queue
+  fullName: GenericCollectionsExtension.Queue
+- uid: GenericCollectionsExtension.Queue.IQueue{{T}}.Capacity
+  commentId: P:GenericCollectionsExtension.Queue.IQueue{`0}.Capacity
+  parent: GenericCollectionsExtension.Queue.IQueue{{T}}
+  definition: GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  name: Capacity
+  nameWithType: IQueue<T>.Capacity
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Capacity
+  nameWithType.vb: IQueue(Of T).Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.IQueue{{T}}.Dequeue
+  commentId: M:GenericCollectionsExtension.Queue.IQueue{`0}.Dequeue
+  parent: GenericCollectionsExtension.Queue.IQueue{{T}}
+  definition: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  name: Dequeue()
+  nameWithType: IQueue<T>.Dequeue()
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue()
+  nameWithType.vb: IQueue(Of T).Dequeue()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+    name: Dequeue
+    nameWithType: IQueue<T>.Dequeue
+    fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+    name: Dequeue
+    nameWithType: IQueue(Of T).Dequeue
+    fullName: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue{{T}}.Peek
+  commentId: M:GenericCollectionsExtension.Queue.IQueue{`0}.Peek
+  parent: GenericCollectionsExtension.Queue.IQueue{{T}}
+  definition: GenericCollectionsExtension.Queue.IQueue`1.Peek
+  name: Peek()
+  nameWithType: IQueue<T>.Peek()
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek()
+  nameWithType.vb: IQueue(Of T).Peek()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Peek()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+    name: Peek
+    nameWithType: IQueue<T>.Peek
+    fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+    name: Peek
+    nameWithType: IQueue(Of T).Peek
+    fullName: GenericCollectionsExtension.Queue.IQueue(Of T).Peek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  commentId: P:GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  name: Capacity
+  nameWithType: IQueue<T>.Capacity
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Capacity
+  nameWithType.vb: IQueue(Of T).Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.IQueue{{T}}
+  commentId: T:GenericCollectionsExtension.Queue.IQueue{`0}
+  parent: GenericCollectionsExtension.Queue
+  definition: GenericCollectionsExtension.Queue.IQueue`1
+  name: IQueue<T>
+  nameWithType: IQueue<T>
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>
+  nameWithType.vb: IQueue(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T)
+  name.vb: IQueue(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  name: Dequeue()
+  nameWithType: IQueue<T>.Dequeue()
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue()
+  nameWithType.vb: IQueue(Of T).Dequeue()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+    name: Dequeue
+    nameWithType: IQueue<T>.Dequeue
+    fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+    name: Dequeue
+    nameWithType: IQueue(Of T).Dequeue
+    fullName: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.Peek
+  name: Peek()
+  nameWithType: IQueue<T>.Peek()
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek()
+  nameWithType.vb: IQueue(Of T).Peek()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Peek()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+    name: Peek
+    nameWithType: IQueue<T>.Peek
+    fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+    name: Peek
+    nameWithType: IQueue(Of T).Peek
+    fullName: GenericCollectionsExtension.Queue.IQueue(Of T).Peek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IQueue`1
+  commentId: T:GenericCollectionsExtension.Queue.IQueue`1
+  name: IQueue<T>
+  nameWithType: IQueue<T>
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>
+  nameWithType.vb: IQueue(Of T)
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T)
+  name.vb: IQueue(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue
+    nameWithType: IQueue
+    fullName: GenericCollectionsExtension.Queue.IQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushFirst*
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PushFirst
+  name: PushFirst
+  nameWithType: IDeque<T>.PushFirst
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushFirst
+  nameWithType.vb: IDeque(Of T).PushFirst
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushFirst
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushLast*
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PushLast
+  name: PushLast
+  nameWithType: IDeque<T>.PushLast
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushLast
+  nameWithType.vb: IDeque(Of T).PushLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushLast
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PopLast*
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  name: PopLast
+  nameWithType: IDeque<T>.PopLast
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PopLast
+  nameWithType.vb: IDeque(Of T).PopLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PopLast
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PeekLast*
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  name: PeekLast
+  nameWithType: IDeque<T>.PeekLast
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PeekLast
+  nameWithType.vb: IDeque(Of T).PeekLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PeekLast

@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Tree.TraversalType
+  commentId: T:GenericCollectionsExtension.Tree.TraversalType
+  id: TraversalType
+  parent: GenericCollectionsExtension.Tree
+  children:
+  - GenericCollectionsExtension.Tree.TraversalType.InOrder
+  - GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  - GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  langs:
+  - csharp
+  - vb
+  name: TraversalType
+  nameWithType: TraversalType
+  fullName: GenericCollectionsExtension.Tree.TraversalType
+  type: Enum
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/TraversalType.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: TraversalType
+    path: Tree/TraversalType.cs
+    startLine: 9
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nThis enum type defines the different types of traversal order for a binary tree.\n"
+  example: []
+  syntax:
+    content: public enum TraversalType
+    content.vb: Public Enum TraversalType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: GenericCollectionsExtension.Tree.TraversalType.InOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.InOrder
+  id: InOrder
+  parent: GenericCollectionsExtension.Tree.TraversalType
+  langs:
+  - csharp
+  - vb
+  name: InOrder
+  nameWithType: TraversalType.InOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.InOrder
+  type: Field
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/TraversalType.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: InOrder
+    path: Tree/TraversalType.cs
+    startLine: 15
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nIn-order traversal visits the left child of a node, then the node itself, and finally the right child of the node.\nThis results in the nodes being visited in ascending order if the binary tree is a search tree.\n"
+  example: []
+  syntax:
+    content: InOrder = 0
+    return:
+      type: GenericCollectionsExtension.Tree.TraversalType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  id: PreOrder
+  parent: GenericCollectionsExtension.Tree.TraversalType
+  langs:
+  - csharp
+  - vb
+  name: PreOrder
+  nameWithType: TraversalType.PreOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  type: Field
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/TraversalType.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PreOrder
+    path: Tree/TraversalType.cs
+    startLine: 20
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nPre-order traversal visits the node itself, then the left child of the node, and finally the right child of the node.\n"
+  example: []
+  syntax:
+    content: PreOrder = 1
+    return:
+      type: GenericCollectionsExtension.Tree.TraversalType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  id: PostOrder
+  parent: GenericCollectionsExtension.Tree.TraversalType
+  langs:
+  - csharp
+  - vb
+  name: PostOrder
+  nameWithType: TraversalType.PostOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  type: Field
+  source:
+    remote:
+      path: GenericCollectionsExtension/Tree/TraversalType.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: PostOrder
+    path: Tree/TraversalType.cs
+    startLine: 25
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Tree
+  summary: "\nPost-order traversal visits the left child of a node, then the right child of the node, and finally the node itself.\n"
+  example: []
+  syntax:
+    content: PostOrder = 2
+    return:
+      type: GenericCollectionsExtension.Tree.TraversalType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: GenericCollectionsExtension.Tree
+  commentId: N:GenericCollectionsExtension.Tree
+  name: GenericCollectionsExtension.Tree
+  nameWithType: GenericCollectionsExtension.Tree
+  fullName: GenericCollectionsExtension.Tree
+- uid: GenericCollectionsExtension.Tree.TraversalType
+  commentId: T:GenericCollectionsExtension.Tree.TraversalType
+  parent: GenericCollectionsExtension.Tree
+  name: TraversalType
+  nameWithType: TraversalType
+  fullName: GenericCollectionsExtension.Tree.TraversalType

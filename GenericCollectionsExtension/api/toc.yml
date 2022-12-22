@@ -1,0 +1,64 @@
+### YamlMime:TableOfContent
+- uid: GenericCollectionsExtension.Exceptions
+  name: GenericCollectionsExtension.Exceptions
+  items:
+  - uid: GenericCollectionsExtension.Exceptions.NegativeNumberException
+    name: NegativeNumberException
+- uid: GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  items:
+  - uid: GenericCollectionsExtension.List.Criterion
+    name: Criterion
+  - uid: GenericCollectionsExtension.List.DoublyLinkedList`1
+    name: DoublyLinkedList<T>
+    name.vb: DoublyLinkedList(Of T)
+  - uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+    name: IDoublyLinkedList<T>
+    name.vb: IDoublyLinkedList(Of T)
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList<T>
+    name.vb: ISortedList(Of T)
+  - uid: GenericCollectionsExtension.List.SortedList`1
+    name: SortedList<T>
+    name.vb: SortedList(Of T)
+- uid: GenericCollectionsExtension.Queue
+  name: GenericCollectionsExtension.Queue
+  items:
+  - uid: GenericCollectionsExtension.Queue.Deque`1
+    name: Deque<T>
+    name.vb: Deque(Of T)
+  - uid: GenericCollectionsExtension.Queue.IDeque`1
+    name: IDeque<T>
+    name.vb: IDeque(Of T)
+  - uid: GenericCollectionsExtension.Queue.IPriorityQueue`1
+    name: IPriorityQueue<T>
+    name.vb: IPriorityQueue(Of T)
+  - uid: GenericCollectionsExtension.Queue.IQueue`1
+    name: IQueue<T>
+    name.vb: IQueue(Of T)
+  - uid: GenericCollectionsExtension.Queue.PriorityQueue`1
+    name: PriorityQueue<T>
+    name.vb: PriorityQueue(Of T)
+- uid: GenericCollectionsExtension.Stack
+  name: GenericCollectionsExtension.Stack
+  items:
+  - uid: GenericCollectionsExtension.Stack.IPriorityStack`1
+    name: IPriorityStack<T>
+    name.vb: IPriorityStack(Of T)
+  - uid: GenericCollectionsExtension.Stack.IStack`1
+    name: IStack<T>
+    name.vb: IStack(Of T)
+  - uid: GenericCollectionsExtension.Stack.PriorityStack`1
+    name: PriorityStack<T>
+    name.vb: PriorityStack(Of T)
+- uid: GenericCollectionsExtension.Tree
+  name: GenericCollectionsExtension.Tree
+  items:
+  - uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+    name: BinarySearchTree<T>
+    name.vb: BinarySearchTree(Of T)
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree<T>
+    name.vb: IBinarySearchTree(Of T)
+  - uid: GenericCollectionsExtension.Tree.TraversalType
+    name: TraversalType

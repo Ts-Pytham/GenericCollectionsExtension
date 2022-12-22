@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Tree
+  commentId: N:GenericCollectionsExtension.Tree
+  id: GenericCollectionsExtension.Tree
+  children:
+  - GenericCollectionsExtension.Tree.BinarySearchTree`1
+  - GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  - GenericCollectionsExtension.Tree.TraversalType
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.Tree
+  nameWithType: GenericCollectionsExtension.Tree
+  fullName: GenericCollectionsExtension.Tree
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  commentId: T:GenericCollectionsExtension.Tree.BinarySearchTree`1
+  name: BinarySearchTree<T>
+  nameWithType: BinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>
+  nameWithType.vb: BinarySearchTree(Of T)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T)
+  name.vb: BinarySearchTree(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+    name: BinarySearchTree
+    nameWithType: BinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.BinarySearchTree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+    name: BinarySearchTree
+    nameWithType: BinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.BinarySearchTree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  commentId: T:GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  name: IBinarySearchTree<T>
+  nameWithType: IBinarySearchTree<T>
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>
+  nameWithType.vb: IBinarySearchTree(Of T)
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T)
+  name.vb: IBinarySearchTree(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+    name: IBinarySearchTree
+    nameWithType: IBinarySearchTree
+    fullName: GenericCollectionsExtension.Tree.IBinarySearchTree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Tree.TraversalType
+  commentId: T:GenericCollectionsExtension.Tree.TraversalType
+  parent: GenericCollectionsExtension.Tree
+  name: TraversalType
+  nameWithType: TraversalType
+  fullName: GenericCollectionsExtension.Tree.TraversalType
+- uid: GenericCollectionsExtension.Tree
+  commentId: N:GenericCollectionsExtension.Tree
+  name: GenericCollectionsExtension.Tree
+  nameWithType: GenericCollectionsExtension.Tree
+  fullName: GenericCollectionsExtension.Tree

@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GenericCollectionsExtension </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GenericCollectionsExtension ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="genericcollectionsextension">GenericCollectionsExtension</h1>
+
+<p><a href="https://github.com/Ts-Pytham/GenericCollectionsExtension"><img src="https://img.shields.io/badge/.NET%20Standard-2.0-red" alt=""></a>
+<a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt"><img src="https://img.shields.io/badge/License-MIT-green" alt=""></a>
+<a href="https://www.nuget.org/packages/GenericCollectionsExtension/"><img src="https://img.shields.io/badge/Nuget-1.2.0-blue" alt=""></a>
+<a href="https://paypal.me/johansanchezdl?locale.x=es_XC"><img src="https://img.shields.io/badge/Paypal-donate-orange" alt="PayPal-donate-button"></a></p>
+<p><strong>Generic Collections Extension</strong> is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list.
+These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.</p>
+<h2>Data structure</h2>
+New data structures were added that are derived from the traditional data structures, these are:
+<ul>
+<li>Deque.</li>
+<li>PriorityQueue.</li>
+<li>PriorityStack.</li>
+<li>Binary Search Tree.</li>
+<li>SortedList.</li>
+<li>DoublyLinkedList.</li>
+</ul>
+<h3>Queue</h3>
+<p>A queue is a data structure that stores and retrieves items in a first-in-first-out (FIFO) manner.
+This means that the first item that is added to the queue is also the first item that is removed from the queue.
+Queues are useful for storing and managing data in applications where items need to be processed in the order in which they are received.
+For example, a queue could be used to hold tasks that need to be executed in the order in which they are received, or to hold messages that need to be sent in the order in which they were received.</p>
+<h4>Queue Type:</h4>
+<ul>
+<li>Deque: Is a double-ended queue, which is a type of data structure that allows items to be added and removed from either end of the queue.
+This means that items can be added to the front or back of the queue, and can also be removed from the front or back of the queue.</li>
+</ul>
+<p><strong>Example in code:</strong></p>
+<pre><code class="lang-C#">Deque&lt;int&gt; deque = new();
+deque.PushFirst(1);
+deque.PushFirst(2);
+deque.PushFirst(5);
+
+Console.WriteLine($&quot;Count: {deque.Count}&quot;);
+foreach(var item in deque)
+{
+    Console.WriteLine(item);
+}
+
+/*
+Output:
+Count: 3
+5
+2
+1
+*/
+
+</code></pre>
+<ul>
+<li>Priority Queue: Is a data structure in which each item has a priority associated with it, and items are stored and retrieved in order of their priority.
+This means that when items are added to the queue, they are automatically placed in the correct position based on their priority, and when items are removed from the queue, the item with the highest priority is always selected first.</li>
+</ul>
+<p><strong>Example in code:</strong></p>
+<pre><code class="lang-C#">PriorityQueue&lt;int&gt; priorityQueue = new();
+priorityQueue.Enqueue(10, 5);
+priorityQueue.Enqueue(50, 2);
+priorityQueue.Enqueue(55, 2);
+priorityQueue.Enqueue(20, 3);
+
+foreach (int item in priorityQueue)
+{
+    Console.WriteLine(item);
+}
+
+Console.WriteLine($&quot;Peek: {priorityQueue.Peek()}&quot;);
+int contains = 51;
+Console.WriteLine($&quot;Contains: {contains}, {priorityQueue.Contains(contains)}&quot;);
+
+
+/*
+Output:
+10
+20
+50
+55
+Peek: 10
+Contains: 51, False
+
+*/
+</code></pre>
+<h3>Stack</h3>
+<p>A stack is a data structure that stores and retrieves items in a last-in-first-out (LIFO) manner.
+This means that the last item that is added to the stack is also the first item that is removed from the stack.
+Stacks are useful for storing and managing data in applications where items need to be processed in the reverse order in which they are received.</p>
+<ul>
+<li>Priority Stack: Is a type of data structure that combines the characteristics of a stack and a priority queue.
+Like a stack, a priority stack stores and retrieves items in a last-in-first-out (LIFO) manner, but also allows items to be added and removed based on their priority.
+This means that items can be added to the top of the stack in any order, but when items are removed from the stack, the item with the highest priority is always selected first.</li>
+</ul>
+<p><strong>Example in code:</strong></p>
+<pre><code class="lang-C#">
+PriorityStack&lt;int&gt; stack = new()
+{
+    4, 5, 3, 5
+};
+
+Console.WriteLine($&quot;Count: {stack.Count}&quot;);
+
+Console.WriteLine($&quot;Value: {stack.Peek()}&quot;);
+
+foreach(var item in stack)
+{
+    Console.WriteLine(item);
+}
+
+/*
+Count: 4
+Value: 5
+5
+3
+5
+4
+*/
+</code></pre>
+<h3>List</h3>
+<p>Is a data structure that stores a collection of items in a specific order. Lists allow items to be added, removed, and accessed by their position in the list. They are often used to store collections of data that need to be organized and accessed in a specific order.</p>
+<ul>
+<li><p>Sorted List: Is a data structure that is similar to a regular list, but maintains its items in a sorted order. This means that when items are added to the list, they are automatically placed in the correct position based on their sorting order. Sorted lists are useful in situations where it is necessary to access items in a specific order, such as in applications that require efficient search and retrieval of data.</p>
+</li>
+<li><p>DoublyLinkedList: Is  a data structure that consists of a set of nodes, where each node has two pointers: one pointing to the previous node in the list and one pointing to the next node in the list. This allows for efficient insertion and deletion of elements from the list, as well as the ability to traverse the list in both directions (from the beginning to the end and from the end to the beginning).</p>
+</li>
+</ul>
+<p><strong>Example of SortedList in code:</strong></p>
+<pre><code class="lang-C#">//Descending
+
+SortedList&lt;int&gt; sortedList = new(Criterion.Descending)
+{
+    1,
+    0,
+    -1,
+    495,
+    1,
+    19,
+    5
+};
+
+Console.WriteLine($&quot;total items: {sortedList.Count}&quot;);
+sortedList.ToList().ForEach(Console.WriteLine);
+
+/*
+total items: 7
+495
+19
+5
+1
+1
+0
+-1
+*/
+</code></pre>
+<pre><code class="lang-C#">//Ascending
+
+SortedList&lt;int&gt; sortedList = new()
+{
+    1,
+    0,
+    -1,
+    495,
+    1,
+    19,
+    5
+};
+
+Console.WriteLine($&quot;total items: {sortedList.Count}&quot;);
+sortedList.ToList().ForEach(Console.WriteLine);
+
+/*
+total items: 7
+-1
+0
+1
+1
+5
+19
+495
+*/
+</code></pre>
+<h5>NOTE</h5>
+<p>This implementation is different from the one implemented in System.Collections.Generic because this implementation does not use a key, and any class to be used must inherit the IComparable interface. Very important to look at this implementation and documentation.</p>
+<h3> Tree </h3>
+Is a data structure consisting of linked nodes. Nodes can have one or more children and each node can have a relationship with other nodes in the tree. 
+<ul>
+<li>Binary search tree: Is a type of data tree in which each node has a value that is smaller than all the values in its left subtree and larger than all the values in its right subtree. This allows for fast and efficient search in the tree.</li>
+</ul>
+<p><strong>Example in code:</strong></p>
+<pre><code class="lang-C#">BinarySearchTree&lt;int&gt; tree = new() { 5, 3, 4, 7, 6, 9, 8, 1, 2, 0, 14, 15};
+
+Console.WriteLine($&quot;Count: {tree.Count}&quot;);
+Console.WriteLine($&quot;Contains 5: {tree.Contains(5)}&quot;);
+Console.WriteLine($&quot;Contains 12: {tree.Contains(12)}&quot;);
+var inOrder = tree.InOrder();
+Console.WriteLine($&quot;Count InOrder: {inOrder.Count()}&quot;);
+
+foreach(var item in inOrder)
+{
+    Console.WriteLine(item);
+}
+
+/*
+Count: 12
+Contains 5: True
+Contains 12: False
+Count InOrder: 12
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+14
+15
+*/
+</code></pre>
+<h2>Possible future data structures</h2>
+<p>More data structures are expected to be added in the future, among them are:</p>
+<ul>
+<li>Graphs.</li>
+<li>Red-Black Tree.</li>
+<li>More...</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

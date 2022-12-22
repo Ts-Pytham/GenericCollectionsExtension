@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.List
+  commentId: N:GenericCollectionsExtension.List
+  id: GenericCollectionsExtension.List
+  children:
+  - GenericCollectionsExtension.List.Criterion
+  - GenericCollectionsExtension.List.DoublyLinkedList`1
+  - GenericCollectionsExtension.List.IDoublyLinkedList`1
+  - GenericCollectionsExtension.List.ISortedList`1
+  - GenericCollectionsExtension.List.SortedList`1
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1
+  commentId: T:GenericCollectionsExtension.List.DoublyLinkedList`1
+  name: DoublyLinkedList<T>
+  nameWithType: DoublyLinkedList<T>
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>
+  nameWithType.vb: DoublyLinkedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T)
+  name.vb: DoublyLinkedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.DoublyLinkedList`1
+    name: DoublyLinkedList
+    nameWithType: DoublyLinkedList
+    fullName: GenericCollectionsExtension.List.DoublyLinkedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.DoublyLinkedList`1
+    name: DoublyLinkedList
+    nameWithType: DoublyLinkedList
+    fullName: GenericCollectionsExtension.List.DoublyLinkedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  commentId: T:GenericCollectionsExtension.List.IDoublyLinkedList`1
+  name: IDoublyLinkedList<T>
+  nameWithType: IDoublyLinkedList<T>
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>
+  nameWithType.vb: IDoublyLinkedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T)
+  name.vb: IDoublyLinkedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+    name: IDoublyLinkedList
+    nameWithType: IDoublyLinkedList
+    fullName: GenericCollectionsExtension.List.IDoublyLinkedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+    name: IDoublyLinkedList
+    nameWithType: IDoublyLinkedList
+    fullName: GenericCollectionsExtension.List.IDoublyLinkedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.Criterion
+  commentId: T:GenericCollectionsExtension.List.Criterion
+  parent: GenericCollectionsExtension.List
+  name: Criterion
+  nameWithType: Criterion
+  fullName: GenericCollectionsExtension.List.Criterion
+- uid: GenericCollectionsExtension.List.ISortedList`1
+  commentId: T:GenericCollectionsExtension.List.ISortedList`1
+  name: ISortedList<T>
+  nameWithType: ISortedList<T>
+  fullName: GenericCollectionsExtension.List.ISortedList<T>
+  nameWithType.vb: ISortedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T)
+  name.vb: ISortedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.ISortedList`1
+    name: ISortedList
+    nameWithType: ISortedList
+    fullName: GenericCollectionsExtension.List.ISortedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List.SortedList`1
+  commentId: T:GenericCollectionsExtension.List.SortedList`1
+  name: SortedList<T>
+  nameWithType: SortedList<T>
+  fullName: GenericCollectionsExtension.List.SortedList<T>
+  nameWithType.vb: SortedList(Of T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T)
+  name.vb: SortedList(Of T)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.List.SortedList`1
+    name: SortedList
+    nameWithType: SortedList
+    fullName: GenericCollectionsExtension.List.SortedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.List.SortedList`1
+    name: SortedList
+    nameWithType: SortedList
+    fullName: GenericCollectionsExtension.List.SortedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.List
+  commentId: N:GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List

@@ -1,0 +1,2295 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GenericCollectionsExtension.Exceptions
+  name: GenericCollectionsExtension.Exceptions
+  href: api/GenericCollectionsExtension.Exceptions.html
+  commentId: N:GenericCollectionsExtension.Exceptions
+  fullName: GenericCollectionsExtension.Exceptions
+  nameWithType: GenericCollectionsExtension.Exceptions
+- uid: GenericCollectionsExtension.Exceptions.NegativeNumberException
+  name: NegativeNumberException
+  href: api/GenericCollectionsExtension.Exceptions.NegativeNumberException.html
+  commentId: T:GenericCollectionsExtension.Exceptions.NegativeNumberException
+  fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException
+  nameWithType: NegativeNumberException
+- uid: GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor
+  name: NegativeNumberException()
+  href: api/GenericCollectionsExtension.Exceptions.NegativeNumberException.html#GenericCollectionsExtension_Exceptions_NegativeNumberException__ctor
+  commentId: M:GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor
+  fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException.NegativeNumberException()
+  nameWithType: NegativeNumberException.NegativeNumberException()
+- uid: GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor(System.String)
+  name: NegativeNumberException(String)
+  href: api/GenericCollectionsExtension.Exceptions.NegativeNumberException.html#GenericCollectionsExtension_Exceptions_NegativeNumberException__ctor_System_String_
+  commentId: M:GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor(System.String)
+  fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException.NegativeNumberException(System.String)
+  nameWithType: NegativeNumberException.NegativeNumberException(String)
+- uid: GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor*
+  name: NegativeNumberException
+  href: api/GenericCollectionsExtension.Exceptions.NegativeNumberException.html#GenericCollectionsExtension_Exceptions_NegativeNumberException__ctor_
+  commentId: Overload:GenericCollectionsExtension.Exceptions.NegativeNumberException.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException.NegativeNumberException
+  nameWithType: NegativeNumberException.NegativeNumberException
+- uid: GenericCollectionsExtension.List
+  name: GenericCollectionsExtension.List
+  href: api/GenericCollectionsExtension.List.html
+  commentId: N:GenericCollectionsExtension.List
+  fullName: GenericCollectionsExtension.List
+  nameWithType: GenericCollectionsExtension.List
+- uid: GenericCollectionsExtension.List.Criterion
+  name: Criterion
+  href: api/GenericCollectionsExtension.List.Criterion.html
+  commentId: T:GenericCollectionsExtension.List.Criterion
+  fullName: GenericCollectionsExtension.List.Criterion
+  nameWithType: Criterion
+- uid: GenericCollectionsExtension.List.Criterion.Ascending
+  name: Ascending
+  href: api/GenericCollectionsExtension.List.Criterion.html#GenericCollectionsExtension_List_Criterion_Ascending
+  commentId: F:GenericCollectionsExtension.List.Criterion.Ascending
+  fullName: GenericCollectionsExtension.List.Criterion.Ascending
+  nameWithType: Criterion.Ascending
+- uid: GenericCollectionsExtension.List.Criterion.Descending
+  name: Descending
+  href: api/GenericCollectionsExtension.List.Criterion.html#GenericCollectionsExtension_List_Criterion_Descending
+  commentId: F:GenericCollectionsExtension.List.Criterion.Descending
+  fullName: GenericCollectionsExtension.List.Criterion.Descending
+  nameWithType: Criterion.Descending
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1
+  name: DoublyLinkedList<T>
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html
+  commentId: T:GenericCollectionsExtension.List.DoublyLinkedList`1
+  name.vb: DoublyLinkedList(Of T)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T)
+  nameWithType: DoublyLinkedList<T>
+  nameWithType.vb: DoublyLinkedList(Of T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor
+  name: DoublyLinkedList()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1__ctor
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.DoublyLinkedList()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).DoublyLinkedList()
+  nameWithType: DoublyLinkedList<T>.DoublyLinkedList()
+  nameWithType.vb: DoublyLinkedList(Of T).DoublyLinkedList()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor(`0)
+  name: DoublyLinkedList(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1__ctor__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.DoublyLinkedList(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).DoublyLinkedList(T)
+  nameWithType: DoublyLinkedList<T>.DoublyLinkedList(T)
+  nameWithType.vb: DoublyLinkedList(Of T).DoublyLinkedList(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name: DoublyLinkedList(IEnumerable<T>)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1__ctor_System_Collections_Generic_IEnumerable__0__
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name.vb: DoublyLinkedList(IEnumerable(Of T))
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.DoublyLinkedList(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).DoublyLinkedList(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: DoublyLinkedList<T>.DoublyLinkedList(IEnumerable<T>)
+  nameWithType.vb: DoublyLinkedList(Of T).DoublyLinkedList(IEnumerable(Of T))
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor*
+  name: DoublyLinkedList
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.DoublyLinkedList
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).DoublyLinkedList
+  nameWithType: DoublyLinkedList<T>.DoublyLinkedList
+  nameWithType.vb: DoublyLinkedList(Of T).DoublyLinkedList
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Add__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.Add(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Add(T)
+  nameWithType: DoublyLinkedList<T>.Add(T)
+  nameWithType.vb: DoublyLinkedList(Of T).Add(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Add_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Add
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Add
+  nameWithType: DoublyLinkedList<T>.Add
+  nameWithType.vb: DoublyLinkedList(Of T).Add
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.AddLast(`0)
+  name: AddLast(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_AddLast__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.AddLast(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.AddLast(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).AddLast(T)
+  nameWithType: DoublyLinkedList<T>.AddLast(T)
+  nameWithType.vb: DoublyLinkedList(Of T).AddLast(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.AddLast*
+  name: AddLast
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_AddLast_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.AddLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.AddLast
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).AddLast
+  nameWithType: DoublyLinkedList<T>.AddLast
+  nameWithType.vb: DoublyLinkedList(Of T).AddLast
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Clear
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.Clear
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Clear()
+  nameWithType: DoublyLinkedList<T>.Clear()
+  nameWithType.vb: DoublyLinkedList(Of T).Clear()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Clear
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Clear
+  nameWithType: DoublyLinkedList<T>.Clear
+  nameWithType.vb: DoublyLinkedList(Of T).Clear
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.Contains(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Contains(T)
+  nameWithType: DoublyLinkedList<T>.Contains(T)
+  nameWithType.vb: DoublyLinkedList(Of T).Contains(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Contains
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Contains
+  nameWithType: DoublyLinkedList<T>.Contains
+  nameWithType.vb: DoublyLinkedList(Of T).Contains
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).CopyTo(T(), System.Int32)
+  nameWithType: DoublyLinkedList<T>.CopyTo(T[], Int32)
+  nameWithType.vb: DoublyLinkedList(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).CopyTo
+  nameWithType: DoublyLinkedList<T>.CopyTo
+  nameWithType.vb: DoublyLinkedList(Of T).CopyTo
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Count
+  commentId: P:GenericCollectionsExtension.List.DoublyLinkedList`1.Count
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Count
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Count
+  nameWithType: DoublyLinkedList<T>.Count
+  nameWithType.vb: DoublyLinkedList(Of T).Count
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Count_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Count
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Count
+  nameWithType: DoublyLinkedList<T>.Count
+  nameWithType.vb: DoublyLinkedList(Of T).Count
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Find(`0)
+  name: Find(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Find__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.Find(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Find(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Find(T)
+  nameWithType: DoublyLinkedList<T>.Find(T)
+  nameWithType.vb: DoublyLinkedList(Of T).Find(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Find*
+  name: Find
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Find_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Find
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Find
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Find
+  nameWithType: DoublyLinkedList<T>.Find
+  nameWithType.vb: DoublyLinkedList(Of T).Find
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerable
+  name: GetEnumerable()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetEnumerable
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerable
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetEnumerable()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetEnumerable()
+  nameWithType: DoublyLinkedList<T>.GetEnumerable()
+  nameWithType.vb: DoublyLinkedList(Of T).GetEnumerable()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerable*
+  name: GetEnumerable
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetEnumerable_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerable
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetEnumerable
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetEnumerable
+  nameWithType: DoublyLinkedList<T>.GetEnumerable
+  nameWithType.vb: DoublyLinkedList(Of T).GetEnumerable
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerator
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetEnumerator()
+  nameWithType: DoublyLinkedList<T>.GetEnumerator()
+  nameWithType.vb: DoublyLinkedList(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetEnumerator
+  nameWithType: DoublyLinkedList<T>.GetEnumerator
+  nameWithType.vb: DoublyLinkedList(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetFirst
+  name: GetFirst()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetFirst
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.GetFirst
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetFirst()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetFirst()
+  nameWithType: DoublyLinkedList<T>.GetFirst()
+  nameWithType.vb: DoublyLinkedList(Of T).GetFirst()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetFirst*
+  name: GetFirst
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetFirst_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.GetFirst
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetFirst
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetFirst
+  nameWithType: DoublyLinkedList<T>.GetFirst
+  nameWithType.vb: DoublyLinkedList(Of T).GetFirst
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetLast
+  name: GetLast()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetLast
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.GetLast
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetLast()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetLast()
+  nameWithType: DoublyLinkedList<T>.GetLast()
+  nameWithType.vb: DoublyLinkedList(Of T).GetLast()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.GetLast*
+  name: GetLast
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_GetLast_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.GetLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.GetLast
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).GetLast
+  nameWithType: DoublyLinkedList<T>.GetLast
+  nameWithType.vb: DoublyLinkedList(Of T).GetLast
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.List.DoublyLinkedList`1.IsReadOnly
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).IsReadOnly
+  nameWithType: DoublyLinkedList<T>.IsReadOnly
+  nameWithType.vb: DoublyLinkedList(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).IsReadOnly
+  nameWithType: DoublyLinkedList<T>.IsReadOnly
+  nameWithType.vb: DoublyLinkedList(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Item_System_Int32_
+  commentId: P:GenericCollectionsExtension.List.DoublyLinkedList`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Item[System.Int32]
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Item(System.Int32)
+  nameWithType: DoublyLinkedList<T>.Item[Int32]
+  nameWithType.vb: DoublyLinkedList(Of T).Item(Int32)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Item*
+  name: Item
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Item_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Item
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Item
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Item
+  nameWithType: DoublyLinkedList<T>.Item
+  nameWithType.vb: DoublyLinkedList(Of T).Item
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.Remove(`0)
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Remove(T)
+  nameWithType: DoublyLinkedList<T>.Remove(T)
+  nameWithType.vb: DoublyLinkedList(Of T).Remove(T)
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.Remove
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).Remove
+  nameWithType: DoublyLinkedList<T>.Remove
+  nameWithType.vb: DoublyLinkedList(Of T).Remove
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.DoublyLinkedList`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: DoublyLinkedList<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: DoublyLinkedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.List.DoublyLinkedList`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.List.DoublyLinkedList-1.html#GenericCollectionsExtension_List_DoublyLinkedList_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.List.DoublyLinkedList`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.List.DoublyLinkedList<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.DoublyLinkedList(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: DoublyLinkedList<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: DoublyLinkedList(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1
+  name: IDoublyLinkedList<T>
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html
+  commentId: T:GenericCollectionsExtension.List.IDoublyLinkedList`1
+  name.vb: IDoublyLinkedList(Of T)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T)
+  nameWithType: IDoublyLinkedList<T>
+  nameWithType.vb: IDoublyLinkedList(Of T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast(`0)
+  name: AddLast(T)
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_AddLast__0_
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast(`0)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.AddLast(T)
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).AddLast(T)
+  nameWithType: IDoublyLinkedList<T>.AddLast(T)
+  nameWithType.vb: IDoublyLinkedList(Of T).AddLast(T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast*
+  name: AddLast
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_AddLast_
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.AddLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.AddLast
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).AddLast
+  nameWithType: IDoublyLinkedList<T>.AddLast
+  nameWithType.vb: IDoublyLinkedList(Of T).AddLast
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Find(`0)
+  name: Find(T)
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_Find__0_
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.Find(`0)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Find(T)
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Find(T)
+  nameWithType: IDoublyLinkedList<T>.Find(T)
+  nameWithType.vb: IDoublyLinkedList(Of T).Find(T)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Find*
+  name: Find
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_Find_
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.Find
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Find
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Find
+  nameWithType: IDoublyLinkedList<T>.Find
+  nameWithType.vb: IDoublyLinkedList(Of T).Find
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  name: GetFirst()
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_GetFirst
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetFirst()
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetFirst()
+  nameWithType: IDoublyLinkedList<T>.GetFirst()
+  nameWithType.vb: IDoublyLinkedList(Of T).GetFirst()
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst*
+  name: GetFirst
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_GetFirst_
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetFirst
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetFirst
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetFirst
+  nameWithType: IDoublyLinkedList<T>.GetFirst
+  nameWithType.vb: IDoublyLinkedList(Of T).GetFirst
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  name: GetLast()
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_GetLast
+  commentId: M:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetLast()
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetLast()
+  nameWithType: IDoublyLinkedList<T>.GetLast()
+  nameWithType.vb: IDoublyLinkedList(Of T).GetLast()
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast*
+  name: GetLast
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_GetLast_
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.GetLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.GetLast
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).GetLast
+  nameWithType: IDoublyLinkedList<T>.GetLast
+  nameWithType.vb: IDoublyLinkedList(Of T).GetLast
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_Item_System_Int32_
+  commentId: P:GenericCollectionsExtension.List.IDoublyLinkedList`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Item[System.Int32]
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Item(System.Int32)
+  nameWithType: IDoublyLinkedList<T>.Item[Int32]
+  nameWithType.vb: IDoublyLinkedList(Of T).Item(Int32)
+- uid: GenericCollectionsExtension.List.IDoublyLinkedList`1.Item*
+  name: Item
+  href: api/GenericCollectionsExtension.List.IDoublyLinkedList-1.html#GenericCollectionsExtension_List_IDoublyLinkedList_1_Item_
+  commentId: Overload:GenericCollectionsExtension.List.IDoublyLinkedList`1.Item
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.IDoublyLinkedList<T>.Item
+  fullName.vb: GenericCollectionsExtension.List.IDoublyLinkedList(Of T).Item
+  nameWithType: IDoublyLinkedList<T>.Item
+  nameWithType.vb: IDoublyLinkedList(Of T).Item
+- uid: GenericCollectionsExtension.List.ISortedList`1
+  name: ISortedList<T>
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html
+  commentId: T:GenericCollectionsExtension.List.ISortedList`1
+  name.vb: ISortedList(Of T)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T)
+  nameWithType: ISortedList<T>
+  nameWithType.vb: ISortedList(Of T)
+- uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+  name: IndexOf(T)
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_IndexOf__0_
+  commentId: M:GenericCollectionsExtension.List.ISortedList`1.IndexOf(`0)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf(T)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf(T)
+  nameWithType: ISortedList<T>.IndexOf(T)
+  nameWithType.vb: ISortedList(Of T).IndexOf(T)
+- uid: GenericCollectionsExtension.List.ISortedList`1.IndexOf*
+  name: IndexOf
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_IndexOf_
+  commentId: Overload:GenericCollectionsExtension.List.ISortedList`1.IndexOf
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.IndexOf
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).IndexOf
+  nameWithType: ISortedList<T>.IndexOf
+  nameWithType.vb: ISortedList(Of T).IndexOf
+- uid: GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_Item_System_Int32_
+  commentId: P:GenericCollectionsExtension.List.ISortedList`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.Item[System.Int32]
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).Item(System.Int32)
+  nameWithType: ISortedList<T>.Item[Int32]
+  nameWithType.vb: ISortedList(Of T).Item(Int32)
+- uid: GenericCollectionsExtension.List.ISortedList`1.Item*
+  name: Item
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_Item_
+  commentId: Overload:GenericCollectionsExtension.List.ISortedList`1.Item
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.Item
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).Item
+  nameWithType: ISortedList<T>.Item
+  nameWithType.vb: ISortedList(Of T).Item
+- uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_RemoveAt_System_Int32_
+  commentId: M:GenericCollectionsExtension.List.ISortedList`1.RemoveAt(System.Int32)
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt(System.Int32)
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt(System.Int32)
+  nameWithType: ISortedList<T>.RemoveAt(Int32)
+  nameWithType.vb: ISortedList(Of T).RemoveAt(Int32)
+- uid: GenericCollectionsExtension.List.ISortedList`1.RemoveAt*
+  name: RemoveAt
+  href: api/GenericCollectionsExtension.List.ISortedList-1.html#GenericCollectionsExtension_List_ISortedList_1_RemoveAt_
+  commentId: Overload:GenericCollectionsExtension.List.ISortedList`1.RemoveAt
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.ISortedList<T>.RemoveAt
+  fullName.vb: GenericCollectionsExtension.List.ISortedList(Of T).RemoveAt
+  nameWithType: ISortedList<T>.RemoveAt
+  nameWithType.vb: ISortedList(Of T).RemoveAt
+- uid: GenericCollectionsExtension.List.SortedList`1
+  name: SortedList<T>
+  href: api/GenericCollectionsExtension.List.SortedList-1.html
+  commentId: T:GenericCollectionsExtension.List.SortedList`1
+  name.vb: SortedList(Of T)
+  fullName: GenericCollectionsExtension.List.SortedList<T>
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T)
+  nameWithType: SortedList<T>
+  nameWithType.vb: SortedList(Of T)
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor
+  name: SortedList()
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1__ctor
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.#ctor
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList()
+  nameWithType: SortedList<T>.SortedList()
+  nameWithType.vb: SortedList(Of T).SortedList()
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)
+  name: SortedList(Criterion)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1__ctor_GenericCollectionsExtension_List_Criterion_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList(GenericCollectionsExtension.List.Criterion)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList(GenericCollectionsExtension.List.Criterion)
+  nameWithType: SortedList<T>.SortedList(Criterion)
+  nameWithType.vb: SortedList(Of T).SortedList(Criterion)
+- uid: GenericCollectionsExtension.List.SortedList`1.#ctor*
+  name: SortedList
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.SortedList
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).SortedList
+  nameWithType: SortedList<T>.SortedList
+  nameWithType.vb: SortedList(Of T).SortedList
+- uid: GenericCollectionsExtension.List.SortedList`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Add__0_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Add(`0)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Add(T)
+  nameWithType: SortedList<T>.Add(T)
+  nameWithType.vb: SortedList(Of T).Add(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Add_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Add
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Add
+  nameWithType: SortedList<T>.Add
+  nameWithType.vb: SortedList(Of T).Add
+- uid: GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name: AddRange(IEnumerable<T>)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: AddRange(IEnumerable(Of T))
+  fullName: GenericCollectionsExtension.List.SortedList<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: SortedList<T>.AddRange(IEnumerable<T>)
+  nameWithType.vb: SortedList(Of T).AddRange(IEnumerable(Of T))
+- uid: GenericCollectionsExtension.List.SortedList`1.AddRange*
+  name: AddRange
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_AddRange_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.AddRange
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.AddRange
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).AddRange
+  nameWithType: SortedList<T>.AddRange
+  nameWithType.vb: SortedList(Of T).AddRange
+- uid: GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)
+  name: BinarySearch(T)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_BinarySearch__0_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.BinarySearch(T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).BinarySearch(T)
+  nameWithType: SortedList<T>.BinarySearch(T)
+  nameWithType.vb: SortedList(Of T).BinarySearch(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.BinarySearch*
+  name: BinarySearch
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_BinarySearch_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.BinarySearch
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.BinarySearch
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).BinarySearch
+  nameWithType: SortedList<T>.BinarySearch
+  nameWithType.vb: SortedList(Of T).BinarySearch
+- uid: GenericCollectionsExtension.List.SortedList`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Clear
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Clear
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Clear()
+  nameWithType: SortedList<T>.Clear()
+  nameWithType.vb: SortedList(Of T).Clear()
+- uid: GenericCollectionsExtension.List.SortedList`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Clear
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Clear
+  nameWithType: SortedList<T>.Clear
+  nameWithType.vb: SortedList(Of T).Clear
+- uid: GenericCollectionsExtension.List.SortedList`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Contains(`0)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Contains(T)
+  nameWithType: SortedList<T>.Contains(T)
+  nameWithType.vb: SortedList(Of T).Contains(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Contains
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Contains
+  nameWithType: SortedList<T>.Contains
+  nameWithType.vb: SortedList(Of T).Contains
+- uid: GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).CopyTo(T(), System.Int32)
+  nameWithType: SortedList<T>.CopyTo(T[], Int32)
+  nameWithType.vb: SortedList(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).CopyTo
+  nameWithType: SortedList<T>.CopyTo
+  nameWithType.vb: SortedList(Of T).CopyTo
+- uid: GenericCollectionsExtension.List.SortedList`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Count
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Count
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Count
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Count
+  nameWithType: SortedList<T>.Count
+  nameWithType.vb: SortedList(Of T).Count
+- uid: GenericCollectionsExtension.List.SortedList`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Count_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Count
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Count
+  nameWithType: SortedList<T>.Count
+  nameWithType.vb: SortedList(Of T).Count
+- uid: GenericCollectionsExtension.List.SortedList`1.Criterion
+  name: Criterion
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Criterion
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Criterion
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Criterion
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Criterion
+  nameWithType: SortedList<T>.Criterion
+  nameWithType.vb: SortedList(Of T).Criterion
+- uid: GenericCollectionsExtension.List.SortedList`1.Criterion*
+  name: Criterion
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Criterion_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Criterion
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Criterion
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Criterion
+  nameWithType: SortedList<T>.Criterion
+  nameWithType.vb: SortedList(Of T).Criterion
+- uid: GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  fullName: GenericCollectionsExtension.List.SortedList<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).GetEnumerator()
+  nameWithType: SortedList<T>.GetEnumerator()
+  nameWithType.vb: SortedList(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.List.SortedList`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).GetEnumerator
+  nameWithType: SortedList<T>.GetEnumerator
+  nameWithType.vb: SortedList(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)
+  name: IndexOf(T)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_IndexOf__0_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IndexOf(T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IndexOf(T)
+  nameWithType: SortedList<T>.IndexOf(T)
+  nameWithType.vb: SortedList(Of T).IndexOf(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.IndexOf*
+  name: IndexOf
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_IndexOf_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.IndexOf
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IndexOf
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IndexOf
+  nameWithType: SortedList<T>.IndexOf
+  nameWithType.vb: SortedList(Of T).IndexOf
+- uid: GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IsReadOnly
+  nameWithType: SortedList<T>.IsReadOnly
+  nameWithType.vb: SortedList(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.SortedList`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).IsReadOnly
+  nameWithType: SortedList<T>.IsReadOnly
+  nameWithType.vb: SortedList(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Item_System_Int32_
+  commentId: P:GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Item[System.Int32]
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Item(System.Int32)
+  nameWithType: SortedList<T>.Item[Int32]
+  nameWithType.vb: SortedList(Of T).Item(Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.Item*
+  name: Item
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Item_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Item
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Item
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Item
+  nameWithType: SortedList<T>.Item
+  nameWithType.vb: SortedList(Of T).Item
+- uid: GenericCollectionsExtension.List.SortedList`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Remove(`0)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Remove(T)
+  nameWithType: SortedList<T>.Remove(T)
+  nameWithType.vb: SortedList(Of T).Remove(T)
+- uid: GenericCollectionsExtension.List.SortedList`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Remove
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Remove
+  nameWithType: SortedList<T>.Remove
+  nameWithType.vb: SortedList(Of T).Remove
+- uid: GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_RemoveAt_System_Int32_
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)
+  fullName: GenericCollectionsExtension.List.SortedList<T>.RemoveAt(System.Int32)
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).RemoveAt(System.Int32)
+  nameWithType: SortedList<T>.RemoveAt(Int32)
+  nameWithType.vb: SortedList(Of T).RemoveAt(Int32)
+- uid: GenericCollectionsExtension.List.SortedList`1.RemoveAt*
+  name: RemoveAt
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_RemoveAt_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.RemoveAt
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.RemoveAt
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).RemoveAt
+  nameWithType: SortedList<T>.RemoveAt
+  nameWithType.vb: SortedList(Of T).RemoveAt
+- uid: GenericCollectionsExtension.List.SortedList`1.Reverse
+  name: Reverse()
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Reverse
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.Reverse
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Reverse()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Reverse()
+  nameWithType: SortedList<T>.Reverse()
+  nameWithType.vb: SortedList(Of T).Reverse()
+- uid: GenericCollectionsExtension.List.SortedList`1.Reverse*
+  name: Reverse
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_Reverse_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.Reverse
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.List.SortedList<T>.Reverse
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).Reverse
+  nameWithType: SortedList<T>.Reverse
+  nameWithType.vb: SortedList(Of T).Reverse
+- uid: GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.List.SortedList<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: SortedList<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: SortedList(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.List.SortedList-1.html#GenericCollectionsExtension_List_SortedList_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.List.SortedList<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.List.SortedList(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: SortedList<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: SortedList(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Queue
+  name: GenericCollectionsExtension.Queue
+  href: api/GenericCollectionsExtension.Queue.html
+  commentId: N:GenericCollectionsExtension.Queue
+  fullName: GenericCollectionsExtension.Queue
+  nameWithType: GenericCollectionsExtension.Queue
+- uid: GenericCollectionsExtension.Queue.Deque`1
+  name: Deque<T>
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html
+  commentId: T:GenericCollectionsExtension.Queue.Deque`1
+  name.vb: Deque(Of T)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T)
+  nameWithType: Deque<T>
+  nameWithType.vb: Deque(Of T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.#ctor
+  name: Deque()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1__ctor
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.#ctor
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Deque()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Deque()
+  nameWithType: Deque<T>.Deque()
+  nameWithType.vb: Deque(Of T).Deque()
+- uid: GenericCollectionsExtension.Queue.Deque`1.#ctor(System.Int32)
+  name: Deque(Int32)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1__ctor_System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.#ctor(System.Int32)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Deque(System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Deque(System.Int32)
+  nameWithType: Deque<T>.Deque(Int32)
+  nameWithType.vb: Deque(Of T).Deque(Int32)
+- uid: GenericCollectionsExtension.Queue.Deque`1.#ctor*
+  name: Deque
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Deque
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Deque
+  nameWithType: Deque<T>.Deque
+  nameWithType.vb: Deque(Of T).Deque
+- uid: GenericCollectionsExtension.Queue.Deque`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Add__0_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Add(`0)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Add(T)
+  nameWithType: Deque<T>.Add(T)
+  nameWithType.vb: Deque(Of T).Add(T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Add_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Add
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Add
+  nameWithType: Deque<T>.Add
+  nameWithType.vb: Deque(Of T).Add
+- uid: GenericCollectionsExtension.Queue.Deque`1.Capacity
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Capacity
+  commentId: P:GenericCollectionsExtension.Queue.Deque`1.Capacity
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Capacity
+  nameWithType: Deque<T>.Capacity
+  nameWithType.vb: Deque(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.Deque`1.Capacity*
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Capacity_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Capacity
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Capacity
+  nameWithType: Deque<T>.Capacity
+  nameWithType.vb: Deque(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.Deque`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Clear
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Clear
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Clear()
+  nameWithType: Deque<T>.Clear()
+  nameWithType.vb: Deque(Of T).Clear()
+- uid: GenericCollectionsExtension.Queue.Deque`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Clear
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Clear
+  nameWithType: Deque<T>.Clear
+  nameWithType.vb: Deque(Of T).Clear
+- uid: GenericCollectionsExtension.Queue.Deque`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Contains(`0)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Contains(T)
+  nameWithType: Deque<T>.Contains(T)
+  nameWithType.vb: Deque(Of T).Contains(T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Contains
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Contains
+  nameWithType: Deque<T>.Contains
+  nameWithType.vb: Deque(Of T).Contains
+- uid: GenericCollectionsExtension.Queue.Deque`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).CopyTo(T(), System.Int32)
+  nameWithType: Deque<T>.CopyTo(T[], Int32)
+  nameWithType.vb: Deque(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.Queue.Deque`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).CopyTo
+  nameWithType: Deque<T>.CopyTo
+  nameWithType.vb: Deque(Of T).CopyTo
+- uid: GenericCollectionsExtension.Queue.Deque`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Count
+  commentId: P:GenericCollectionsExtension.Queue.Deque`1.Count
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Count
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Count
+  nameWithType: Deque<T>.Count
+  nameWithType.vb: Deque(Of T).Count
+- uid: GenericCollectionsExtension.Queue.Deque`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Count_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Count
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Count
+  nameWithType: Deque<T>.Count
+  nameWithType.vb: Deque(Of T).Count
+- uid: GenericCollectionsExtension.Queue.Deque`1.Dequeue
+  name: Dequeue()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Dequeue
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Dequeue
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Dequeue()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Dequeue()
+  nameWithType: Deque<T>.Dequeue()
+  nameWithType.vb: Deque(Of T).Dequeue()
+- uid: GenericCollectionsExtension.Queue.Deque`1.Dequeue*
+  name: Dequeue
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Dequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Dequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Dequeue
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Dequeue
+  nameWithType: Deque<T>.Dequeue
+  nameWithType.vb: Deque(Of T).Dequeue
+- uid: GenericCollectionsExtension.Queue.Deque`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.GetEnumerator
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).GetEnumerator()
+  nameWithType: Deque<T>.GetEnumerator()
+  nameWithType.vb: Deque(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.Queue.Deque`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).GetEnumerator
+  nameWithType: Deque<T>.GetEnumerator
+  nameWithType.vb: Deque(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Queue.Deque`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.Queue.Deque`1.IsReadOnly
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).IsReadOnly
+  nameWithType: Deque<T>.IsReadOnly
+  nameWithType.vb: Deque(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Queue.Deque`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).IsReadOnly
+  nameWithType: Deque<T>.IsReadOnly
+  nameWithType.vb: Deque(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Queue.Deque`1.Peek
+  name: Peek()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Peek
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Peek
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Peek()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Peek()
+  nameWithType: Deque<T>.Peek()
+  nameWithType.vb: Deque(Of T).Peek()
+- uid: GenericCollectionsExtension.Queue.Deque`1.Peek*
+  name: Peek
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Peek_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Peek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Peek
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Peek
+  nameWithType: Deque<T>.Peek
+  nameWithType.vb: Deque(Of T).Peek
+- uid: GenericCollectionsExtension.Queue.Deque`1.PeekLast
+  name: PeekLast()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PeekLast
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.PeekLast
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PeekLast()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PeekLast()
+  nameWithType: Deque<T>.PeekLast()
+  nameWithType.vb: Deque(Of T).PeekLast()
+- uid: GenericCollectionsExtension.Queue.Deque`1.PeekLast*
+  name: PeekLast
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PeekLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.PeekLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PeekLast
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PeekLast
+  nameWithType: Deque<T>.PeekLast
+  nameWithType.vb: Deque(Of T).PeekLast
+- uid: GenericCollectionsExtension.Queue.Deque`1.PopLast
+  name: PopLast()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PopLast
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.PopLast
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PopLast()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PopLast()
+  nameWithType: Deque<T>.PopLast()
+  nameWithType.vb: Deque(Of T).PopLast()
+- uid: GenericCollectionsExtension.Queue.Deque`1.PopLast*
+  name: PopLast
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PopLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.PopLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PopLast
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PopLast
+  nameWithType: Deque<T>.PopLast
+  nameWithType.vb: Deque(Of T).PopLast
+- uid: GenericCollectionsExtension.Queue.Deque`1.PushFirst(`0)
+  name: PushFirst(T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PushFirst__0_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.PushFirst(`0)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PushFirst(T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PushFirst(T)
+  nameWithType: Deque<T>.PushFirst(T)
+  nameWithType.vb: Deque(Of T).PushFirst(T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.PushFirst*
+  name: PushFirst
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PushFirst_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.PushFirst
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PushFirst
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PushFirst
+  nameWithType: Deque<T>.PushFirst
+  nameWithType.vb: Deque(Of T).PushFirst
+- uid: GenericCollectionsExtension.Queue.Deque`1.PushLast(`0)
+  name: PushLast(T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PushLast__0_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.PushLast(`0)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PushLast(T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PushLast(T)
+  nameWithType: Deque<T>.PushLast(T)
+  nameWithType.vb: Deque(Of T).PushLast(T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.PushLast*
+  name: PushLast
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_PushLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.PushLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.PushLast
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).PushLast
+  nameWithType: Deque<T>.PushLast
+  nameWithType.vb: Deque(Of T).PushLast
+- uid: GenericCollectionsExtension.Queue.Deque`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.Remove(`0)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Remove(T)
+  nameWithType: Deque<T>.Remove(T)
+  nameWithType.vb: Deque(Of T).Remove(T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.Remove
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).Remove
+  nameWithType: Deque<T>.Remove
+  nameWithType.vb: Deque(Of T).Remove
+- uid: GenericCollectionsExtension.Queue.Deque`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Deque<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: Deque(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Queue.Deque`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Deque<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: Deque(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Queue.IDeque`1
+  name: IDeque<T>
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html
+  commentId: T:GenericCollectionsExtension.Queue.IDeque`1
+  name.vb: IDeque(Of T)
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T)
+  nameWithType: IDeque<T>
+  nameWithType.vb: IDeque(Of T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  name: PeekLast()
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PeekLast
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PeekLast()
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PeekLast()
+  nameWithType: IDeque<T>.PeekLast()
+  nameWithType.vb: IDeque(Of T).PeekLast()
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PeekLast*
+  name: PeekLast
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PeekLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PeekLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PeekLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PeekLast
+  nameWithType: IDeque<T>.PeekLast
+  nameWithType.vb: IDeque(Of T).PeekLast
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  name: PopLast()
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PopLast
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PopLast()
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PopLast()
+  nameWithType: IDeque<T>.PopLast()
+  nameWithType.vb: IDeque(Of T).PopLast()
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PopLast*
+  name: PopLast
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PopLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PopLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PopLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PopLast
+  nameWithType: IDeque<T>.PopLast
+  nameWithType.vb: IDeque(Of T).PopLast
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushFirst(`0)
+  name: PushFirst(T)
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PushFirst__0_
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PushFirst(`0)
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushFirst(T)
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushFirst(T)
+  nameWithType: IDeque<T>.PushFirst(T)
+  nameWithType.vb: IDeque(Of T).PushFirst(T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushFirst*
+  name: PushFirst
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PushFirst_
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PushFirst
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushFirst
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushFirst
+  nameWithType: IDeque<T>.PushFirst
+  nameWithType.vb: IDeque(Of T).PushFirst
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushLast(`0)
+  name: PushLast(T)
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PushLast__0_
+  commentId: M:GenericCollectionsExtension.Queue.IDeque`1.PushLast(`0)
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushLast(T)
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushLast(T)
+  nameWithType: IDeque<T>.PushLast(T)
+  nameWithType.vb: IDeque(Of T).PushLast(T)
+- uid: GenericCollectionsExtension.Queue.IDeque`1.PushLast*
+  name: PushLast
+  href: api/GenericCollectionsExtension.Queue.IDeque-1.html#GenericCollectionsExtension_Queue_IDeque_1_PushLast_
+  commentId: Overload:GenericCollectionsExtension.Queue.IDeque`1.PushLast
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IDeque<T>.PushLast
+  fullName.vb: GenericCollectionsExtension.Queue.IDeque(Of T).PushLast
+  nameWithType: IDeque<T>.PushLast
+  nameWithType.vb: IDeque(Of T).PushLast
+- uid: GenericCollectionsExtension.Queue.IPriorityQueue`1
+  name: IPriorityQueue<T>
+  href: api/GenericCollectionsExtension.Queue.IPriorityQueue-1.html
+  commentId: T:GenericCollectionsExtension.Queue.IPriorityQueue`1
+  name.vb: IPriorityQueue(Of T)
+  fullName: GenericCollectionsExtension.Queue.IPriorityQueue<T>
+  fullName.vb: GenericCollectionsExtension.Queue.IPriorityQueue(Of T)
+  nameWithType: IPriorityQueue<T>
+  nameWithType.vb: IPriorityQueue(Of T)
+- uid: GenericCollectionsExtension.Queue.IPriorityQueue`1.Enqueue(`0,System.Int32)
+  name: Enqueue(T, Int32)
+  href: api/GenericCollectionsExtension.Queue.IPriorityQueue-1.html#GenericCollectionsExtension_Queue_IPriorityQueue_1_Enqueue__0_System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.IPriorityQueue`1.Enqueue(`0,System.Int32)
+  fullName: GenericCollectionsExtension.Queue.IPriorityQueue<T>.Enqueue(T, System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.IPriorityQueue(Of T).Enqueue(T, System.Int32)
+  nameWithType: IPriorityQueue<T>.Enqueue(T, Int32)
+  nameWithType.vb: IPriorityQueue(Of T).Enqueue(T, Int32)
+- uid: GenericCollectionsExtension.Queue.IPriorityQueue`1.Enqueue*
+  name: Enqueue
+  href: api/GenericCollectionsExtension.Queue.IPriorityQueue-1.html#GenericCollectionsExtension_Queue_IPriorityQueue_1_Enqueue_
+  commentId: Overload:GenericCollectionsExtension.Queue.IPriorityQueue`1.Enqueue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IPriorityQueue<T>.Enqueue
+  fullName.vb: GenericCollectionsExtension.Queue.IPriorityQueue(Of T).Enqueue
+  nameWithType: IPriorityQueue<T>.Enqueue
+  nameWithType.vb: IPriorityQueue(Of T).Enqueue
+- uid: GenericCollectionsExtension.Queue.IQueue`1
+  name: IQueue<T>
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html
+  commentId: T:GenericCollectionsExtension.Queue.IQueue`1
+  name.vb: IQueue(Of T)
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T)
+  nameWithType: IQueue<T>
+  nameWithType.vb: IQueue(Of T)
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Capacity
+  commentId: P:GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Capacity
+  nameWithType: IQueue<T>.Capacity
+  nameWithType.vb: IQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Capacity*
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Capacity_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.Capacity
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Capacity
+  nameWithType: IQueue<T>.Capacity
+  nameWithType.vb: IQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  name: Dequeue()
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Dequeue
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue()
+  nameWithType: IQueue<T>.Dequeue()
+  nameWithType.vb: IQueue(Of T).Dequeue()
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Dequeue*
+  name: Dequeue
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Dequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.Dequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Dequeue
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue
+  nameWithType: IQueue<T>.Dequeue
+  nameWithType.vb: IQueue(Of T).Dequeue
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
+  name: Peek()
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Peek
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.Peek
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek()
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Peek()
+  nameWithType: IQueue<T>.Peek()
+  nameWithType.vb: IQueue(Of T).Peek()
+- uid: GenericCollectionsExtension.Queue.IQueue`1.Peek*
+  name: Peek
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Peek_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.Peek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.Peek
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Peek
+  nameWithType: IQueue<T>.Peek
+  nameWithType.vb: IQueue(Of T).Peek
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1
+  name: PriorityQueue<T>
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html
+  commentId: T:GenericCollectionsExtension.Queue.PriorityQueue`1
+  name.vb: PriorityQueue(Of T)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T)
+  nameWithType: PriorityQueue<T>
+  nameWithType.vb: PriorityQueue(Of T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor
+  name: PriorityQueue()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1__ctor
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.PriorityQueue()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).PriorityQueue()
+  nameWithType: PriorityQueue<T>.PriorityQueue()
+  nameWithType.vb: PriorityQueue(Of T).PriorityQueue()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor(System.Int32)
+  name: PriorityQueue(Int32)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1__ctor_System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor(System.Int32)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.PriorityQueue(System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).PriorityQueue(System.Int32)
+  nameWithType: PriorityQueue<T>.PriorityQueue(Int32)
+  nameWithType.vb: PriorityQueue(Of T).PriorityQueue(Int32)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor*
+  name: PriorityQueue
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.PriorityQueue
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).PriorityQueue
+  nameWithType: PriorityQueue<T>.PriorityQueue
+  nameWithType.vb: PriorityQueue(Of T).PriorityQueue
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Add__0_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Add(`0)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Add(T)
+  nameWithType: PriorityQueue<T>.Add(T)
+  nameWithType.vb: PriorityQueue(Of T).Add(T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Add_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Add
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Add
+  nameWithType: PriorityQueue<T>.Add
+  nameWithType.vb: PriorityQueue(Of T).Add
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Capacity
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Capacity
+  commentId: P:GenericCollectionsExtension.Queue.PriorityQueue`1.Capacity
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Capacity
+  nameWithType: PriorityQueue<T>.Capacity
+  nameWithType.vb: PriorityQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Capacity*
+  name: Capacity
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Capacity_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Capacity
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Capacity
+  nameWithType: PriorityQueue<T>.Capacity
+  nameWithType.vb: PriorityQueue(Of T).Capacity
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Clear
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Clear
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Clear()
+  nameWithType: PriorityQueue<T>.Clear()
+  nameWithType.vb: PriorityQueue(Of T).Clear()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Clear
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Clear
+  nameWithType: PriorityQueue<T>.Clear
+  nameWithType.vb: PriorityQueue(Of T).Clear
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Contains(`0)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Contains(T)
+  nameWithType: PriorityQueue<T>.Contains(T)
+  nameWithType.vb: PriorityQueue(Of T).Contains(T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Contains
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Contains
+  nameWithType: PriorityQueue<T>.Contains
+  nameWithType.vb: PriorityQueue(Of T).Contains
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).CopyTo(T(), System.Int32)
+  nameWithType: PriorityQueue<T>.CopyTo(T[], Int32)
+  nameWithType.vb: PriorityQueue(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).CopyTo
+  nameWithType: PriorityQueue<T>.CopyTo
+  nameWithType.vb: PriorityQueue(Of T).CopyTo
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Count
+  commentId: P:GenericCollectionsExtension.Queue.PriorityQueue`1.Count
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Count
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Count
+  nameWithType: PriorityQueue<T>.Count
+  nameWithType.vb: PriorityQueue(Of T).Count
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Count_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Count
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Count
+  nameWithType: PriorityQueue<T>.Count
+  nameWithType.vb: PriorityQueue(Of T).Count
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Dequeue
+  name: Dequeue()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Dequeue
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Dequeue
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Dequeue()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Dequeue()
+  nameWithType: PriorityQueue<T>.Dequeue()
+  nameWithType.vb: PriorityQueue(Of T).Dequeue()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Dequeue*
+  name: Dequeue
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Dequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Dequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Dequeue
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Dequeue
+  nameWithType: PriorityQueue<T>.Dequeue
+  nameWithType.vb: PriorityQueue(Of T).Dequeue
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Enqueue(`0,System.Int32)
+  name: Enqueue(T, Int32)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Enqueue__0_System_Int32_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Enqueue(`0,System.Int32)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Enqueue(T, System.Int32)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Enqueue(T, System.Int32)
+  nameWithType: PriorityQueue<T>.Enqueue(T, Int32)
+  nameWithType.vb: PriorityQueue(Of T).Enqueue(T, Int32)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Enqueue*
+  name: Enqueue
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Enqueue_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Enqueue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Enqueue
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Enqueue
+  nameWithType: PriorityQueue<T>.Enqueue
+  nameWithType.vb: PriorityQueue(Of T).Enqueue
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.GetEnumerator
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).GetEnumerator()
+  nameWithType: PriorityQueue<T>.GetEnumerator()
+  nameWithType.vb: PriorityQueue(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).GetEnumerator
+  nameWithType: PriorityQueue<T>.GetEnumerator
+  nameWithType.vb: PriorityQueue(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.Queue.PriorityQueue`1.IsReadOnly
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).IsReadOnly
+  nameWithType: PriorityQueue<T>.IsReadOnly
+  nameWithType.vb: PriorityQueue(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).IsReadOnly
+  nameWithType: PriorityQueue<T>.IsReadOnly
+  nameWithType.vb: PriorityQueue(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Peek
+  name: Peek()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Peek
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Peek
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Peek()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Peek()
+  nameWithType: PriorityQueue<T>.Peek()
+  nameWithType.vb: PriorityQueue(Of T).Peek()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Peek*
+  name: Peek
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Peek_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Peek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Peek
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Peek
+  nameWithType: PriorityQueue<T>.Peek
+  nameWithType.vb: PriorityQueue(Of T).Peek
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.Remove(`0)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Remove(T)
+  nameWithType: PriorityQueue<T>.Remove(T)
+  nameWithType.vb: PriorityQueue(Of T).Remove(T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.Remove
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).Remove
+  nameWithType: PriorityQueue<T>.Remove
+  nameWithType.vb: PriorityQueue(Of T).Remove
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: PriorityQueue<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: PriorityQueue<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Stack
+  name: GenericCollectionsExtension.Stack
+  href: api/GenericCollectionsExtension.Stack.html
+  commentId: N:GenericCollectionsExtension.Stack
+  fullName: GenericCollectionsExtension.Stack
+  nameWithType: GenericCollectionsExtension.Stack
+- uid: GenericCollectionsExtension.Stack.IPriorityStack`1
+  name: IPriorityStack<T>
+  href: api/GenericCollectionsExtension.Stack.IPriorityStack-1.html
+  commentId: T:GenericCollectionsExtension.Stack.IPriorityStack`1
+  name.vb: IPriorityStack(Of T)
+  fullName: GenericCollectionsExtension.Stack.IPriorityStack<T>
+  fullName.vb: GenericCollectionsExtension.Stack.IPriorityStack(Of T)
+  nameWithType: IPriorityStack<T>
+  nameWithType.vb: IPriorityStack(Of T)
+- uid: GenericCollectionsExtension.Stack.IPriorityStack`1.Push(`0,System.Int32)
+  name: Push(T, Int32)
+  href: api/GenericCollectionsExtension.Stack.IPriorityStack-1.html#GenericCollectionsExtension_Stack_IPriorityStack_1_Push__0_System_Int32_
+  commentId: M:GenericCollectionsExtension.Stack.IPriorityStack`1.Push(`0,System.Int32)
+  fullName: GenericCollectionsExtension.Stack.IPriorityStack<T>.Push(T, System.Int32)
+  fullName.vb: GenericCollectionsExtension.Stack.IPriorityStack(Of T).Push(T, System.Int32)
+  nameWithType: IPriorityStack<T>.Push(T, Int32)
+  nameWithType.vb: IPriorityStack(Of T).Push(T, Int32)
+- uid: GenericCollectionsExtension.Stack.IPriorityStack`1.Push*
+  name: Push
+  href: api/GenericCollectionsExtension.Stack.IPriorityStack-1.html#GenericCollectionsExtension_Stack_IPriorityStack_1_Push_
+  commentId: Overload:GenericCollectionsExtension.Stack.IPriorityStack`1.Push
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IPriorityStack<T>.Push
+  fullName.vb: GenericCollectionsExtension.Stack.IPriorityStack(Of T).Push
+  nameWithType: IPriorityStack<T>.Push
+  nameWithType.vb: IPriorityStack(Of T).Push
+- uid: GenericCollectionsExtension.Stack.IStack`1
+  name: IStack<T>
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html
+  commentId: T:GenericCollectionsExtension.Stack.IStack`1
+  name.vb: IStack(Of T)
+  fullName: GenericCollectionsExtension.Stack.IStack<T>
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T)
+  nameWithType: IStack<T>
+  nameWithType.vb: IStack(Of T)
+- uid: GenericCollectionsExtension.Stack.IStack`1.Capacity
+  name: Capacity
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Capacity
+  commentId: P:GenericCollectionsExtension.Stack.IStack`1.Capacity
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Capacity
+  nameWithType: IStack<T>.Capacity
+  nameWithType.vb: IStack(Of T).Capacity
+- uid: GenericCollectionsExtension.Stack.IStack`1.Capacity*
+  name: Capacity
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Capacity_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.Capacity
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Capacity
+  nameWithType: IStack<T>.Capacity
+  nameWithType.vb: IStack(Of T).Capacity
+- uid: GenericCollectionsExtension.Stack.IStack`1.Peek
+  name: Peek()
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Peek
+  commentId: M:GenericCollectionsExtension.Stack.IStack`1.Peek
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Peek()
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Peek()
+  nameWithType: IStack<T>.Peek()
+  nameWithType.vb: IStack(Of T).Peek()
+- uid: GenericCollectionsExtension.Stack.IStack`1.Peek*
+  name: Peek
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Peek_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.Peek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Peek
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Peek
+  nameWithType: IStack<T>.Peek
+  nameWithType.vb: IStack(Of T).Peek
+- uid: GenericCollectionsExtension.Stack.IStack`1.Pop
+  name: Pop()
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Pop
+  commentId: M:GenericCollectionsExtension.Stack.IStack`1.Pop
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Pop()
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Pop()
+  nameWithType: IStack<T>.Pop()
+  nameWithType.vb: IStack(Of T).Pop()
+- uid: GenericCollectionsExtension.Stack.IStack`1.Pop*
+  name: Pop
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Pop_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.Pop
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.Pop
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Pop
+  nameWithType: IStack<T>.Pop
+  nameWithType.vb: IStack(Of T).Pop
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1
+  name: PriorityStack<T>
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html
+  commentId: T:GenericCollectionsExtension.Stack.PriorityStack`1
+  name.vb: PriorityStack(Of T)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T)
+  nameWithType: PriorityStack<T>
+  nameWithType.vb: PriorityStack(Of T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.#ctor
+  name: PriorityStack()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1__ctor
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.#ctor
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.PriorityStack()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).PriorityStack()
+  nameWithType: PriorityStack<T>.PriorityStack()
+  nameWithType.vb: PriorityStack(Of T).PriorityStack()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.#ctor(System.Int32)
+  name: PriorityStack(Int32)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1__ctor_System_Int32_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.#ctor(System.Int32)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.PriorityStack(System.Int32)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).PriorityStack(System.Int32)
+  nameWithType: PriorityStack<T>.PriorityStack(Int32)
+  nameWithType.vb: PriorityStack(Of T).PriorityStack(Int32)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.#ctor*
+  name: PriorityStack
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.PriorityStack
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).PriorityStack
+  nameWithType: PriorityStack<T>.PriorityStack
+  nameWithType.vb: PriorityStack(Of T).PriorityStack
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Add__0_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Add(`0)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Add(T)
+  nameWithType: PriorityStack<T>.Add(T)
+  nameWithType.vb: PriorityStack(Of T).Add(T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Add_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Add
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Add
+  nameWithType: PriorityStack<T>.Add
+  nameWithType.vb: PriorityStack(Of T).Add
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Capacity
+  name: Capacity
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Capacity
+  commentId: P:GenericCollectionsExtension.Stack.PriorityStack`1.Capacity
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Capacity
+  nameWithType: PriorityStack<T>.Capacity
+  nameWithType.vb: PriorityStack(Of T).Capacity
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Capacity*
+  name: Capacity
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Capacity_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Capacity
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Capacity
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Capacity
+  nameWithType: PriorityStack<T>.Capacity
+  nameWithType.vb: PriorityStack(Of T).Capacity
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Clear
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Clear
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Clear()
+  nameWithType: PriorityStack<T>.Clear()
+  nameWithType.vb: PriorityStack(Of T).Clear()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Clear
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Clear
+  nameWithType: PriorityStack<T>.Clear
+  nameWithType.vb: PriorityStack(Of T).Clear
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Contains(`0)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Contains(T)
+  nameWithType: PriorityStack<T>.Contains(T)
+  nameWithType.vb: PriorityStack(Of T).Contains(T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Contains
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Contains
+  nameWithType: PriorityStack<T>.Contains
+  nameWithType.vb: PriorityStack(Of T).Contains
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).CopyTo(T(), System.Int32)
+  nameWithType: PriorityStack<T>.CopyTo(T[], Int32)
+  nameWithType.vb: PriorityStack(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).CopyTo
+  nameWithType: PriorityStack<T>.CopyTo
+  nameWithType.vb: PriorityStack(Of T).CopyTo
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Count
+  commentId: P:GenericCollectionsExtension.Stack.PriorityStack`1.Count
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Count
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Count
+  nameWithType: PriorityStack<T>.Count
+  nameWithType.vb: PriorityStack(Of T).Count
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Count_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Count
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Count
+  nameWithType: PriorityStack<T>.Count
+  nameWithType.vb: PriorityStack(Of T).Count
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.GetEnumerator
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).GetEnumerator()
+  nameWithType: PriorityStack<T>.GetEnumerator()
+  nameWithType.vb: PriorityStack(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).GetEnumerator
+  nameWithType: PriorityStack<T>.GetEnumerator
+  nameWithType.vb: PriorityStack(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.Stack.PriorityStack`1.IsReadOnly
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).IsReadOnly
+  nameWithType: PriorityStack<T>.IsReadOnly
+  nameWithType.vb: PriorityStack(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).IsReadOnly
+  nameWithType: PriorityStack<T>.IsReadOnly
+  nameWithType.vb: PriorityStack(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Peek
+  name: Peek()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Peek
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Peek
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Peek()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Peek()
+  nameWithType: PriorityStack<T>.Peek()
+  nameWithType.vb: PriorityStack(Of T).Peek()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Peek*
+  name: Peek
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Peek_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Peek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Peek
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Peek
+  nameWithType: PriorityStack<T>.Peek
+  nameWithType.vb: PriorityStack(Of T).Peek
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Pop
+  name: Pop()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Pop
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Pop
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Pop()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Pop()
+  nameWithType: PriorityStack<T>.Pop()
+  nameWithType.vb: PriorityStack(Of T).Pop()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Pop*
+  name: Pop
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Pop_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Pop
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Pop
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Pop
+  nameWithType: PriorityStack<T>.Pop
+  nameWithType.vb: PriorityStack(Of T).Pop
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Push(`0,System.Int32)
+  name: Push(T, Int32)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Push__0_System_Int32_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Push(`0,System.Int32)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Push(T, System.Int32)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Push(T, System.Int32)
+  nameWithType: PriorityStack<T>.Push(T, Int32)
+  nameWithType.vb: PriorityStack(Of T).Push(T, Int32)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Push*
+  name: Push
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Push_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Push
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Push
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Push
+  nameWithType: PriorityStack<T>.Push
+  nameWithType.vb: PriorityStack(Of T).Push
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.Remove(`0)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Remove(T)
+  nameWithType: PriorityStack<T>.Remove(T)
+  nameWithType.vb: PriorityStack(Of T).Remove(T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.Remove
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).Remove
+  nameWithType: PriorityStack<T>.Remove
+  nameWithType.vb: PriorityStack(Of T).Remove
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: PriorityStack<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: PriorityStack<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Tree
+  name: GenericCollectionsExtension.Tree
+  href: api/GenericCollectionsExtension.Tree.html
+  commentId: N:GenericCollectionsExtension.Tree
+  fullName: GenericCollectionsExtension.Tree
+  nameWithType: GenericCollectionsExtension.Tree
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1
+  name: BinarySearchTree<T>
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html
+  commentId: T:GenericCollectionsExtension.Tree.BinarySearchTree`1
+  name.vb: BinarySearchTree(Of T)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T)
+  nameWithType: BinarySearchTree<T>
+  nameWithType.vb: BinarySearchTree(Of T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  name: BinarySearchTree()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree()
+  nameWithType: BinarySearchTree<T>.BinarySearchTree()
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)
+  name: BinarySearchTree(TraversalType)
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_GenericCollectionsExtension_Tree_TraversalType_
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor(GenericCollectionsExtension.Tree.TraversalType)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree(GenericCollectionsExtension.Tree.TraversalType)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree(GenericCollectionsExtension.Tree.TraversalType)
+  nameWithType: BinarySearchTree<T>.BinarySearchTree(TraversalType)
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree(TraversalType)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor*
+  name: BinarySearchTree
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1__ctor_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.BinarySearchTree
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).BinarySearchTree
+  nameWithType: BinarySearchTree<T>.BinarySearchTree
+  nameWithType.vb: BinarySearchTree(Of T).BinarySearchTree
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)
+  name: Add(T)
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Add__0_
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Add(`0)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Add(T)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Add(T)
+  nameWithType: BinarySearchTree<T>.Add(T)
+  nameWithType.vb: BinarySearchTree(Of T).Add(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Add_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Add
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Add
+  nameWithType: BinarySearchTree<T>.Add
+  nameWithType.vb: BinarySearchTree(Of T).Add
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Clear
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Clear()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Clear()
+  nameWithType: BinarySearchTree<T>.Clear()
+  nameWithType.vb: BinarySearchTree(Of T).Clear()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Clear_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Clear
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Clear
+  nameWithType: BinarySearchTree<T>.Clear
+  nameWithType.vb: BinarySearchTree(Of T).Clear
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)
+  name: Contains(T)
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Contains__0_
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains(`0)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Contains(T)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Contains(T)
+  nameWithType: BinarySearchTree<T>.Contains(T)
+  nameWithType.vb: BinarySearchTree(Of T).Contains(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Contains_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Contains
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Contains
+  nameWithType: BinarySearchTree<T>.Contains
+  nameWithType.vb: BinarySearchTree(Of T).Contains
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_CopyTo__0___System_Int32_
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.CopyTo(T[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).CopyTo(T(), System.Int32)
+  nameWithType: BinarySearchTree<T>.CopyTo(T[], Int32)
+  nameWithType.vb: BinarySearchTree(Of T).CopyTo(T(), Int32)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.CopyTo
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).CopyTo
+  nameWithType: BinarySearchTree<T>.CopyTo
+  nameWithType.vb: BinarySearchTree(Of T).CopyTo
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  name: Count
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Count
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Count
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Count
+  nameWithType: BinarySearchTree<T>.Count
+  nameWithType.vb: BinarySearchTree(Of T).Count
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Count_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Count
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Count
+  nameWithType: BinarySearchTree<T>.Count
+  nameWithType.vb: BinarySearchTree(Of T).Count
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  name: GetEnumerable()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerable
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerable()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerable()
+  nameWithType: BinarySearchTree<T>.GetEnumerable()
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerable()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable*
+  name: GetEnumerable
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerable_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerable
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerable
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerable
+  nameWithType: BinarySearchTree<T>.GetEnumerable
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerable
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerator()
+  nameWithType: BinarySearchTree<T>.GetEnumerator()
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerator()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).GetEnumerator
+  nameWithType: BinarySearchTree<T>.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  name: InOrder()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_InOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.InOrder()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).InOrder()
+  nameWithType: BinarySearchTree<T>.InOrder()
+  nameWithType.vb: BinarySearchTree(Of T).InOrder()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder*
+  name: InOrder
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_InOrder_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.InOrder
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.InOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).InOrder
+  nameWithType: BinarySearchTree<T>.InOrder
+  nameWithType.vb: BinarySearchTree(Of T).InOrder
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  name: IsEmpty()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_IsEmpty
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsEmpty()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsEmpty()
+  nameWithType: BinarySearchTree<T>.IsEmpty()
+  nameWithType.vb: BinarySearchTree(Of T).IsEmpty()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsEmpty
+  nameWithType: BinarySearchTree<T>.IsEmpty
+  nameWithType.vb: BinarySearchTree(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_IsReadOnly
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsReadOnly
+  nameWithType: BinarySearchTree<T>.IsReadOnly
+  nameWithType.vb: BinarySearchTree(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).IsReadOnly
+  nameWithType: BinarySearchTree<T>.IsReadOnly
+  nameWithType.vb: BinarySearchTree(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  name: PostOrder()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_PostOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PostOrder()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PostOrder()
+  nameWithType: BinarySearchTree<T>.PostOrder()
+  nameWithType.vb: BinarySearchTree(Of T).PostOrder()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder*
+  name: PostOrder
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_PostOrder_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.PostOrder
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PostOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PostOrder
+  nameWithType: BinarySearchTree<T>.PostOrder
+  nameWithType.vb: BinarySearchTree(Of T).PostOrder
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  name: PreOrder()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_PreOrder
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PreOrder()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PreOrder()
+  nameWithType: BinarySearchTree<T>.PreOrder()
+  nameWithType.vb: BinarySearchTree(Of T).PreOrder()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder*
+  name: PreOrder
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_PreOrder_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.PreOrder
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.PreOrder
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).PreOrder
+  nameWithType: BinarySearchTree<T>.PreOrder
+  nameWithType.vb: BinarySearchTree(Of T).PreOrder
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)
+  name: Remove(T)
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Remove__0_
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove(`0)
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Remove(T)
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Remove(T)
+  nameWithType: BinarySearchTree<T>.Remove(T)
+  nameWithType.vb: BinarySearchTree(Of T).Remove(T)
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Remove_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Remove
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Remove
+  nameWithType: BinarySearchTree<T>.Remove
+  nameWithType.vb: BinarySearchTree(Of T).Remove
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  name: RepeatedNodes
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_RepeatedNodes
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.RepeatedNodes
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).RepeatedNodes
+  nameWithType: BinarySearchTree<T>.RepeatedNodes
+  nameWithType.vb: BinarySearchTree(Of T).RepeatedNodes
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes*
+  name: RepeatedNodes
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_RepeatedNodes_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.RepeatedNodes
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.RepeatedNodes
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).RepeatedNodes
+  nameWithType: BinarySearchTree<T>.RepeatedNodes
+  nameWithType.vb: BinarySearchTree(Of T).RepeatedNodes
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: BinarySearchTree<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: BinarySearchTree<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: BinarySearchTree(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  name: Traversal
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Traversal
+  commentId: P:GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Traversal
+  nameWithType: BinarySearchTree<T>.Traversal
+  nameWithType.vb: BinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal*
+  name: Traversal
+  href: api/GenericCollectionsExtension.Tree.BinarySearchTree-1.html#GenericCollectionsExtension_Tree_BinarySearchTree_1_Traversal_
+  commentId: Overload:GenericCollectionsExtension.Tree.BinarySearchTree`1.Traversal
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.BinarySearchTree<T>.Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.BinarySearchTree(Of T).Traversal
+  nameWithType: BinarySearchTree<T>.Traversal
+  nameWithType.vb: BinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  name: IBinarySearchTree<T>
+  href: api/GenericCollectionsExtension.Tree.IBinarySearchTree-1.html
+  commentId: T:GenericCollectionsExtension.Tree.IBinarySearchTree`1
+  name.vb: IBinarySearchTree(Of T)
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T)
+  nameWithType: IBinarySearchTree<T>
+  nameWithType.vb: IBinarySearchTree(Of T)
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  name: IsEmpty()
+  href: api/GenericCollectionsExtension.Tree.IBinarySearchTree-1.html#GenericCollectionsExtension_Tree_IBinarySearchTree_1_IsEmpty
+  commentId: M:GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty()
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty()
+  nameWithType: IBinarySearchTree<T>.IsEmpty()
+  nameWithType.vb: IBinarySearchTree(Of T).IsEmpty()
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Tree.IBinarySearchTree-1.html#GenericCollectionsExtension_Tree_IBinarySearchTree_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Tree.IBinarySearchTree`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).IsEmpty
+  nameWithType: IBinarySearchTree<T>.IsEmpty
+  nameWithType.vb: IBinarySearchTree(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  name: Traversal
+  href: api/GenericCollectionsExtension.Tree.IBinarySearchTree-1.html#GenericCollectionsExtension_Tree_IBinarySearchTree_1_Traversal
+  commentId: P:GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).Traversal
+  nameWithType: IBinarySearchTree<T>.Traversal
+  nameWithType.vb: IBinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal*
+  name: Traversal
+  href: api/GenericCollectionsExtension.Tree.IBinarySearchTree-1.html#GenericCollectionsExtension_Tree_IBinarySearchTree_1_Traversal_
+  commentId: Overload:GenericCollectionsExtension.Tree.IBinarySearchTree`1.Traversal
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Tree.IBinarySearchTree<T>.Traversal
+  fullName.vb: GenericCollectionsExtension.Tree.IBinarySearchTree(Of T).Traversal
+  nameWithType: IBinarySearchTree<T>.Traversal
+  nameWithType.vb: IBinarySearchTree(Of T).Traversal
+- uid: GenericCollectionsExtension.Tree.TraversalType
+  name: TraversalType
+  href: api/GenericCollectionsExtension.Tree.TraversalType.html
+  commentId: T:GenericCollectionsExtension.Tree.TraversalType
+  fullName: GenericCollectionsExtension.Tree.TraversalType
+  nameWithType: TraversalType
+- uid: GenericCollectionsExtension.Tree.TraversalType.InOrder
+  name: InOrder
+  href: api/GenericCollectionsExtension.Tree.TraversalType.html#GenericCollectionsExtension_Tree_TraversalType_InOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.InOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.InOrder
+  nameWithType: TraversalType.InOrder
+- uid: GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  name: PostOrder
+  href: api/GenericCollectionsExtension.Tree.TraversalType.html#GenericCollectionsExtension_Tree_TraversalType_PostOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.PostOrder
+  nameWithType: TraversalType.PostOrder
+- uid: GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  name: PreOrder
+  href: api/GenericCollectionsExtension.Tree.TraversalType.html#GenericCollectionsExtension_Tree_TraversalType_PreOrder
+  commentId: F:GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  fullName: GenericCollectionsExtension.Tree.TraversalType.PreOrder
+  nameWithType: TraversalType.PreOrder
