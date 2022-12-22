@@ -1,4 +1,4 @@
-﻿namespace GenericCollectionsExtension.Tests.SortedList;
+﻿namespace GenericCollectionsExtension.Tests.List.SortedList;
 
 public class SortedListTests
 {
@@ -207,7 +207,7 @@ public class SortedListTests
     {
         SortedList<int> list = new();
 
-        list.AddRange(new[] { 59, 10, 2, 5, -2});
+        list.AddRange(new[] { 59, 10, 2, 5, -2 });
 
         Assert.Equal(new[] { -2, 2, 5, 10, 59 }, list);
     }

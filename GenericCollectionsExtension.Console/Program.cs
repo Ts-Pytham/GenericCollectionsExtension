@@ -108,6 +108,18 @@ foreach (var item in preOrder)
     Console.WriteLine(item);
 }
 
+Console.WriteLine("DoublyLinkedList: ");
+var doubly = new DoublyLinkedList<int>();
+
+doubly.Add(1);
+doubly.Add(2);
+doubly.Add(3);
+
+Console.WriteLine($"Count: {doubly.Count}\n");
+for(int i = 0; i != doubly.Count; i++)
+{
+    Console.WriteLine(doubly[i]);
+}
 
 
 
