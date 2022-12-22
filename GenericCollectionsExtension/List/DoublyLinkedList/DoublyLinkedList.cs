@@ -6,14 +6,23 @@ using System.Collections.Generic;
 namespace GenericCollectionsExtension.List
 {
     /// <summary>
-    /// 
+    /// A doubly linked list is a linear data structure in which each element is a separate object 
+    /// connected to two other elements, usually referred to as the previous and next element.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type of elements in the list.</typeparam>
     public class DoublyLinkedList<T> : IDoublyLinkedList<T>, IEnumerable<T>, ICollection<T>
     {
         private Node<T> _head;
         private Node<T> _tail;
 
+        /// <summary>
+        /// Gets or sets the element at the specified index.
+        /// </summary>
+        /// <param name="index">The zero-based index of the element to get or set.</param>
+        /// <returns>The element at the specified index.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// Thrown if the index is less than 0 or greater than or equal to the number of elements in the list.
+        /// </exception>
         public T this[int index] 
         {
             get => Loop(index);
@@ -21,14 +30,18 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Gets the number of elements contained in the <see cref="DoublyLinkedList{T}"/>.
         /// </summary>
         public int Count { get; private set; }
 
+        /// <summary>
+        /// Gets a value indicating whether the <see cref="DoublyLinkedList{T}"/> is read-only.
+        /// </summary>
+        /// <returns>Always returns false.</returns>
         public bool IsReadOnly => false;
 
         /// <summary>
-        /// 
+        /// Constructs a new instance of the <see cref="DoublyLinkedList{T}"/> class.
         /// </summary>
         public DoublyLinkedList()
         {
@@ -38,9 +51,9 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Constructs a new instance of the <see cref="DoublyLinkedList{T}"/> class and adds the given item to the list.
         /// </summary>
-        /// <param name="item"></param>
+        /// <param name="item">The item to be added to the list.</param
         public DoublyLinkedList(T item)
         {
             Count = 0;
@@ -50,9 +63,9 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Constructs a new instance of the <see cref="DoublyLinkedList{T}"/> class and adds the items from the given enumerable to the list.
         /// </summary>
-        /// <param name="values"></param>
+        /// <param name="values">The items to be added to the list.</param>
         public DoublyLinkedList(IEnumerable<T> values)
         {
             foreach(var value in values)
@@ -62,9 +75,9 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Adds an item to the beginning of the list.
         /// </summary>
-        /// <param name="item"></param>
+        /// <param name="item">The item to be added.</param>
         public void Add(T item)
         {
             if(_head is null)
@@ -85,6 +98,7 @@ namespace GenericCollectionsExtension.List
             Count++;
         }
 
+        /// <inheritdoc cref="IDoublyLinkedList{T}.AddLast(T)"/>
         public void AddLast(T item)
         {
             if (_head is null)
@@ -103,7 +117,7 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Removes all elements from the <see cref="DoublyLinkedList{T}"/>.
         /// </summary>
         public void Clear()
         {
@@ -112,30 +126,31 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Determines whether the <see cref="DoublyLinkedList{T}"/> contains a specific value.
         /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
+        /// <param name="item">The object to locate in the <see cref="DoublyLinkedList{T}"/>.</param>
+        /// <returns>
+        ///   <see langword="true"/> if item is found in the <see cref="DoublyLinkedList{T}"/>; otherwise, <see langword="false"/>.
+        /// </returns>
         public bool Contains(T item)
         {
             return Find(item) != -1;
         }
 
         /// <summary>
-        /// 
+        /// Copies the elements of the <see cref="ICollection{T}"/> to an <see cref="Array"/>, starting at a particular <see cref="Array"/> index.
         /// </summary>
-        /// <param name="array"></param>
-        /// <param name="arrayIndex"></param>
+        /// <param name="array">The one-dimensional <see cref="Array"/> that is the destination of the elements copied from <see cref="ICollection{T}"/>. The <see cref="Array"/> must have zero-based indexing.</param>
+        /// <param name="arrayIndex">The zero-based index in <paramref name="array"/> at which copying begins.</param>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="array"/> is null.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="arrayIndex"/> is less than 0.</exception>
+        /// <exception cref="ArgumentException">Thrown if the number of elements in the source <see cref="ICollection{T}"/> is greater than the available space from <paramref name="arrayIndex"/> to the end of the destination <paramref name="array"/>.</exception>
         public void CopyTo(T[] array, int arrayIndex)
         {
             GetEnumerable().ToArray().CopyTo(array, arrayIndex);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
+        /// <inheritdoc cref="IDoublyLinkedList{T}.Find(T)"/>
         public int Find(T item)
         {
             if (_head is null) return -1;
@@ -159,9 +174,9 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Returns an enumerator that iterates through the collection.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An enumerator that can be used to iterate through the collection.</returns>
         public IEnumerator<T> GetEnumerator()
         {
             if (_head is null) yield break;
@@ -175,9 +190,9 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Returns an enumerable collection of the elements of the list.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An enumerable collection of the elements of the list.</returns>
         public IEnumerable<T> GetEnumerable()
         {
             if (_head is null) yield break;
@@ -191,6 +206,7 @@ namespace GenericCollectionsExtension.List
             }
         }
 
+        /// <inheritdoc cref="IDoublyLinkedList{T}.GetFirst()"/>
         public T GetFirst()
         {
             if (_head is null) return default;
@@ -198,6 +214,7 @@ namespace GenericCollectionsExtension.List
             return _head.Value;
         }
 
+        /// <inheritdoc cref="IDoublyLinkedList{T}.GetLast()"/>
         public T GetLast()
         {
             if (_tail is null) return default;
@@ -206,10 +223,12 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Removes the specified item from the <see cref="DoublyLinkedList{T}"/>t.
         /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
+        /// <param name="item">The item to be removed from the <see cref="DoublyLinkedList{T}"/>.</param>
+        /// <returns>
+        /// <see langword="true"/> if the item was found and removed from the list, <see langword="false"/> otherwise.
+        /// </returns>
         public bool Remove(T item)
         {
             if(_head is null) return false;
@@ -259,20 +278,20 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Returns an enumerator that iterates through the collection.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An enumerator that can be used to iterate through the collection.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
         /// <summary>
-        /// 
+        /// Retrieves the element at the specified index in the list.
         /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
-        /// <exception cref="IndexOutOfRangeException"></exception>
+        /// <param name="index">The index of the element to retrieve.</param>
+        /// <returns>The element at the specified index in the list.</returns>
+        /// <exception cref="IndexOutOfRangeException">Thrown if the index is outside the bounds of the list.</exception>
         private T Loop(int index)
         {
             if(index > Count || index < 0) throw new IndexOutOfRangeException();
@@ -296,11 +315,11 @@ namespace GenericCollectionsExtension.List
         }
 
         /// <summary>
-        /// 
+        /// Sets the value at the specified index.
         /// </summary>
-        /// <param name="index"></param>
-        /// <param name="value"></param>
-        /// <exception cref="IndexOutOfRangeException"></exception>
+        /// <param name="index">The zero-based index of the element to set.</param>
+        /// <param name="value">The value to set.</param>
+        /// <exception cref="IndexOutOfRangeException">Thrown when the index is out of range.</exception>
         private void SetValue(int index, T value)
         {
             if (index > Count || index < 0) throw new IndexOutOfRangeException();
