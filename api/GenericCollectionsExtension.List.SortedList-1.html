@@ -1,0 +1,815 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SortedList&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SortedList&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GenericCollectionsExtension.List.SortedList`1">
+  
+  
+  <h1 id="GenericCollectionsExtension_List_SortedList_1" data-uid="GenericCollectionsExtension.List.SortedList`1" class="text-break">Class SortedList&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a sorted list each time you enter an item in the list.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SortedList&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GenericCollectionsExtension.List.ISortedList-1.html">ISortedList</a>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GenericCollectionsExtension.List.html">GenericCollectionsExtension.List</a></h6>
+  <h6><strong>Assembly</strong>: GenericCollectionsExtension.dll</h6>
+  <h5 id="GenericCollectionsExtension_List_SortedList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SortedList&lt;T&gt; : ISortedList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>T is type of element in the list and implements <span class="xref">System.IComparable`1</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1__ctor.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L105">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1__ctor_" data-uid="GenericCollectionsExtension.List.SortedList`1.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1__ctor" data-uid="GenericCollectionsExtension.List.SortedList`1.#ctor">SortedList()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenericCollectionsExtension.List.SortedList-1.html">SortedList&lt;T&gt;</a> class and initialize the criterion to ascending by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1__ctor_GenericCollectionsExtension_List_Criterion_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.%23ctor(GenericCollectionsExtension.List.Criterion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L115">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1__ctor_" data-uid="GenericCollectionsExtension.List.SortedList`1.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1__ctor_GenericCollectionsExtension_List_Criterion_" data-uid="GenericCollectionsExtension.List.SortedList`1.#ctor(GenericCollectionsExtension.List.Criterion)">SortedList(Criterion)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenericCollectionsExtension.List.SortedList-1.html">SortedList&lt;T&gt;</a> class and initializes the criterion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedList(Criterion criterion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.List.Criterion.html">Criterion</a></td>
+        <td><span class="parametername">criterion</span></td>
+        <td><p>Can be ascending or descending.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Count.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L95">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Count_" data-uid="GenericCollectionsExtension.List.SortedList`1.Count*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Count" data-uid="GenericCollectionsExtension.List.SortedList`1.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Criterion.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Criterion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L19">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Criterion_" data-uid="GenericCollectionsExtension.List.SortedList`1.Criterion*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Criterion" data-uid="GenericCollectionsExtension.List.SortedList`1.Criterion">Criterion</h4>
+  <div class="markdown level1 summary"><p>Criterion for sorting the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Criterion Criterion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.List.Criterion.html">Criterion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_IsReadOnly.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L100">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_IsReadOnly_" data-uid="GenericCollectionsExtension.List.SortedList`1.IsReadOnly*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_IsReadOnly" data-uid="GenericCollectionsExtension.List.SortedList`1.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L21">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Item_" data-uid="GenericCollectionsExtension.List.SortedList`1.Item*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Item_System_Int32_" data-uid="GenericCollectionsExtension.List.SortedList`1.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Add__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L125">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Add_" data-uid="GenericCollectionsExtension.List.SortedList`1.Add*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Add__0_" data-uid="GenericCollectionsExtension.List.SortedList`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds an item and sorts it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_AddRange_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.AddRange(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L194">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_AddRange_" data-uid="GenericCollectionsExtension.List.SortedList`1.AddRange*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="GenericCollectionsExtension.List.SortedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a range of values to the collection in a sorted order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(IEnumerable&lt;T&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values to be added to the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_BinarySearch__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.BinarySearch(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L236">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_BinarySearch_" data-uid="GenericCollectionsExtension.List.SortedList`1.BinarySearch*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_BinarySearch__0_" data-uid="GenericCollectionsExtension.List.SortedList`1.BinarySearch(`0)">BinarySearch(T)</h4>
+  <div class="markdown level1 summary"><p>Performs a binary search on a sorted list to find a specific element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The element to search for in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of the element in the list if found, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Clear.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L201">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Clear_" data-uid="GenericCollectionsExtension.List.SortedList`1.Clear*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Clear" data-uid="GenericCollectionsExtension.List.SortedList`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Contains__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Contains(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L206">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Contains_" data-uid="GenericCollectionsExtension.List.SortedList`1.Contains*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Contains__0_" data-uid="GenericCollectionsExtension.List.SortedList`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L211">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_CopyTo_" data-uid="GenericCollectionsExtension.List.SortedList`1.CopyTo*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_CopyTo__0___System_Int32_" data-uid="GenericCollectionsExtension.List.SortedList`1.CopyTo(`0[],System.Int32)">CopyTo(T[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L216">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_GetEnumerator_" data-uid="GenericCollectionsExtension.List.SortedList`1.GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_GetEnumerator" data-uid="GenericCollectionsExtension.List.SortedList`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_IndexOf__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.IndexOf(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L226">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_IndexOf_" data-uid="GenericCollectionsExtension.List.SortedList`1.IndexOf*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_IndexOf__0_" data-uid="GenericCollectionsExtension.List.SortedList`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Remove__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Remove(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L276">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Remove_" data-uid="GenericCollectionsExtension.List.SortedList`1.Remove*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Remove__0_" data-uid="GenericCollectionsExtension.List.SortedList`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L281">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_RemoveAt_" data-uid="GenericCollectionsExtension.List.SortedList`1.RemoveAt*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_RemoveAt_System_Int32_" data-uid="GenericCollectionsExtension.List.SortedList`1.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_Reverse.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.Reverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L289">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_Reverse_" data-uid="GenericCollectionsExtension.List.SortedList`1.Reverse*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_Reverse" data-uid="GenericCollectionsExtension.List.SortedList`1.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>Reverses the order of the elements in the sorted list and changes the Criterion property accordingly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L221">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_List_SortedList_1_System_Collections_IEnumerable_GetEnumerator_" data-uid="GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_List_SortedList_1_System_Collections_IEnumerable_GetEnumerator" data-uid="GenericCollectionsExtension.List.SortedList`1.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GenericCollectionsExtension.List.ISortedList-1.html">ISortedList&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_List_SortedList_1.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.List.SortedList%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/List/SortedList/SortedList.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
