@@ -18,5 +18,6 @@ namespace GenericCollectionsExtension.Stack
         /// <param name="item">The element to add to the stack.</param>
         /// <param name="priority">The priority of the element.</param>
         void Push(T item, int priority);
+
     }
 }

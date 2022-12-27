@@ -24,6 +24,9 @@ namespace GenericCollectionsExtension.Stack
 
         public bool IsReadOnly => false;
 
+        /// <inheritdoc cref="IStack{T}.IsEmpty/>
+        public bool IsEmpty { get => Count == 0; }
+
         /// <summary>
         /// Constructs a new instance of the <see cref="PriorityStack{T}"/> class.
         /// </summary>
@@ -91,15 +94,40 @@ namespace GenericCollectionsExtension.Stack
             return _stack[Count - 1].Value;
         }
 
+        /// <inheritdoc cref="IStack{T}.TryPeek(out T)"/>
+        public bool TryPeek(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = _stack[Count - 1].Value;
+                return true;
+            }
+
+            result = default;
+            return false;
+        }
+
         /// <inheritdoc cref="IStack{T}.Pop"/>
         public T Pop()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _stack[Count - 1].Value;
             _stack.RemoveAt(Count - 1);
             return value;
+        }
+
+        /// <inheritdoc cref="IStack{T}.TryPop(out T)"/>
+        public bool TryPop(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = Pop();
+                return true;
+            }
+            result = default;
+            return false;
         }
 
         /// <inheritdoc cref="IPriorityStack{T}.Push(T, int)"/>
