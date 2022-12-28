@@ -198,11 +198,10 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         /// <param name="item">The element to remove from the priority queue.</param>
         /// <returns>True if the element is found and removed from the queue, false otherwise.</returns>
-        /// <exception cref="IndexOutOfRangeException">Thrown if the queue is empty.</exception>
         public bool Remove(T item)
         {
             if (IsEmpty)
-                throw new IndexOutOfRangeException();
+                return false;
 
             int index = ExistsItem(item);
 
