@@ -66,11 +66,17 @@ namespace GenericCollectionsExtension.Stack
         /// </summary>
         public void Clear()
         {
-            _stack.Clear();
+            if (!IsEmpty) 
+            { 
+                _stack.Clear();
+            }
         }
 
         public bool Contains(T item)
         {
+            if (IsEmpty)
+                return false;
+
             return ExistsItem(item) != -1;
         }
 
@@ -91,7 +97,12 @@ namespace GenericCollectionsExtension.Stack
         /// <inheritdoc cref="IStack{T}.Peek"/>
         public T Peek()
         {
-            return _stack[Count - 1].Value;
+            if (!IsEmpty)
+            {
+                return _stack[Count - 1].Value;
+            }
+
+            return default;
         }
 
         /// <inheritdoc cref="IStack{T}.TryPeek(out T)"/>
@@ -181,7 +192,7 @@ namespace GenericCollectionsExtension.Stack
         /// <returns>True if the item was successfully removed from the stack, or false if the item was not found in the stack.</returns>
         public bool Remove(T item)
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             int index = ExistsItem(item);
