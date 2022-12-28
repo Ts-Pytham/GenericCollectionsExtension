@@ -73,11 +73,19 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public void Clear()
         {
-            _queue.Clear();
+            if (!IsEmpty)
+            {
+                _queue.Clear();
+            }
         }
 
         public bool Contains(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
+
             return ExistsItem(item) != -1;
         }
 
@@ -89,7 +97,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Dequeue"/>
         public T Dequeue()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _queue[0].Value;
@@ -123,7 +131,7 @@ namespace GenericCollectionsExtension.Queue
                 throw new NegativeNumberException();
             }
             var value = new PriorityObject<T> { Value = item, Priority = priority };
-            if (_queue.Count == 0)
+            if (IsEmpty)
             {
                 _queue.Add(value);
             }
@@ -164,7 +172,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Peek"/>
         public T Peek()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _queue[0].Value;
@@ -193,7 +201,7 @@ namespace GenericCollectionsExtension.Queue
         /// <exception cref="IndexOutOfRangeException">Thrown if the queue is empty.</exception>
         public bool Remove(T item)
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             int index = ExistsItem(item);
