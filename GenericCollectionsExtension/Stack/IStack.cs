@@ -17,7 +17,7 @@ namespace GenericCollectionsExtension.Stack
         int Capacity { get; }
 
         /// <summary>
-        /// Gets a value indicating whether the priority stack is empty.
+        /// Gets a value indicating whether the stack is empty.
         /// </summary>
         bool IsEmpty { get; }
 

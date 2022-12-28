@@ -22,6 +22,9 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public int Count { get => _deque.Count; }
 
+        /// <inheritdoc cref="IQueue{T}.IsEmpty"/>
+        public bool IsEmpty { get => Count == 0; }
+
         /// <summary>
         /// Gets a value indicating whether the deque is read-only.
         /// This property always returns false.
@@ -107,6 +110,19 @@ namespace GenericCollectionsExtension.Queue
             return value;
         }
 
+        /// <inheritdoc cref="IQueue{T}.TryDequeue(out T)"/>
+        public bool TryDequeue(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = Dequeue();
+                return true;
+            }
+            result = default;
+
+            return false;
+        }
+
         /// <inheritdoc cref="IDeque{T}.PopLast"/>
         public T PopLast()
         {
@@ -134,6 +150,19 @@ namespace GenericCollectionsExtension.Queue
                 throw new IndexOutOfRangeException();
 
             return _deque[0];
+        }
+
+        /// <inheritdoc cref="IQueue{T}.TryPeek(out T)"/>
+        public bool TryPeek(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = _deque[0];
+                return true;
+            }
+
+            result = default;
+            return false;
         }
 
         /// <inheritdoc cref="IDeque{T}.PeekLast"/>
