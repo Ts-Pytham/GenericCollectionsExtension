@@ -32,10 +32,11 @@ namespace GenericCollectionsExtension.Stack
         /// <see cref="IStack{T}"/>, and if one is present, copies it to the result parameter. 
         /// The object is not removed from the <see cref="IStack{T}"/>.
         /// </summary>
-        /// <param name="result">If present, the object at the top of the <see cref="IStack{T}"/>; otherwise, the default value of <see cref="{T}"/>.</param>
+        /// <param name="result">If present, the object at the top of the <see cref="IStack{T}"/>; otherwise, the default value of `T`.</param>
         /// <returns><see langword="true"/> if there is an object at the top of the <see cref="IStack{T}"/>; <see langword="false"/> if the <see cref="IStack{T}"/> is empty.</returns>
         bool TryPeek(out T result);
 
+        /// <summary>
         /// Removes and returns the element at the top of the stack.
         /// </summary>
         /// <returns>The element at the top of the stack.</returns>
@@ -46,7 +47,7 @@ namespace GenericCollectionsExtension.Stack
         /// <see cref="IStack{T}"/>, and if one is present, copies it to the result parameter,
         /// and removes it from the <see cref="IStack{T}"/>.
         /// </summary>
-        /// <param name="result">If present, the object at the top of the <see cref="IStack{T}"/>; otherwise, the default value of <see cref="{T}"/>.</param>
+        /// <param name="result">If present, the object at the top of the <see cref="IStack{T}"/>; otherwise, the default value of `T`.</param>
         /// <returns><see langword="true"/> if there is an object at the top of the <see cref="IStack{T}"/>; <see langword="false"/> if the <see cref="IStack{T}"/> is empty.</returns>
         bool TryPop(out T result);
 

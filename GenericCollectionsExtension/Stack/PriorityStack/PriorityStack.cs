@@ -24,7 +24,7 @@ namespace GenericCollectionsExtension.Stack
 
         public bool IsReadOnly => false;
 
-        /// <inheritdoc cref="IStack{T}.IsEmpty/>
+        /// <inheritdoc cref="IStack{T}.IsEmpty"/>
         public bool IsEmpty { get => Count == 0; }
 
         /// <summary>

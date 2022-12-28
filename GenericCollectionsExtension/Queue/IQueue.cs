@@ -32,7 +32,7 @@ namespace GenericCollectionsExtension.Queue
         /// <see cref="IQueue{T}"/>, and if one is present, copies it to the result parameter,
         /// and removes it from the <see cref="IQueue{T}"/>.
         /// </summary>
-        /// <param name="result">If present, the object at the beginning of the <see cref="IQueue{T}"/>; otherwise, the default value of <see cref="{T}"/>.</param>
+        /// <param name="result">If present, the object at the beginning of the <see cref="IQueue{T}"/>; otherwise, the default value of `T`.</param>
         /// <returns><see langword="true"/> if the object is successfully removed; <see langword="false"/> if the <see cref="IQueue{T}"/> is empty.</returns>
         bool TryDequeue(out T result);
 
@@ -43,11 +43,11 @@ namespace GenericCollectionsExtension.Queue
         T Peek();
 
         /// <summary>
-        /// Returns a value that indicates whether there is an object at the beginning of the 
+        /// Returns a value that indicates whether there is an object
         /// <see cref="IQueue{T}"/>, and if one is present, copies it to the result parameter. 
         /// The object is not removed from the <see cref="IQueue{T}"/>.
         /// </summary>
-        /// <param name="result">If present, the object at the beginning of the <see cref="IQueue{T}"/>; otherwise, the default value of <see cref="{T}"/>.</param>
+        /// <param name="result">If present, the object at the beginning of the <see cref="IQueue{T}"/>; otherwise, the default value of `T`.</param>
         /// <returns><see langword="true"/> if there is an object at the beginning of the <see cref="IQueue{T}"/>; <see langword="false"/> if the <see cref="IQueue{T}"/> is empty.</returns>
         bool TryPeek(out T result);
     }
