@@ -79,7 +79,10 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public void Clear()
         {
-            _deque.Clear();
+            if (!IsEmpty)
+            {
+                _deque.Clear();
+            }
         }
 
         /// <summary>
@@ -91,6 +94,10 @@ namespace GenericCollectionsExtension.Queue
         /// </returns>
         public bool Contains(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
             return _deque.Contains(item);
         }
 
@@ -102,7 +109,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Dequeue"/>
         public T Dequeue()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _deque[0];
@@ -126,7 +133,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IDeque{T}.PopLast"/>
         public T PopLast()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _deque[Count - 1];
@@ -146,7 +153,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Peek"/>
         public T Peek()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _deque[0];
@@ -168,7 +175,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IDeque{T}.PeekLast"/>
         public T PeekLast()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _deque[Count - 1];
@@ -205,6 +212,11 @@ namespace GenericCollectionsExtension.Queue
         /// </returns>
         public bool Remove(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
+
             return _deque.Remove(item);
         }
 
