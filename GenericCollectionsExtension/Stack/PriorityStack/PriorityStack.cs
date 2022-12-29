@@ -176,7 +176,7 @@ namespace GenericCollectionsExtension.Stack
         {
             for (int index = 0; index != Count; ++index)
             {
-                if (item > _stack[index])
+                if (item < _stack[index])
                 {
                     _stack.Insert(index, item);
                     return;
