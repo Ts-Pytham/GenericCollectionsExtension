@@ -23,10 +23,17 @@ namespace GenericCollectionsExtension.Queue
 
         public bool IsReadOnly { get => false; }
 
+        /// <summary>
+        /// Gets the maximum number of elements the <see cref="PriorityQueue{T}"/> can hold.
+        /// If the value is -1, the <see cref="PriorityQueue{T}"/> can hold an unlimited number of elements.
+        /// </summary>
         public int Capacity 
         { 
             get;
         }
+
+        /// <inheritdoc cref="IQueue{T}.IsEmpty"/>
+        public bool IsEmpty { get => Count == 0; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PriorityQueue{T}"/> class with default capacity.
@@ -53,7 +60,7 @@ namespace GenericCollectionsExtension.Queue
         }
 
         /// <summary>
-        /// Adds an element to the queue with the default priority (0).
+        /// Adds an element to the <see cref="PriorityQueue{T}"/> with the default priority (0).
         /// </summary>
         /// <param name="item">The element to add to the queue.</param>
         public void Add(T item)
@@ -66,11 +73,19 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public void Clear()
         {
-            _queue.Clear();
+            if (!IsEmpty)
+            {
+                _queue.Clear();
+            }
         }
 
         public bool Contains(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
+
             return ExistsItem(item) != -1;
         }
 
@@ -82,12 +97,25 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Dequeue"/>
         public T Dequeue()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _queue[0].Value;
             _queue.RemoveAt(0);
             return value;
+        }
+
+        /// <inheritdoc cref="IQueue{T}.TryDequeue(out T)"/>
+        public bool TryDequeue(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = Dequeue();
+                return true;
+            }
+
+            result = default;
+            return false;
         }
 
         /// <inheritdoc cref="IPriorityQueue{T}.Enqueue(T, int)"/>
@@ -103,7 +131,7 @@ namespace GenericCollectionsExtension.Queue
                 throw new NegativeNumberException();
             }
             var value = new PriorityObject<T> { Value = item, Priority = priority };
-            if (_queue.Count == 0)
+            if (IsEmpty)
             {
                 _queue.Add(value);
             }
@@ -144,10 +172,23 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Peek"/>
         public T Peek()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _queue[0].Value;
+        }
+
+        /// <inheritdoc cref="IQueue{T}.TryPeek(out T)"/>
+        public bool TryPeek(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = Peek();
+                return true;
+            }
+
+            result = default;
+            return false;
         }
 
         /// <summary>
@@ -157,11 +198,10 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         /// <param name="item">The element to remove from the priority queue.</param>
         /// <returns>True if the element is found and removed from the queue, false otherwise.</returns>
-        /// <exception cref="IndexOutOfRangeException">Thrown if the queue is empty.</exception>
         public bool Remove(T item)
         {
-            if (Count == 0)
-                throw new IndexOutOfRangeException();
+            if (IsEmpty)
+                return false;
 
             int index = ExistsItem(item);
 
