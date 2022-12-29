@@ -13,7 +13,7 @@
 	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	  <RepositoryUrl>https://github.com/Ts-Pytham/GenericCollectionsExtension</RepositoryUrl>
 	  <Description>Generic Collections Extension is a class library and an extension of the data structures in .NET.</Description>
-	  <Version>1.2.0</Version>
+	  <Version>1.3.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
