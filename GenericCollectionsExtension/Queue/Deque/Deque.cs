@@ -22,6 +22,9 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public int Count { get => _deque.Count; }
 
+        /// <inheritdoc cref="IQueue{T}.IsEmpty"/>
+        public bool IsEmpty { get => Count == 0; }
+
         /// <summary>
         /// Gets a value indicating whether the deque is read-only.
         /// This property always returns false.
@@ -76,7 +79,10 @@ namespace GenericCollectionsExtension.Queue
         /// </summary>
         public void Clear()
         {
-            _deque.Clear();
+            if (!IsEmpty)
+            {
+                _deque.Clear();
+            }
         }
 
         /// <summary>
@@ -88,6 +94,10 @@ namespace GenericCollectionsExtension.Queue
         /// </returns>
         public bool Contains(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
             return _deque.Contains(item);
         }
 
@@ -99,7 +109,7 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Dequeue"/>
         public T Dequeue()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _deque[0];
@@ -107,10 +117,23 @@ namespace GenericCollectionsExtension.Queue
             return value;
         }
 
+        /// <inheritdoc cref="IQueue{T}.TryDequeue(out T)"/>
+        public bool TryDequeue(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = Dequeue();
+                return true;
+            }
+            result = default;
+
+            return false;
+        }
+
         /// <inheritdoc cref="IDeque{T}.PopLast"/>
         public T PopLast()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             var value = _deque[Count - 1];
@@ -130,16 +153,29 @@ namespace GenericCollectionsExtension.Queue
         /// <inheritdoc cref="IQueue{T}.Peek"/>
         public T Peek()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _deque[0];
         }
 
+        /// <inheritdoc cref="IQueue{T}.TryPeek(out T)"/>
+        public bool TryPeek(out T result)
+        {
+            if (!IsEmpty)
+            {
+                result = _deque[0];
+                return true;
+            }
+
+            result = default;
+            return false;
+        }
+
         /// <inheritdoc cref="IDeque{T}.PeekLast"/>
         public T PeekLast()
         {
-            if (Count == 0)
+            if (IsEmpty)
                 throw new IndexOutOfRangeException();
 
             return _deque[Count - 1];
@@ -176,6 +212,11 @@ namespace GenericCollectionsExtension.Queue
         /// </returns>
         public bool Remove(T item)
         {
+            if (IsEmpty)
+            {
+                return false;
+            }
+
             return _deque.Remove(item);
         }
 
