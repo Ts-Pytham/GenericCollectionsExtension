@@ -7,13 +7,13 @@ namespace GenericCollectionsExtension.Graph
     public class Edge<T, U>
         where U : IComparable<U>
     {
-        public T Suceessor { get; set; }
+        public T Sucessor { get; set; }
 
         public U Cost { get; set; }
 
-        public Edge(T suceessor, U cost)
+        public Edge(T sucessor, U cost)
         {
-            Suceessor = suceessor;
+            Sucessor = sucessor;
             Cost = cost;
         }
     }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace GenericCollectionsExtension.Graph
@@ -90,12 +91,41 @@ namespace GenericCollectionsExtension.Graph
 
         public bool HasEdge(TVertex v1, TVertex v2)
         {
-            throw new NotImplementedException();
+            if(HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null && !HasVertex(v2))
+            {
+                return false;
+            }
+
+            return vertex.Edges.Exists(x => x.Sucessor.Equals(v2));
+        }
+
+        public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Edge<TVertex, TEdge> edge)
+        {
+            edge = null;
+            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null && !HasVertex(v2))
+            {
+                return null;
+            }
+
+            edge = vertex.Edges.Find(x => x.Sucessor.Equals(v2));
+            return edge;
+        }
+
+        public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Vertex<TVertex, TEdge> vertex, out Edge<TVertex, TEdge> edge)
+        {
+            edge = null;
+            if (HasVertex(v1, out vertex) is null && !HasVertex(v2))
+            {
+                return null;
+            }
+
+            edge = vertex.Edges.Find(x => x.Sucessor.Equals(v2));
+            return edge;
         }
 
         public bool HasVertex(TVertex vertex)
         {
-            return Vertexs.Find(x => x.VertexName.Equals(vertex)) is not null;
+            return Vertexs.Exists(x => x.VertexName.Equals(vertex));
         }
 
         public Vertex<TVertex, TEdge> HasVertex(TVertex name, out Vertex<TVertex, TEdge> vertex)
@@ -107,12 +137,17 @@ namespace GenericCollectionsExtension.Graph
 
         public bool Remove(Vertex<TVertex, TEdge> item)
         {
-            throw new NotImplementedException();
+            return Vertexs.Remove(item);
         }
 
         public void RemoveEdge(TVertex v1, TVertex v2)
         {
-            throw new NotImplementedException();
+            if(HasEdge(v1, v2, out Vertex<TVertex, TEdge> vertex,out Edge<TVertex, TEdge> edge) is null)
+            {
+                throw new NonExistentVertexException();
+            }
+
+            vertex.Edges.Remove(edge);
         }
 
         public void RemoveVertex(TVertex vertex)
@@ -124,6 +159,26 @@ namespace GenericCollectionsExtension.Graph
         {
             return Vertexs.GetEnumerator();
 
+        }
+
+        public IEnumerable<Vertex<TVertex, TEdge>> Successors(TVertex v)
+        {
+            if(HasVertex(v, out Vertex<TVertex, TEdge> vertex) is null)
+            {
+                throw new NonExistentVertexException();
+            }
+
+            return vertex.Edges.Select(x => HasVertex(x.Sucessor, out _));
+        }
+
+        public IEnumerable<Vertex<TVertex, TEdge>> Predecessors(TVertex v)
+        {
+            if (!HasVertex(v))
+            {
+                throw new NonExistentVertexException();
+            }
+
+            return Vertexs.Where(x => x.Edges.Any(e => e.Sucessor.Equals(v)))
         }
     }
 }
