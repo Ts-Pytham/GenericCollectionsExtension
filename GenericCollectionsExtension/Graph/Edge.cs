@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericCollectionsExtension.Graph
 {
-    internal class Edge<T, U>
+    public class Edge<T, U>
         where U : IComparable<U>
     {
         public T Suceessor { get; set; }

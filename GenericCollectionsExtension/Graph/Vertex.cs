@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericCollectionsExtension.Graph
 {
-    internal class Vertex<T, U>
+    public class Vertex<T, U>
         where U : IComparable<U>
     {
         public T VertexName { get; set; }
