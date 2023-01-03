@@ -13,7 +13,12 @@ namespace GenericCollectionsExtension.Graph
         /// <summary>
         /// Gets or sets the vertex that the edge connects to.
         /// </summary>
-        public T Sucessor { get; set; }
+        public Vertex<T, U> Sucessor { get; set; }
+
+        /// <summary>
+        /// The predecessor of this vertex in the graph.
+        /// </summary>
+        public Vertex<T, U> Predecessor { get; set; }
 
         /// <summary>
         /// Gets or sets the cost of the edge.
@@ -21,13 +26,15 @@ namespace GenericCollectionsExtension.Graph
         public U Cost { get; set; }
 
         /// <summary>
-        /// Constructs a new instance of the edge with the specified sucessor and cost.
+        /// Initializes a new instance of the Edge class with the specified sucessor vertex, predecessor vertex, and cost.
         /// </summary>
-        /// <param name="sucessor">The vertex that the edge connects to.</param>
+        /// <param name="sucessor">The sucessor vertex of the edge.</param>
+        /// <param name="predecessor">The predecessor vertex of the edge.</param>
         /// <param name="cost">The cost of the edge.</param>
-        public Edge(T sucessor, U cost)
+        public Edge(Vertex<T, U> sucessor, Vertex<T, U> predecessor, U cost)
         {
             Sucessor = sucessor;
+            Predecessor = predecessor;
             Cost = cost;
         }
     }

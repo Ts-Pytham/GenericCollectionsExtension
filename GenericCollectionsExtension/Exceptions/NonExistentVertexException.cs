@@ -17,7 +17,7 @@ namespace GenericCollectionsExtension.Exceptions
         /// <summary>
         /// Constructs a new instance of the exception with a custom message.
         /// </summary>
-        /// <param name="message">The custom message to be included with the exception.
+        /// <param name="message">The custom message to be included with the exception.</param>
         public NonExistentVertexException(string message)
           : base(message) { }
     }

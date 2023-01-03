@@ -80,12 +80,12 @@ namespace GenericCollectionsExtension.Graph
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.AddEdge(TVertex, TVertex, TEdge)"/>
         public void AddEdge(TVertex v1, TVertex v2, TEdge edge)
         {
-            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null || !HasVertex(v2))
+            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null || HasVertex(v1, out Vertex<TVertex, TEdge> vertex2) is null)
             {
                 throw new NonExistentVertexException();
             }
 
-            vertex.AddEdge(new Edge<TVertex, TEdge>(v2, edge));
+            vertex.AddEdge(new Edge<TVertex, TEdge>(vertex, vertex2, edge));
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.AddVertex(TVertex)"/>
@@ -254,7 +254,7 @@ namespace GenericCollectionsExtension.Graph
                 throw new NonExistentVertexException();
             }
 
-            return vertex.Edges.Select(x => HasVertex(x.Sucessor, out _));
+            return vertex.Edges.Select(x => HasVertex(x.Sucessor.VertexName, out _));
         }
 
         /// <summary>
@@ -265,12 +265,12 @@ namespace GenericCollectionsExtension.Graph
         /// <exception cref="NonExistentVertexException">Thrown if the specified vertex does not exist in the graph.</exception>
         public IEnumerable<Vertex<TVertex, TEdge>> Predecessors(TVertex v)
         {
-            if (!HasVertex(v))
+            if (HasVertex(v, out Vertex<TVertex, TEdge> vertex) is null)
             {
                 throw new NonExistentVertexException();
             }
 
-            return Vertexs.Where(x => x.Edges.Any(e => e.Sucessor.Equals(v)));
+            return vertex.Edges.Select(x => HasVertex(x.Predecessor.VertexName, out _));
         }
     }
 }
