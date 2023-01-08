@@ -1,4 +1,5 @@
-﻿using GenericCollectionsExtension.List;
+﻿using GenericCollectionsExtension.Graph;
+using GenericCollectionsExtension.List;
 using GenericCollectionsExtension.Queue;
 using GenericCollectionsExtension.Stack;
 using GenericCollectionsExtension.Tree;
@@ -119,6 +120,22 @@ Console.WriteLine($"Count: {doubly.Count}\n");
 for(int i = 0; i != doubly.Count; i++)
 {
     Console.WriteLine(doubly[i]);
+}
+
+
+var graph = new Graph<char, int>
+{
+    new Vertex<char, int>('A'),
+    new Vertex<char, int>('B'),
+    new Vertex<char, int>('C')
+};
+
+graph.AddEdge('A', 'B', 10);
+graph.AddEdge('A', 'C', 5);
+
+foreach(var vertex in graph)
+{
+    Console.WriteLine($"{vertex.VertexName}: {string.Join(" ", graph.Predecessors(vertex.VertexName).Select(x => x.VertexName))}");
 }
 
 

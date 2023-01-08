@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/Ts-Pytham/GenericCollectionsExtension)
 [![](https://img.shields.io/badge/License-MIT-green)](https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt)
-[![](https://img.shields.io/badge/Nuget-1.3.0-blue)](https://www.nuget.org/packages/GenericCollectionsExtension/)
+[![](https://img.shields.io/badge/Nuget-1.4.0-blue)](https://www.nuget.org/packages/GenericCollectionsExtension/)
 [![PayPal-donate-button](https://img.shields.io/badge/Paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
 
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
@@ -17,6 +17,7 @@ New data structures were added that are derived from the traditional data struct
 * Binary Search Tree.
 * SortedList.
 * DoublyLinkedList.
+* Graph.
 
 ### Queue
 
@@ -238,11 +239,31 @@ Count InOrder: 12
 */
 ```
 
-## Possible future data structures
+### Graph
+A graph is a data structure that consists of a finite set of vertices (also known as nodes) and a set of edges connecting these vertices. The vertices represent the entities being modeled, and the edges represent the relationships between them. Graphs are often used to represent networks, such as social networks, communication networks, and transportation networks. They are also used in computer science to represent data structures such as trees and maps.
 
-More data structures are expected to be added in the future, among them are:
 
-* Graphs.
-* Red-Black Tree.
-* More...
+**Example in code:**
 
+```C#
+var graph = new Graph<char, int>
+{
+    new Vertex<char, int>('A'),
+    new Vertex<char, int>('B'),
+    new Vertex<char, int>('C')
+};
+
+graph.AddEdge('A', 'B', 10);
+graph.AddEdge('A', 'C', 5);
+
+foreach(var vertex in graph)
+{
+    Console.WriteLine($"{vertex.VertexName}: {string.Join(" ", graph.Successors(vertex.VertexName).Select(x => x.VertexName))}");
+}
+
+/*
+A: B C
+B:
+C:
+*/
+```

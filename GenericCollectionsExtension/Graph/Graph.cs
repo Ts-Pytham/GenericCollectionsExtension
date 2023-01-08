@@ -259,7 +259,8 @@ namespace GenericCollectionsExtension.Graph
                 throw new NonExistentVertexException();
             }
 
-            return vertex.Edges.Select(x => HasVertex(x.Sucessor.VertexName, out _));
+            return vertex.Edges.Where(x => !x.Sucessor.VertexName.Equals(v))
+                               .Select(x => HasVertex(x.Sucessor.VertexName, out _));
         }
 
         /// <summary>
@@ -275,7 +276,8 @@ namespace GenericCollectionsExtension.Graph
                 throw new NonExistentVertexException();
             }
 
-            return vertex.Edges.Select(x => HasVertex(x.Predecessor.VertexName, out _));
+            return vertex.Edges.Where(x => !x.Predecessor.VertexName.Equals(v))
+                               .Select(x => HasVertex(x.Predecessor.VertexName, out _));
         }
     }
 }
