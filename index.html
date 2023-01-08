@@ -64,12 +64,12 @@
 
 <p><a href="https://github.com/Ts-Pytham/GenericCollectionsExtension"><img src="https://img.shields.io/badge/.NET%20Standard-2.0-red" alt=""></a>
 <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/LICENSE.txt"><img src="https://img.shields.io/badge/License-MIT-green" alt=""></a>
-<a href="https://www.nuget.org/packages/GenericCollectionsExtension/"><img src="https://img.shields.io/badge/Nuget-1.2.0-blue" alt=""></a>
+<a href="https://www.nuget.org/packages/GenericCollectionsExtension/"><img src="https://img.shields.io/badge/Nuget-1.4.0-blue" alt=""></a>
 <a href="https://paypal.me/johansanchezdl?locale.x=es_XC"><img src="https://img.shields.io/badge/Paypal-donate-orange" alt="PayPal-donate-button"></a></p>
 <p><strong>Generic Collections Extension</strong> is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list.
 These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.</p>
-<h2>Data structure</h2>
-New data structures were added that are derived from the traditional data structures, these are:
+<h2 id="data-structure">Data structure</h2>
+<p>New data structures were added that are derived from the traditional data structures, these are:</p>
 <ul>
 <li>Deque.</li>
 <li>PriorityQueue.</li>
@@ -77,13 +77,14 @@ New data structures were added that are derived from the traditional data struct
 <li>Binary Search Tree.</li>
 <li>SortedList.</li>
 <li>DoublyLinkedList.</li>
+<li>Graph.</li>
 </ul>
-<h3>Queue</h3>
+<h3 id="queue">Queue</h3>
 <p>A queue is a data structure that stores and retrieves items in a first-in-first-out (FIFO) manner.
 This means that the first item that is added to the queue is also the first item that is removed from the queue.
 Queues are useful for storing and managing data in applications where items need to be processed in the order in which they are received.
 For example, a queue could be used to hold tasks that need to be executed in the order in which they are received, or to hold messages that need to be sent in the order in which they were received.</p>
-<h4>Queue Type:</h4>
+<h4 id="queue-type">Queue Type:</h4>
 <ul>
 <li>Deque: Is a double-ended queue, which is a type of data structure that allows items to be added and removed from either end of the queue.
 This means that items can be added to the front or back of the queue, and can also be removed from the front or back of the queue.</li>
@@ -141,7 +142,7 @@ Contains: 51, False
 
 */
 </code></pre>
-<h3>Stack</h3>
+<h3 id="stack">Stack</h3>
 <p>A stack is a data structure that stores and retrieves items in a last-in-first-out (LIFO) manner.
 This means that the last item that is added to the stack is also the first item that is removed from the stack.
 Stacks are useful for storing and managing data in applications where items need to be processed in the reverse order in which they are received.</p>
@@ -175,7 +176,7 @@ Value: 5
 4
 */
 </code></pre>
-<h3>List</h3>
+<h3 id="list">List</h3>
 <p>Is a data structure that stores a collection of items in a specific order. Lists allow items to be added, removed, and accessed by their position in the list. They are often used to store collections of data that need to be organized and accessed in a specific order.</p>
 <ul>
 <li><p>Sorted List: Is a data structure that is similar to a regular list, but maintains its items in a sorted order. This means that when items are added to the list, they are automatically placed in the correct position based on their sorting order. Sorted lists are useful in situations where it is necessary to access items in a specific order, such as in applications that require efficient search and retrieval of data.</p>
@@ -238,10 +239,10 @@ total items: 7
 495
 */
 </code></pre>
-<h5>NOTE</h5>
+<h5 id="note">NOTE</h5>
 <p>This implementation is different from the one implemented in System.Collections.Generic because this implementation does not use a key, and any class to be used must inherit the IComparable interface. Very important to look at this implementation and documentation.</p>
-<h3> Tree </h3>
-Is a data structure consisting of linked nodes. Nodes can have one or more children and each node can have a relationship with other nodes in the tree. 
+<h3 id="tree">Tree</h3>
+<p>Is a data structure consisting of linked nodes. Nodes can have one or more children and each node can have a relationship with other nodes in the tree.</p>
 <ul>
 <li>Binary search tree: Is a type of data tree in which each node has a value that is smaller than all the values in its left subtree and larger than all the values in its right subtree. This allows for fast and efficient search in the tree.</li>
 </ul>
@@ -278,13 +279,30 @@ Count InOrder: 12
 15
 */
 </code></pre>
-<h2>Possible future data structures</h2>
-<p>More data structures are expected to be added in the future, among them are:</p>
-<ul>
-<li>Graphs.</li>
-<li>Red-Black Tree.</li>
-<li>More...</li>
-</ul>
+<h3 id="graph">Graph</h3>
+<p>A graph is a data structure that consists of a finite set of vertices (also known as nodes) and a set of edges connecting these vertices. The vertices represent the entities being modeled, and the edges represent the relationships between them. Graphs are often used to represent networks, such as social networks, communication networks, and transportation networks. They are also used in computer science to represent data structures such as trees and maps.</p>
+<p><strong>Example in code:</strong></p>
+<pre><code class="lang-C#">var graph = new Graph&lt;char, int&gt;
+{
+    new Vertex&lt;char, int&gt;('A'),
+    new Vertex&lt;char, int&gt;('B'),
+    new Vertex&lt;char, int&gt;('C')
+};
+
+graph.AddEdge('A', 'B', 10);
+graph.AddEdge('A', 'C', 5);
+
+foreach(var vertex in graph)
+{
+    Console.WriteLine($&quot;{vertex.VertexName}: {string.Join(&quot; &quot;, graph.Successors(vertex.VertexName).Select(x =&gt; x.VertexName))}&quot;);
+}
+
+/*
+A: B C
+B:
+C:
+*/
+</code></pre>
 </article>
           </div>
           

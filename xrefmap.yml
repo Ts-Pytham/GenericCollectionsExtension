@@ -7,6 +7,31 @@ references:
   commentId: N:GenericCollectionsExtension.Exceptions
   fullName: GenericCollectionsExtension.Exceptions
   nameWithType: GenericCollectionsExtension.Exceptions
+- uid: GenericCollectionsExtension.Exceptions.ExistentVertexException
+  name: ExistentVertexException
+  href: api/GenericCollectionsExtension.Exceptions.ExistentVertexException.html
+  commentId: T:GenericCollectionsExtension.Exceptions.ExistentVertexException
+  fullName: GenericCollectionsExtension.Exceptions.ExistentVertexException
+  nameWithType: ExistentVertexException
+- uid: GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor
+  name: ExistentVertexException()
+  href: api/GenericCollectionsExtension.Exceptions.ExistentVertexException.html#GenericCollectionsExtension_Exceptions_ExistentVertexException__ctor
+  commentId: M:GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor
+  fullName: GenericCollectionsExtension.Exceptions.ExistentVertexException.ExistentVertexException()
+  nameWithType: ExistentVertexException.ExistentVertexException()
+- uid: GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor(System.String)
+  name: ExistentVertexException(String)
+  href: api/GenericCollectionsExtension.Exceptions.ExistentVertexException.html#GenericCollectionsExtension_Exceptions_ExistentVertexException__ctor_System_String_
+  commentId: M:GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor(System.String)
+  fullName: GenericCollectionsExtension.Exceptions.ExistentVertexException.ExistentVertexException(System.String)
+  nameWithType: ExistentVertexException.ExistentVertexException(String)
+- uid: GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor*
+  name: ExistentVertexException
+  href: api/GenericCollectionsExtension.Exceptions.ExistentVertexException.html#GenericCollectionsExtension_Exceptions_ExistentVertexException__ctor_
+  commentId: Overload:GenericCollectionsExtension.Exceptions.ExistentVertexException.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Exceptions.ExistentVertexException.ExistentVertexException
+  nameWithType: ExistentVertexException.ExistentVertexException
 - uid: GenericCollectionsExtension.Exceptions.NegativeNumberException
   name: NegativeNumberException
   href: api/GenericCollectionsExtension.Exceptions.NegativeNumberException.html
@@ -32,6 +57,730 @@ references:
   isSpec: "True"
   fullName: GenericCollectionsExtension.Exceptions.NegativeNumberException.NegativeNumberException
   nameWithType: NegativeNumberException.NegativeNumberException
+- uid: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+  name: NonExistentVertexException
+  href: api/GenericCollectionsExtension.Exceptions.NonExistentVertexException.html
+  commentId: T:GenericCollectionsExtension.Exceptions.NonExistentVertexException
+  fullName: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+  nameWithType: NonExistentVertexException
+- uid: GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor
+  name: NonExistentVertexException()
+  href: api/GenericCollectionsExtension.Exceptions.NonExistentVertexException.html#GenericCollectionsExtension_Exceptions_NonExistentVertexException__ctor
+  commentId: M:GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor
+  fullName: GenericCollectionsExtension.Exceptions.NonExistentVertexException.NonExistentVertexException()
+  nameWithType: NonExistentVertexException.NonExistentVertexException()
+- uid: GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor(System.String)
+  name: NonExistentVertexException(String)
+  href: api/GenericCollectionsExtension.Exceptions.NonExistentVertexException.html#GenericCollectionsExtension_Exceptions_NonExistentVertexException__ctor_System_String_
+  commentId: M:GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor(System.String)
+  fullName: GenericCollectionsExtension.Exceptions.NonExistentVertexException.NonExistentVertexException(System.String)
+  nameWithType: NonExistentVertexException.NonExistentVertexException(String)
+- uid: GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor*
+  name: NonExistentVertexException
+  href: api/GenericCollectionsExtension.Exceptions.NonExistentVertexException.html#GenericCollectionsExtension_Exceptions_NonExistentVertexException__ctor_
+  commentId: Overload:GenericCollectionsExtension.Exceptions.NonExistentVertexException.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Exceptions.NonExistentVertexException.NonExistentVertexException
+  nameWithType: NonExistentVertexException.NonExistentVertexException
+- uid: GenericCollectionsExtension.Graph
+  name: GenericCollectionsExtension.Graph
+  href: api/GenericCollectionsExtension.Graph.html
+  commentId: N:GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+- uid: GenericCollectionsExtension.Graph.Edge`2
+  name: Edge<T, U>
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html
+  commentId: T:GenericCollectionsExtension.Graph.Edge`2
+  name.vb: Edge(Of T, U)
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U)
+  nameWithType: Edge<T, U>
+  nameWithType.vb: Edge(Of T, U)
+- uid: GenericCollectionsExtension.Graph.Edge`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)
+  name: Edge(Vertex<T, U>, Vertex<T, U>, U)
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2__ctor_GenericCollectionsExtension_Graph_Vertex__0__1__GenericCollectionsExtension_Graph_Vertex__0__1___1_
+  commentId: M:GenericCollectionsExtension.Graph.Edge`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)
+  name.vb: Edge(Vertex(Of T, U), Vertex(Of T, U), U)
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Edge(GenericCollectionsExtension.Graph.Vertex<T, U>, GenericCollectionsExtension.Graph.Vertex<T, U>, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Edge(GenericCollectionsExtension.Graph.Vertex(Of T, U), GenericCollectionsExtension.Graph.Vertex(Of T, U), U)
+  nameWithType: Edge<T, U>.Edge(Vertex<T, U>, Vertex<T, U>, U)
+  nameWithType.vb: Edge(Of T, U).Edge(Vertex(Of T, U), Vertex(Of T, U), U)
+- uid: GenericCollectionsExtension.Graph.Edge`2.#ctor*
+  name: Edge
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2__ctor_
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Edge
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Edge
+  nameWithType: Edge<T, U>.Edge
+  nameWithType.vb: Edge(Of T, U).Edge
+- uid: GenericCollectionsExtension.Graph.Edge`2.Cost
+  name: Cost
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Cost
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Cost
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Cost
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Cost
+  nameWithType: Edge<T, U>.Cost
+  nameWithType.vb: Edge(Of T, U).Cost
+- uid: GenericCollectionsExtension.Graph.Edge`2.Cost*
+  name: Cost
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Cost_
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Cost
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Cost
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Cost
+  nameWithType: Edge<T, U>.Cost
+  nameWithType.vb: Edge(Of T, U).Cost
+- uid: GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  name: Predecessor
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Predecessor
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Predecessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Predecessor
+  nameWithType: Edge<T, U>.Predecessor
+  nameWithType.vb: Edge(Of T, U).Predecessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Predecessor*
+  name: Predecessor
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Predecessor_
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Predecessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Predecessor
+  nameWithType: Edge<T, U>.Predecessor
+  nameWithType.vb: Edge(Of T, U).Predecessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  name: Sucessor
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Sucessor
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Sucessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Sucessor
+  nameWithType: Edge<T, U>.Sucessor
+  nameWithType.vb: Edge(Of T, U).Sucessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Sucessor*
+  name: Sucessor
+  href: api/GenericCollectionsExtension.Graph.Edge-2.html#GenericCollectionsExtension_Graph_Edge_2_Sucessor_
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Sucessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Sucessor
+  nameWithType: Edge<T, U>.Sucessor
+  nameWithType.vb: Edge(Of T, U).Sucessor
+- uid: GenericCollectionsExtension.Graph.Graph`2
+  name: Graph<TVertex, TEdge>
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html
+  commentId: T:GenericCollectionsExtension.Graph.Graph`2
+  name.vb: Graph(Of TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge)
+  nameWithType: Graph<TVertex, TEdge>
+  nameWithType.vb: Graph(Of TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor
+  name: Graph()
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2__ctor
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph()
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph()
+  nameWithType: Graph<TVertex, TEdge>.Graph()
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph()
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name: Graph(Vertex<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2__ctor_GenericCollectionsExtension_Graph_Vertex__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name.vb: Graph(Vertex(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.Graph(Vertex<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})
+  name: Graph(IEnumerable<Vertex<TVertex, TEdge>>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2__ctor_System_Collections_Generic_IEnumerable_GenericCollectionsExtension_Graph_Vertex__0__1___
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})
+  name.vb: Graph(IEnumerable(Of Vertex(Of TVertex, TEdge)))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph(System.Collections.Generic.IEnumerable<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph(System.Collections.Generic.IEnumerable(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)))
+  nameWithType: Graph<TVertex, TEdge>.Graph(IEnumerable<Vertex<TVertex, TEdge>>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph(IEnumerable(Of Vertex(Of TVertex, TEdge)))
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor*
+  name: Graph
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2__ctor_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph
+  nameWithType: Graph<TVertex, TEdge>.Graph
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph
+- uid: GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name: Add(Vertex<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Add_GenericCollectionsExtension_Graph_Vertex__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name.vb: Add(Vertex(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Add(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Add(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.Add(Vertex<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Add(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.Add*
+  name: Add
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Add_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Add
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Add
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Add
+  nameWithType: Graph<TVertex, TEdge>.Add
+  nameWithType.vb: Graph(Of TVertex, TEdge).Add
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)
+  name: AddEdge(TVertex, TVertex, TEdge)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_AddEdge__0__0__1_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: Graph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddEdge*
+  name: AddEdge
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_AddEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.AddEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddEdge
+  nameWithType: Graph<TVertex, TEdge>.AddEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddEdge
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)
+  name: AddVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_AddVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.AddVertex(TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddVertex*
+  name: AddVertex
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_AddVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.AddVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddVertex
+  nameWithType: Graph<TVertex, TEdge>.AddVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddVertex
+- uid: GenericCollectionsExtension.Graph.Graph`2.Clear
+  name: Clear()
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Clear
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Clear
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Clear()
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Clear()
+  nameWithType: Graph<TVertex, TEdge>.Clear()
+  nameWithType.vb: Graph(Of TVertex, TEdge).Clear()
+- uid: GenericCollectionsExtension.Graph.Graph`2.Clear*
+  name: Clear
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Clear_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Clear
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Clear
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Clear
+  nameWithType: Graph<TVertex, TEdge>.Clear
+  nameWithType.vb: Graph(Of TVertex, TEdge).Clear
+- uid: GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name: Contains(Vertex<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Contains_GenericCollectionsExtension_Graph_Vertex__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name.vb: Contains(Vertex(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Contains(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Contains(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.Contains(Vertex<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Contains(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.Contains*
+  name: Contains
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Contains_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Contains
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Contains
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Contains
+  nameWithType: Graph<TVertex, TEdge>.Contains
+  nameWithType.vb: Graph(Of TVertex, TEdge).Contains
+- uid: GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  name: CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_CopyTo_GenericCollectionsExtension_Graph_Vertex__0__1____System_Int32_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  name.vb: CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.CopyTo(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>[], System.Int32)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).CopyTo(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)(), System.Int32)
+  nameWithType: Graph<TVertex, TEdge>.CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  nameWithType.vb: Graph(Of TVertex, TEdge).CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+- uid: GenericCollectionsExtension.Graph.Graph`2.CopyTo*
+  name: CopyTo
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_CopyTo_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.CopyTo
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.CopyTo
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).CopyTo
+  nameWithType: Graph<TVertex, TEdge>.CopyTo
+  nameWithType.vb: Graph(Of TVertex, TEdge).CopyTo
+- uid: GenericCollectionsExtension.Graph.Graph`2.Count
+  name: Count
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Count
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.Count
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Count
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Count
+  nameWithType: Graph<TVertex, TEdge>.Count
+  nameWithType.vb: Graph(Of TVertex, TEdge).Count
+- uid: GenericCollectionsExtension.Graph.Graph`2.Count*
+  name: Count
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Count_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Count
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Count
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Count
+  nameWithType: Graph<TVertex, TEdge>.Count
+  nameWithType.vb: Graph(Of TVertex, TEdge).Count
+- uid: GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).GetEnumerator()
+  nameWithType: Graph<TVertex, TEdge>.GetEnumerator()
+  nameWithType.vb: Graph(Of TVertex, TEdge).GetEnumerator()
+- uid: GenericCollectionsExtension.Graph.Graph`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).GetEnumerator
+  nameWithType: Graph<TVertex, TEdge>.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).GetEnumerator
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)
+  name: HasEdge(TVertex, TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  name: HasEdge(TVertex, TVertex, out Edge<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Edge__0__1___
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  name.vb: HasEdge(TVertex, TVertex, ByRef Edge(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out GenericCollectionsExtension.Graph.Edge<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef GenericCollectionsExtension.Graph.Edge(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out Edge<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef Edge(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  name: HasEdge(TVertex, TVertex, out Vertex<TVertex, TEdge>, out Vertex<TVertex, TEdge>, out Edge<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Edge__0__1___
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  name.vb: HasEdge(TVertex, TVertex, ByRef Vertex(Of TVertex, TEdge), ByRef Vertex(Of TVertex, TEdge), ByRef Edge(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>, out GenericCollectionsExtension.Graph.Edge<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge), ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge), ByRef GenericCollectionsExtension.Graph.Edge(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out Vertex<TVertex, TEdge>, out Vertex<TVertex, TEdge>, out Edge<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef Vertex(Of TVertex, TEdge), ByRef Vertex(Of TVertex, TEdge), ByRef Edge(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge*
+  name: HasEdge
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.HasEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge
+  nameWithType: Graph<TVertex, TEdge>.HasEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)
+  name: HasVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.HasVertex(TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  name: HasVertex(TVertex, out Vertex<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_GenericCollectionsExtension_Graph_Vertex__0__1___
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  name.vb: HasVertex(TVertex, ByRef Vertex(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex(TVertex, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex(TVertex, ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.HasVertex(TVertex, out Vertex<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex(TVertex, ByRef Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex*
+  name: HasVertex
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_HasVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.HasVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex
+  nameWithType: Graph<TVertex, TEdge>.HasVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex
+- uid: GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_IsReadOnly
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).IsReadOnly
+  nameWithType: Graph<TVertex, TEdge>.IsReadOnly
+  nameWithType.vb: Graph(Of TVertex, TEdge).IsReadOnly
+- uid: GenericCollectionsExtension.Graph.Graph`2.IsReadOnly*
+  name: IsReadOnly
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_IsReadOnly_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).IsReadOnly
+  nameWithType: Graph<TVertex, TEdge>.IsReadOnly
+  nameWithType.vb: Graph(Of TVertex, TEdge).IsReadOnly
+- uid: GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)
+  name: Predecessors(TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Predecessors__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Predecessors(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Predecessors(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.Predecessors(TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Predecessors(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.Predecessors*
+  name: Predecessors
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Predecessors_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Predecessors
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Predecessors
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Predecessors
+  nameWithType: Graph<TVertex, TEdge>.Predecessors
+  nameWithType.vb: Graph(Of TVertex, TEdge).Predecessors
+- uid: GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name: Remove(Vertex<TVertex, TEdge>)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Remove_GenericCollectionsExtension_Graph_Vertex__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name.vb: Remove(Vertex(Of TVertex, TEdge))
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Remove(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Remove(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  nameWithType: Graph<TVertex, TEdge>.Remove(Vertex<TVertex, TEdge>)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Remove(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.Remove*
+  name: Remove
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Remove_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Remove
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Remove
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Remove
+  nameWithType: Graph<TVertex, TEdge>.Remove
+  nameWithType.vb: Graph(Of TVertex, TEdge).Remove
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)
+  name: RemoveEdge(TVertex, TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_RemoveEdge__0__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  nameWithType: Graph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveEdge*
+  name: RemoveEdge
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_RemoveEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.RemoveEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveEdge
+  nameWithType: Graph<TVertex, TEdge>.RemoveEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveEdge
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)
+  name: RemoveVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_RemoveVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.RemoveVertex(TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveVertex*
+  name: RemoveVertex
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_RemoveVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.RemoveVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveVertex
+  nameWithType: Graph<TVertex, TEdge>.RemoveVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveVertex
+- uid: GenericCollectionsExtension.Graph.Graph`2.Successors(`0)
+  name: Successors(TVertex)
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Successors__0_
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Successors(`0)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Successors(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Successors(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.Successors(TVertex)
+  nameWithType.vb: Graph(Of TVertex, TEdge).Successors(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.Successors*
+  name: Successors
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Successors_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Successors
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Successors
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Successors
+  nameWithType: Graph<TVertex, TEdge>.Successors
+  nameWithType.vb: Graph(Of TVertex, TEdge).Successors
+- uid: GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Graph<TVertex, TEdge>.IEnumerable.GetEnumerator()
+  nameWithType.vb: Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Graph<TVertex, TEdge>.IEnumerable.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  name: Vertexs
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Vertexs
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Vertexs
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Vertexs
+  nameWithType: Graph<TVertex, TEdge>.Vertexs
+  nameWithType.vb: Graph(Of TVertex, TEdge).Vertexs
+- uid: GenericCollectionsExtension.Graph.Graph`2.Vertexs*
+  name: Vertexs
+  href: api/GenericCollectionsExtension.Graph.Graph-2.html#GenericCollectionsExtension_Graph_Graph_2_Vertexs_
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Vertexs
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Vertexs
+  nameWithType: Graph<TVertex, TEdge>.Vertexs
+  nameWithType.vb: Graph(Of TVertex, TEdge).Vertexs
+- uid: GenericCollectionsExtension.Graph.IGraph`2
+  name: IGraph<TVertex, TEdge>
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html
+  commentId: T:GenericCollectionsExtension.Graph.IGraph`2
+  name.vb: IGraph(Of TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge)
+  nameWithType: IGraph<TVertex, TEdge>
+  nameWithType.vb: IGraph(Of TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  name: AddEdge(TVertex, TVertex, TEdge)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_AddEdge__0__0__1_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge*
+  name: AddEdge
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_AddEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.AddEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  name: AddVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_AddVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex*
+  name: AddVertex
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_AddVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.AddVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  name: HasEdge(TVertex, TVertex)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_HasEdge__0__0_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge*
+  name: HasEdge
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_HasEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.HasEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  name: HasVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_HasVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex*
+  name: HasVertex
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_HasVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.HasVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  name: RemoveEdge(TVertex, TVertex)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_RemoveEdge__0__0_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge*
+  name: RemoveEdge
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_RemoveEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  name: RemoveVertex(TVertex)
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_RemoveVertex__0_
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex*
+  name: RemoveVertex
+  href: api/GenericCollectionsExtension.Graph.IGraph-2.html#GenericCollectionsExtension_Graph_IGraph_2_RemoveVertex_
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex
+- uid: GenericCollectionsExtension.Graph.Vertex`2
+  name: Vertex<T, U>
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html
+  commentId: T:GenericCollectionsExtension.Graph.Vertex`2
+  name.vb: Vertex(Of T, U)
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U)
+  nameWithType: Vertex<T, U>
+  nameWithType.vb: Vertex(Of T, U)
+- uid: GenericCollectionsExtension.Graph.Vertex`2.#ctor(`0)
+  name: Vertex(T)
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2__ctor__0_
+  commentId: M:GenericCollectionsExtension.Graph.Vertex`2.#ctor(`0)
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Vertex(T)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Vertex(T)
+  nameWithType: Vertex<T, U>.Vertex(T)
+  nameWithType.vb: Vertex(Of T, U).Vertex(T)
+- uid: GenericCollectionsExtension.Graph.Vertex`2.#ctor*
+  name: Vertex
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2__ctor_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.#ctor
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Vertex
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Vertex
+  nameWithType: Vertex<T, U>.Vertex
+  nameWithType.vb: Vertex(Of T, U).Vertex
+- uid: GenericCollectionsExtension.Graph.Vertex`2.AddEdge(GenericCollectionsExtension.Graph.Edge{`0,`1})
+  name: AddEdge(Edge<T, U>)
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_AddEdge_GenericCollectionsExtension_Graph_Edge__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Vertex`2.AddEdge(GenericCollectionsExtension.Graph.Edge{`0,`1})
+  name.vb: AddEdge(Edge(Of T, U))
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.AddEdge(GenericCollectionsExtension.Graph.Edge<T, U>)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).AddEdge(GenericCollectionsExtension.Graph.Edge(Of T, U))
+  nameWithType: Vertex<T, U>.AddEdge(Edge<T, U>)
+  nameWithType.vb: Vertex(Of T, U).AddEdge(Edge(Of T, U))
+- uid: GenericCollectionsExtension.Graph.Vertex`2.AddEdge*
+  name: AddEdge
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_AddEdge_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.AddEdge
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.AddEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).AddEdge
+  nameWithType: Vertex<T, U>.AddEdge
+  nameWithType.vb: Vertex(Of T, U).AddEdge
+- uid: GenericCollectionsExtension.Graph.Vertex`2.Edges
+  name: Edges
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_Edges
+  commentId: P:GenericCollectionsExtension.Graph.Vertex`2.Edges
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Edges
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Edges
+  nameWithType: Vertex<T, U>.Edges
+  nameWithType.vb: Vertex(Of T, U).Edges
+- uid: GenericCollectionsExtension.Graph.Vertex`2.Edges*
+  name: Edges
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_Edges_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.Edges
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Edges
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Edges
+  nameWithType: Vertex<T, U>.Edges
+  nameWithType.vb: Vertex(Of T, U).Edges
+- uid: GenericCollectionsExtension.Graph.Vertex`2.Equals(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name: Equals(Vertex<T, U>)
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_Equals_GenericCollectionsExtension_Graph_Vertex__0__1__
+  commentId: M:GenericCollectionsExtension.Graph.Vertex`2.Equals(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  name.vb: Equals(Vertex(Of T, U))
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Equals(GenericCollectionsExtension.Graph.Vertex<T, U>)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Equals(GenericCollectionsExtension.Graph.Vertex(Of T, U))
+  nameWithType: Vertex<T, U>.Equals(Vertex<T, U>)
+  nameWithType.vb: Vertex(Of T, U).Equals(Vertex(Of T, U))
+- uid: GenericCollectionsExtension.Graph.Vertex`2.Equals(System.Object)
+  name: Equals(Object)
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_Equals_System_Object_
+  commentId: M:GenericCollectionsExtension.Graph.Vertex`2.Equals(System.Object)
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Equals(System.Object)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Equals(System.Object)
+  nameWithType: Vertex<T, U>.Equals(Object)
+  nameWithType.vb: Vertex(Of T, U).Equals(Object)
+- uid: GenericCollectionsExtension.Graph.Vertex`2.Equals*
+  name: Equals
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_Equals_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.Equals
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.Equals
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).Equals
+  nameWithType: Vertex<T, U>.Equals
+  nameWithType.vb: Vertex(Of T, U).Equals
+- uid: GenericCollectionsExtension.Graph.Vertex`2.GetHashCode
+  name: GetHashCode()
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_GetHashCode
+  commentId: M:GenericCollectionsExtension.Graph.Vertex`2.GetHashCode
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.GetHashCode()
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).GetHashCode()
+  nameWithType: Vertex<T, U>.GetHashCode()
+  nameWithType.vb: Vertex(Of T, U).GetHashCode()
+- uid: GenericCollectionsExtension.Graph.Vertex`2.GetHashCode*
+  name: GetHashCode
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_GetHashCode_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.GetHashCode
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.GetHashCode
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).GetHashCode
+  nameWithType: Vertex<T, U>.GetHashCode
+  nameWithType.vb: Vertex(Of T, U).GetHashCode
+- uid: GenericCollectionsExtension.Graph.Vertex`2.VertexName
+  name: VertexName
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_VertexName
+  commentId: P:GenericCollectionsExtension.Graph.Vertex`2.VertexName
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.VertexName
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).VertexName
+  nameWithType: Vertex<T, U>.VertexName
+  nameWithType.vb: Vertex(Of T, U).VertexName
+- uid: GenericCollectionsExtension.Graph.Vertex`2.VertexName*
+  name: VertexName
+  href: api/GenericCollectionsExtension.Graph.Vertex-2.html#GenericCollectionsExtension_Graph_Vertex_2_VertexName_
+  commentId: Overload:GenericCollectionsExtension.Graph.Vertex`2.VertexName
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>.VertexName
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U).VertexName
+  nameWithType: Vertex<T, U>.VertexName
+  nameWithType.vb: Vertex(Of T, U).VertexName
 - uid: GenericCollectionsExtension.List
   name: GenericCollectionsExtension.List
   href: api/GenericCollectionsExtension.List.html
@@ -1002,6 +1751,23 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).GetEnumerator
   nameWithType: Deque<T>.GetEnumerator
   nameWithType.vb: Deque(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Queue.Deque`1.IsEmpty
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_IsEmpty
+  commentId: P:GenericCollectionsExtension.Queue.Deque`1.IsEmpty
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).IsEmpty
+  nameWithType: Deque<T>.IsEmpty
+  nameWithType.vb: Deque(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Queue.Deque`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).IsEmpty
+  nameWithType: Deque<T>.IsEmpty
+  nameWithType.vb: Deque(Of T).IsEmpty
 - uid: GenericCollectionsExtension.Queue.Deque`1.IsReadOnly
   name: IsReadOnly
   href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_IsReadOnly
@@ -1140,6 +1906,42 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).System.Collections.IEnumerable.GetEnumerator
   nameWithType: Deque<T>.IEnumerable.GetEnumerator
   nameWithType.vb: Deque(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Queue.Deque`1.TryDequeue(`0@)
+  name: TryDequeue(out T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_TryDequeue__0__
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.TryDequeue(`0@)
+  name.vb: TryDequeue(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.TryDequeue(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).TryDequeue(ByRef T)
+  nameWithType: Deque<T>.TryDequeue(out T)
+  nameWithType.vb: Deque(Of T).TryDequeue(ByRef T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.TryDequeue*
+  name: TryDequeue
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_TryDequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.TryDequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.TryDequeue
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).TryDequeue
+  nameWithType: Deque<T>.TryDequeue
+  nameWithType.vb: Deque(Of T).TryDequeue
+- uid: GenericCollectionsExtension.Queue.Deque`1.TryPeek(`0@)
+  name: TryPeek(out T)
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_TryPeek__0__
+  commentId: M:GenericCollectionsExtension.Queue.Deque`1.TryPeek(`0@)
+  name.vb: TryPeek(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.TryPeek(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).TryPeek(ByRef T)
+  nameWithType: Deque<T>.TryPeek(out T)
+  nameWithType.vb: Deque(Of T).TryPeek(ByRef T)
+- uid: GenericCollectionsExtension.Queue.Deque`1.TryPeek*
+  name: TryPeek
+  href: api/GenericCollectionsExtension.Queue.Deque-1.html#GenericCollectionsExtension_Queue_Deque_1_TryPeek_
+  commentId: Overload:GenericCollectionsExtension.Queue.Deque`1.TryPeek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.Deque<T>.TryPeek
+  fullName.vb: GenericCollectionsExtension.Queue.Deque(Of T).TryPeek
+  nameWithType: Deque<T>.TryPeek
+  nameWithType.vb: Deque(Of T).TryPeek
 - uid: GenericCollectionsExtension.Queue.IDeque`1
   name: IDeque<T>
   href: api/GenericCollectionsExtension.Queue.IDeque-1.html
@@ -1286,6 +2088,23 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Dequeue
   nameWithType: IQueue<T>.Dequeue
   nameWithType.vb: IQueue(Of T).Dequeue
+- uid: GenericCollectionsExtension.Queue.IQueue`1.IsEmpty
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_IsEmpty
+  commentId: P:GenericCollectionsExtension.Queue.IQueue`1.IsEmpty
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).IsEmpty
+  nameWithType: IQueue<T>.IsEmpty
+  nameWithType.vb: IQueue(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Queue.IQueue`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).IsEmpty
+  nameWithType: IQueue<T>.IsEmpty
+  nameWithType.vb: IQueue(Of T).IsEmpty
 - uid: GenericCollectionsExtension.Queue.IQueue`1.Peek
   name: Peek()
   href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_Peek
@@ -1303,6 +2122,42 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).Peek
   nameWithType: IQueue<T>.Peek
   nameWithType.vb: IQueue(Of T).Peek
+- uid: GenericCollectionsExtension.Queue.IQueue`1.TryDequeue(`0@)
+  name: TryDequeue(out T)
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_TryDequeue__0__
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.TryDequeue(`0@)
+  name.vb: TryDequeue(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.TryDequeue(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).TryDequeue(ByRef T)
+  nameWithType: IQueue<T>.TryDequeue(out T)
+  nameWithType.vb: IQueue(Of T).TryDequeue(ByRef T)
+- uid: GenericCollectionsExtension.Queue.IQueue`1.TryDequeue*
+  name: TryDequeue
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_TryDequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.TryDequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.TryDequeue
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).TryDequeue
+  nameWithType: IQueue<T>.TryDequeue
+  nameWithType.vb: IQueue(Of T).TryDequeue
+- uid: GenericCollectionsExtension.Queue.IQueue`1.TryPeek(`0@)
+  name: TryPeek(out T)
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_TryPeek__0__
+  commentId: M:GenericCollectionsExtension.Queue.IQueue`1.TryPeek(`0@)
+  name.vb: TryPeek(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.TryPeek(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).TryPeek(ByRef T)
+  nameWithType: IQueue<T>.TryPeek(out T)
+  nameWithType.vb: IQueue(Of T).TryPeek(ByRef T)
+- uid: GenericCollectionsExtension.Queue.IQueue`1.TryPeek*
+  name: TryPeek
+  href: api/GenericCollectionsExtension.Queue.IQueue-1.html#GenericCollectionsExtension_Queue_IQueue_1_TryPeek_
+  commentId: Overload:GenericCollectionsExtension.Queue.IQueue`1.TryPeek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.IQueue<T>.TryPeek
+  fullName.vb: GenericCollectionsExtension.Queue.IQueue(Of T).TryPeek
+  nameWithType: IQueue<T>.TryPeek
+  nameWithType.vb: IQueue(Of T).TryPeek
 - uid: GenericCollectionsExtension.Queue.PriorityQueue`1
   name: PriorityQueue<T>
   href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html
@@ -1491,6 +2346,23 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).GetEnumerator
   nameWithType: PriorityQueue<T>.GetEnumerator
   nameWithType.vb: PriorityQueue(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.IsEmpty
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_IsEmpty
+  commentId: P:GenericCollectionsExtension.Queue.PriorityQueue`1.IsEmpty
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).IsEmpty
+  nameWithType: PriorityQueue<T>.IsEmpty
+  nameWithType.vb: PriorityQueue(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).IsEmpty
+  nameWithType: PriorityQueue<T>.IsEmpty
+  nameWithType.vb: PriorityQueue(Of T).IsEmpty
 - uid: GenericCollectionsExtension.Queue.PriorityQueue`1.IsReadOnly
   name: IsReadOnly
   href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_IsReadOnly
@@ -1561,6 +2433,42 @@ references:
   fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator
   nameWithType: PriorityQueue<T>.IEnumerable.GetEnumerator
   nameWithType.vb: PriorityQueue(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.TryDequeue(`0@)
+  name: TryDequeue(out T)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_TryDequeue__0__
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.TryDequeue(`0@)
+  name.vb: TryDequeue(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.TryDequeue(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).TryDequeue(ByRef T)
+  nameWithType: PriorityQueue<T>.TryDequeue(out T)
+  nameWithType.vb: PriorityQueue(Of T).TryDequeue(ByRef T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.TryDequeue*
+  name: TryDequeue
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_TryDequeue_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.TryDequeue
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.TryDequeue
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).TryDequeue
+  nameWithType: PriorityQueue<T>.TryDequeue
+  nameWithType.vb: PriorityQueue(Of T).TryDequeue
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.TryPeek(`0@)
+  name: TryPeek(out T)
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_TryPeek__0__
+  commentId: M:GenericCollectionsExtension.Queue.PriorityQueue`1.TryPeek(`0@)
+  name.vb: TryPeek(ByRef T)
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.TryPeek(out T)
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).TryPeek(ByRef T)
+  nameWithType: PriorityQueue<T>.TryPeek(out T)
+  nameWithType.vb: PriorityQueue(Of T).TryPeek(ByRef T)
+- uid: GenericCollectionsExtension.Queue.PriorityQueue`1.TryPeek*
+  name: TryPeek
+  href: api/GenericCollectionsExtension.Queue.PriorityQueue-1.html#GenericCollectionsExtension_Queue_PriorityQueue_1_TryPeek_
+  commentId: Overload:GenericCollectionsExtension.Queue.PriorityQueue`1.TryPeek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Queue.PriorityQueue<T>.TryPeek
+  fullName.vb: GenericCollectionsExtension.Queue.PriorityQueue(Of T).TryPeek
+  nameWithType: PriorityQueue<T>.TryPeek
+  nameWithType.vb: PriorityQueue(Of T).TryPeek
 - uid: GenericCollectionsExtension.Stack
   name: GenericCollectionsExtension.Stack
   href: api/GenericCollectionsExtension.Stack.html
@@ -1619,6 +2527,23 @@ references:
   fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Capacity
   nameWithType: IStack<T>.Capacity
   nameWithType.vb: IStack(Of T).Capacity
+- uid: GenericCollectionsExtension.Stack.IStack`1.IsEmpty
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_IsEmpty
+  commentId: P:GenericCollectionsExtension.Stack.IStack`1.IsEmpty
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).IsEmpty
+  nameWithType: IStack<T>.IsEmpty
+  nameWithType.vb: IStack(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Stack.IStack`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).IsEmpty
+  nameWithType: IStack<T>.IsEmpty
+  nameWithType.vb: IStack(Of T).IsEmpty
 - uid: GenericCollectionsExtension.Stack.IStack`1.Peek
   name: Peek()
   href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_Peek
@@ -1653,6 +2578,42 @@ references:
   fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).Pop
   nameWithType: IStack<T>.Pop
   nameWithType.vb: IStack(Of T).Pop
+- uid: GenericCollectionsExtension.Stack.IStack`1.TryPeek(`0@)
+  name: TryPeek(out T)
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_TryPeek__0__
+  commentId: M:GenericCollectionsExtension.Stack.IStack`1.TryPeek(`0@)
+  name.vb: TryPeek(ByRef T)
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.TryPeek(out T)
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).TryPeek(ByRef T)
+  nameWithType: IStack<T>.TryPeek(out T)
+  nameWithType.vb: IStack(Of T).TryPeek(ByRef T)
+- uid: GenericCollectionsExtension.Stack.IStack`1.TryPeek*
+  name: TryPeek
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_TryPeek_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.TryPeek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.TryPeek
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).TryPeek
+  nameWithType: IStack<T>.TryPeek
+  nameWithType.vb: IStack(Of T).TryPeek
+- uid: GenericCollectionsExtension.Stack.IStack`1.TryPop(`0@)
+  name: TryPop(out T)
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_TryPop__0__
+  commentId: M:GenericCollectionsExtension.Stack.IStack`1.TryPop(`0@)
+  name.vb: TryPop(ByRef T)
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.TryPop(out T)
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).TryPop(ByRef T)
+  nameWithType: IStack<T>.TryPop(out T)
+  nameWithType.vb: IStack(Of T).TryPop(ByRef T)
+- uid: GenericCollectionsExtension.Stack.IStack`1.TryPop*
+  name: TryPop
+  href: api/GenericCollectionsExtension.Stack.IStack-1.html#GenericCollectionsExtension_Stack_IStack_1_TryPop_
+  commentId: Overload:GenericCollectionsExtension.Stack.IStack`1.TryPop
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.IStack<T>.TryPop
+  fullName.vb: GenericCollectionsExtension.Stack.IStack(Of T).TryPop
+  nameWithType: IStack<T>.TryPop
+  nameWithType.vb: IStack(Of T).TryPop
 - uid: GenericCollectionsExtension.Stack.PriorityStack`1
   name: PriorityStack<T>
   href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html
@@ -1807,6 +2768,23 @@ references:
   fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).GetEnumerator
   nameWithType: PriorityStack<T>.GetEnumerator
   nameWithType.vb: PriorityStack(Of T).GetEnumerator
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.IsEmpty
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_IsEmpty
+  commentId: P:GenericCollectionsExtension.Stack.PriorityStack`1.IsEmpty
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).IsEmpty
+  nameWithType: PriorityStack<T>.IsEmpty
+  nameWithType.vb: PriorityStack(Of T).IsEmpty
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.IsEmpty*
+  name: IsEmpty
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_IsEmpty_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.IsEmpty
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.IsEmpty
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).IsEmpty
+  nameWithType: PriorityStack<T>.IsEmpty
+  nameWithType.vb: PriorityStack(Of T).IsEmpty
 - uid: GenericCollectionsExtension.Stack.PriorityStack`1.IsReadOnly
   name: IsReadOnly
   href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_IsReadOnly
@@ -1911,6 +2889,42 @@ references:
   fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator
   nameWithType: PriorityStack<T>.IEnumerable.GetEnumerator
   nameWithType.vb: PriorityStack(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.TryPeek(`0@)
+  name: TryPeek(out T)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_TryPeek__0__
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.TryPeek(`0@)
+  name.vb: TryPeek(ByRef T)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.TryPeek(out T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).TryPeek(ByRef T)
+  nameWithType: PriorityStack<T>.TryPeek(out T)
+  nameWithType.vb: PriorityStack(Of T).TryPeek(ByRef T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.TryPeek*
+  name: TryPeek
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_TryPeek_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.TryPeek
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.TryPeek
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).TryPeek
+  nameWithType: PriorityStack<T>.TryPeek
+  nameWithType.vb: PriorityStack(Of T).TryPeek
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.TryPop(`0@)
+  name: TryPop(out T)
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_TryPop__0__
+  commentId: M:GenericCollectionsExtension.Stack.PriorityStack`1.TryPop(`0@)
+  name.vb: TryPop(ByRef T)
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.TryPop(out T)
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).TryPop(ByRef T)
+  nameWithType: PriorityStack<T>.TryPop(out T)
+  nameWithType.vb: PriorityStack(Of T).TryPop(ByRef T)
+- uid: GenericCollectionsExtension.Stack.PriorityStack`1.TryPop*
+  name: TryPop
+  href: api/GenericCollectionsExtension.Stack.PriorityStack-1.html#GenericCollectionsExtension_Stack_PriorityStack_1_TryPop_
+  commentId: Overload:GenericCollectionsExtension.Stack.PriorityStack`1.TryPop
+  isSpec: "True"
+  fullName: GenericCollectionsExtension.Stack.PriorityStack<T>.TryPop
+  fullName.vb: GenericCollectionsExtension.Stack.PriorityStack(Of T).TryPop
+  nameWithType: PriorityStack<T>.TryPop
+  nameWithType.vb: PriorityStack(Of T).TryPop
 - uid: GenericCollectionsExtension.Tree
   name: GenericCollectionsExtension.Tree
   href: api/GenericCollectionsExtension.Tree.html
