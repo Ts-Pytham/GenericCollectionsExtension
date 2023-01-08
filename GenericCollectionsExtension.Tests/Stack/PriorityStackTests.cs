@@ -22,6 +22,7 @@ public class PriorityStackTests
         Assert.IsType<Action>(test);
     }
 
+    [Theory]
     [InlineData(new[] { "ho", "la", "ma" }, new[] { 1, 10, 2 }, "la")]
     [InlineData(new[] { "Pytham", "MrDave", "Holly" }, new[] { 20, 10, 50 }, "Holly")]
     [InlineData(new[] { "Do", "Re", "Mi" }, new[] { 0, 0, 0 }, "Mi")]
