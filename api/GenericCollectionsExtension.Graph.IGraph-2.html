@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGraph&lt;TVertex, TEdge&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGraph&lt;TVertex, TEdge&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GenericCollectionsExtension.Graph.IGraph`2">
+  
+  
+  <h1 id="GenericCollectionsExtension_Graph_IGraph_2" data-uid="GenericCollectionsExtension.Graph.IGraph`2" class="text-break">Interface IGraph&lt;TVertex, TEdge&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a interface graph data structure.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GenericCollectionsExtension.Graph.html">GenericCollectionsExtension.Graph</a></h6>
+  <h6><strong>Assembly</strong>: GenericCollectionsExtension.dll</h6>
+  <h5 id="GenericCollectionsExtension_Graph_IGraph_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGraph&lt;TVertex, TEdge&gt;
+    where TEdge : IComparable&lt;TEdge&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertices in the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEdge</span></td>
+        <td><p>The type of the edges in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_AddEdge__0__0__1_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.AddEdge(%600%2C%600%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L25">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_AddEdge_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.AddEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_AddEdge__0__0__1_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)">AddEdge(TVertex, TVertex, TEdge)</h4>
+  <div class="markdown level1 summary"><p>Adds an edge to the graph, connecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddEdge(TVertex v1, TVertex v2, TEdge cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex to be connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex to be connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEdge</span></td>
+        <td><span class="parametername">cost</span></td>
+        <td><p>The cost connecting the two vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_AddVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.AddVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L17">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_AddVertex_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.AddVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_AddVertex__0_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)">AddVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Adds a vertex to the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_HasEdge__0__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.HasEdge(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L55">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_HasEdge_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.HasEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_HasEdge__0__0_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)">HasEdge(TVertex, TVertex)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the graph contains an edge connecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasEdge(TVertex v1, TVertex v2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex of the edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the edge is found; <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_HasVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.HasVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L47">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_HasVertex_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.HasVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_HasVertex__0_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)">HasVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the graph contains a specific vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be searched for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the vertex is found; <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_RemoveEdge__0__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.RemoveEdge(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L40">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_RemoveEdge_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_RemoveEdge__0__0_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)">RemoveEdge(TVertex, TVertex)</h4>
+  <div class="markdown level1 summary"><p>Removes an edge from the graph, disconnecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RemoveEdge(TVertex v1, TVertex v2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex to be disconnected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex to be disconnected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the edge was successfully removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2_RemoveVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602.RemoveVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L32">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_IGraph_2_RemoveVertex_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_IGraph_2_RemoveVertex__0_" data-uid="GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)">RemoveVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Removes a vertex from the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RemoveVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the vertex was successfully removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_IGraph_2.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.IGraph%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/IGraph.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

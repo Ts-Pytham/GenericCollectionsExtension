@@ -1,0 +1,3609 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Graph.Graph`2
+  commentId: T:GenericCollectionsExtension.Graph.Graph`2
+  id: Graph`2
+  parent: GenericCollectionsExtension.Graph
+  children:
+  - GenericCollectionsExtension.Graph.Graph`2.#ctor
+  - GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  - GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})
+  - GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  - GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)
+  - GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)
+  - GenericCollectionsExtension.Graph.Graph`2.Clear
+  - GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  - GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  - GenericCollectionsExtension.Graph.Graph`2.Count
+  - GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  - GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)
+  - GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  - GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  - GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)
+  - GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  - GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  - GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)
+  - GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  - GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)
+  - GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)
+  - GenericCollectionsExtension.Graph.Graph`2.Successors(`0)
+  - GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  - GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  langs:
+  - csharp
+  - vb
+  name: Graph<TVertex, TEdge>
+  nameWithType: Graph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>
+  type: Class
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Graph
+    path: Graph/Graph.cs
+    startLine: 13
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRepresents a graph data structure, composed of vertices and edges connecting them.\n"
+  example: []
+  syntax:
+    content: 'public class Graph<TVertex, TEdge> : IGraph<TVertex, TEdge>, ICollection<Vertex<TVertex, TEdge>>, IEnumerable<Vertex<TVertex, TEdge>>, IEnumerable where TEdge : IComparable<TEdge>'
+    typeParameters:
+    - id: TVertex
+      description: The type of the vertices in the graph.
+    - id: TEdge
+      description: The type of the edges in the graph (cost).
+    content.vb: >-
+      Public Class Graph(Of TVertex, TEdge As IComparable(Of TEdge))
+          Implements IGraph(Of TVertex, TEdge), ICollection(Of Vertex(Of TVertex, TEdge)), IEnumerable(Of Vertex(Of TVertex, TEdge)), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  - System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Graph(Of TVertex, TEdge)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge)
+  name.vb: Graph(Of TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  id: Vertexs
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Vertexs
+  nameWithType: Graph<TVertex, TEdge>.Vertexs
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Vertexs
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Vertexs
+    path: Graph/Graph.cs
+    startLine: 19
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nGets the list of vertices in the graph.\n"
+  example: []
+  syntax:
+    content: public List<Vertex<TVertex, TEdge>> Vertexs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+    content.vb: Public ReadOnly Property Vertexs As List(Of Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.Vertexs*
+  nameWithType.vb: Graph(Of TVertex, TEdge).Vertexs
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Vertexs
+- uid: GenericCollectionsExtension.Graph.Graph`2.Count
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.Count
+  id: Count
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Graph<TVertex, TEdge>.Count
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Count
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Count
+    path: Graph/Graph.cs
+    startLine: 24
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nGets the number of vertices in the graph.\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: GenericCollectionsExtension.Graph.Graph`2.Count*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Count
+  nameWithType.vb: Graph(Of TVertex, TEdge).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Count
+- uid: GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  commentId: P:GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  id: IsReadOnly
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: Graph<TVertex, TEdge>.IsReadOnly
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IsReadOnly
+    path: Graph/Graph.cs
+    startLine: 29
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nGets a value indicating whether the graph is read-only.\n"
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.IsReadOnly
+  nameWithType.vb: Graph(Of TVertex, TEdge).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).IsReadOnly
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor
+  id: '#ctor'
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Graph()
+  nameWithType: Graph<TVertex, TEdge>.Graph()
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph()
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Graph/Graph.cs
+    startLine: 34
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nConstructs a new instance of the graph with no vertices.\n"
+  example: []
+  syntax:
+    content: public Graph()
+    content.vb: Public Sub New
+  overload: GenericCollectionsExtension.Graph.Graph`2.#ctor*
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph()
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  id: '#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})'
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Graph(Vertex<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.Graph(Vertex<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Graph/Graph.cs
+    startLine: 43
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nConstructs a new instance of the graph with a single vertex.\n"
+  example: []
+  syntax:
+    content: public Graph(Vertex<TVertex, TEdge> item)
+    parameters:
+    - id: item
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex to be added to the graph.
+    content.vb: Public Sub New(item As Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.#ctor*
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph(Vertex(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Graph(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})
+  id: '#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})'
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Graph(IEnumerable<Vertex<TVertex, TEdge>>)
+  nameWithType: Graph<TVertex, TEdge>.Graph(IEnumerable<Vertex<TVertex, TEdge>>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph(System.Collections.Generic.IEnumerable<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>)
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Graph/Graph.cs
+    startLine: 54
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nConstructs a new instance of the graph with a collection of vertices.\n"
+  example: []
+  syntax:
+    content: public Graph(IEnumerable<Vertex<TVertex, TEdge>> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+      description: The vertices to be added to the graph.
+    content.vb: Public Sub New(items As IEnumerable(Of Vertex(Of TVertex, TEdge)))
+  overload: GenericCollectionsExtension.Graph.Graph`2.#ctor*
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph(IEnumerable(Of Vertex(Of TVertex, TEdge)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph(System.Collections.Generic.IEnumerable(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)))
+  name.vb: Graph(IEnumerable(Of Vertex(Of TVertex, TEdge)))
+- uid: GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  id: Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Add(Vertex<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.Add(Vertex<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Add(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Add
+    path: Graph/Graph.cs
+    startLine: 69
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nAdds a vertex to the graph.\n"
+  example: []
+  syntax:
+    content: public void Add(Vertex<TVertex, TEdge> item)
+    parameters:
+    - id: item
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex to be added.
+    content.vb: Public Sub Add(item As Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.Add*
+  exceptions:
+  - type: GenericCollectionsExtension.Exceptions.ExistentVertexException
+    commentId: T:GenericCollectionsExtension.Exceptions.ExistentVertexException
+    description: Thrown if the vertex already exists in the graph.
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Add(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  nameWithType.vb: Graph(Of TVertex, TEdge).Add(Vertex(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Add(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Add(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)
+  id: AddEdge(`0,`0,`1)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: Graph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddEdge
+    path: Graph/Graph.cs
+    startLine: 80
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nAdds an edge to the graph, connecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: public void AddEdge(TVertex v1, TVertex v2, TEdge cost)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex to be connected.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex to be connected.
+    - id: cost
+      type: '{TEdge}'
+      description: The cost connecting the two vertices.
+    content.vb: Public Sub AddEdge(v1 As TVertex, v2 As TVertex, cost As TEdge)
+  overload: GenericCollectionsExtension.Graph.Graph`2.AddEdge*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.AddEdge({TVertex},{TVertex},{TEdge})
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)
+  id: AddVertex(`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: AddVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddVertex
+    path: Graph/Graph.cs
+    startLine: 92
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nAdds a vertex to the graph.\n"
+  example: []
+  syntax:
+    content: public void AddVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be added.
+    content.vb: Public Sub AddVertex(vertex As TVertex)
+  overload: GenericCollectionsExtension.Graph.Graph`2.AddVertex*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.AddVertex({TVertex})
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddVertex(TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.Clear
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Clear
+  id: Clear
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: Graph<TVertex, TEdge>.Clear()
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Clear()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Clear
+    path: Graph/Graph.cs
+    startLine: 105
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves all vertices from the graph.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: GenericCollectionsExtension.Graph.Graph`2.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Clear
+  nameWithType.vb: Graph(Of TVertex, TEdge).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Clear()
+- uid: GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  id: Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Contains(Vertex<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.Contains(Vertex<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Contains(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Contains
+    path: Graph/Graph.cs
+    startLine: 115
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines whether the graph contains a specific vertex.\n"
+  example: []
+  syntax:
+    content: public bool Contains(Vertex<TVertex, TEdge> item)
+    parameters:
+    - id: item
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex to locate in the graph.
+    return:
+      type: System.Boolean
+      description: <xref uid="langword_csharp_true" name="true" href=""></xref> if the vertex is found in the graph; otherwise, <xref uid="langword_csharp_false" name="false" href=""></xref>.
+    content.vb: Public Function Contains(item As Vertex(Of TVertex, TEdge)) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Contains(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  nameWithType.vb: Graph(Of TVertex, TEdge).Contains(Vertex(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Contains(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Contains(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  id: CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  nameWithType: Graph<TVertex, TEdge>.CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.CopyTo(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: CopyTo
+    path: Graph/Graph.cs
+    startLine: 125
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nCopies the elements of the graph to an array, starting at a particular array index.\n"
+  example: []
+  syntax:
+    content: public void CopyTo(Vertex<TVertex, TEdge>[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}[]
+      description: The one-dimensional array that is the destination of the elements copied from the graph. The array must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in array at which copying begins.
+    content.vb: Public Sub CopyTo(array As Vertex(Of TVertex, TEdge)(), arrayIndex As Integer)
+  overload: GenericCollectionsExtension.Graph.Graph`2.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.CopyTo(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}[],System.Int32)
+  nameWithType.vb: Graph(Of TVertex, TEdge).CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).CopyTo(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)(), System.Int32)
+  name.vb: CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+- uid: GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  id: GetEnumerator
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Graph<TVertex, TEdge>.GetEnumerator()
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: GetEnumerator
+    path: Graph/Graph.cs
+    startLine: 134
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nReturns an enumerator that iterates through the graph.\n"
+  example: []
+  syntax:
+    content: public IEnumerator<Vertex<TVertex, TEdge>> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+      description: An enumerator that can be used to iterate through the graph.
+    content.vb: Public Function GetEnumerator As IEnumerator(Of Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).GetEnumerator()
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)
+  id: HasEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: HasEdge(TVertex, TVertex)
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasEdge
+    path: Graph/Graph.cs
+    startLine: 140
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines whether the graph contains an edge connecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: public bool HasEdge(TVertex v1, TVertex v2)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex of the edge.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex of the edge.
+    return:
+      type: System.Boolean
+      description: <xref uid="langword_csharp_true" name="true" href=""></xref> if the edge is found; <xref uid="langword_csharp_false" name="false" href=""></xref> otherwise.
+    content.vb: Public Function HasEdge(v1 As TVertex, v2 As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.HasEdge*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.HasEdge({TVertex},{TVertex})
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  id: HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: HasEdge(TVertex, TVertex, out Edge<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out Edge<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out GenericCollectionsExtension.Graph.Edge<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasEdge
+    path: Graph/Graph.cs
+    startLine: 157
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nSearches for an edge between two vertices and returns it if found.\n"
+  example: []
+  syntax:
+    content: public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Edge<TVertex, TEdge> edge)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The starting vertex of the edge.
+    - id: v2
+      type: '{TVertex}'
+      description: The ending vertex of the edge.
+    - id: edge
+      type: GenericCollectionsExtension.Graph.Edge{{TVertex},{TEdge}}
+      description: If found, the edge connecting the two vertices; otherwise, the default value of TEdge.
+    return:
+      type: GenericCollectionsExtension.Graph.Edge{{TVertex},{TEdge}}
+    content.vb: Public Function HasEdge(v1 As TVertex, v2 As TVertex, ByRef edge As Edge(Of TVertex, TEdge)) As Edge(Of TVertex, TEdge)
+  overload: GenericCollectionsExtension.Graph.Graph`2.HasEdge*
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef Edge(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef GenericCollectionsExtension.Graph.Edge(Of TVertex, TEdge))
+  name.vb: HasEdge(TVertex, TVertex, ByRef Edge(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  id: HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: HasEdge(TVertex, TVertex, out Vertex<TVertex, TEdge>, out Vertex<TVertex, TEdge>, out Edge<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out Vertex<TVertex, TEdge>, out Vertex<TVertex, TEdge>, out Edge<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge(TVertex, TVertex, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>, out GenericCollectionsExtension.Graph.Edge<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasEdge
+    path: Graph/Graph.cs
+    startLine: 178
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nSearches for an edge between two vertices and returns it, along with the starting vertex, if found.\n"
+  example: []
+  syntax:
+    content: public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Vertex<TVertex, TEdge> vertex, out Vertex<TVertex, TEdge> vertex2, out Edge<TVertex, TEdge> edge)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The starting vertex of the edge.
+    - id: v2
+      type: '{TVertex}'
+      description: The ending vertex of the edge.
+    - id: vertex
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: If found, the starting vertex of the edge; otherwise, the default value of TVertex.
+    - id: vertex2
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+    - id: edge
+      type: GenericCollectionsExtension.Graph.Edge{{TVertex},{TEdge}}
+      description: If found, the edge connecting the two vertices; otherwise, the default value of TEdge.
+    return:
+      type: GenericCollectionsExtension.Graph.Edge{{TVertex},{TEdge}}
+      description: The edge if it is found; otherwise, <xref uid="langword_csharp_null" name="null" href=""></xref>.
+    content.vb: Public Function HasEdge(v1 As TVertex, v2 As TVertex, ByRef vertex As Vertex(Of TVertex, TEdge), ByRef vertex2 As Vertex(Of TVertex, TEdge), ByRef edge As Edge(Of TVertex, TEdge)) As Edge(Of TVertex, TEdge)
+  overload: GenericCollectionsExtension.Graph.Graph`2.HasEdge*
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef Vertex(Of TVertex, TEdge), ByRef Vertex(Of TVertex, TEdge), ByRef Edge(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge(TVertex, TVertex, ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge), ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge), ByRef GenericCollectionsExtension.Graph.Edge(Of TVertex, TEdge))
+  name.vb: HasEdge(TVertex, TVertex, ByRef Vertex(Of TVertex, TEdge), ByRef Vertex(Of TVertex, TEdge), ByRef Edge(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)
+  id: HasVertex(`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: HasVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasVertex
+    path: Graph/Graph.cs
+    startLine: 193
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines whether the graph contains a specific vertex.\n"
+  example: []
+  syntax:
+    content: public bool HasVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be searched for.
+    return:
+      type: System.Boolean
+      description: <xref uid="langword_csharp_true" name="true" href=""></xref> if the vertex is found; <xref uid="langword_csharp_false" name="false" href=""></xref> otherwise.
+    content.vb: Public Function HasVertex(vertex As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.HasVertex*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.HasVertex({TVertex})
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex(TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  id: HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: HasVertex(TVertex, out Vertex<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.HasVertex(TVertex, out Vertex<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex(TVertex, out GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasVertex
+    path: Graph/Graph.cs
+    startLine: 204
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines if the graph has a vertex with the given name.\n"
+  example: []
+  syntax:
+    content: public Vertex<TVertex, TEdge> HasVertex(TVertex name, out Vertex<TVertex, TEdge> vertex)
+    parameters:
+    - id: name
+      type: '{TVertex}'
+      description: The name of the vertex to search for.
+    - id: vertex
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex with the given name, if it exists in the graph.
+    return:
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex with the given name, if it exists in the graph.
+    content.vb: Public Function HasVertex(name As TVertex, ByRef vertex As Vertex(Of TVertex, TEdge)) As Vertex(Of TVertex, TEdge)
+  overload: GenericCollectionsExtension.Graph.Graph`2.HasVertex*
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex(TVertex, ByRef Vertex(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex(TVertex, ByRef GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: HasVertex(TVertex, ByRef Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  id: Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Remove(Vertex<TVertex, TEdge>)
+  nameWithType: Graph<TVertex, TEdge>.Remove(Vertex<TVertex, TEdge>)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Remove(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Remove
+    path: Graph/Graph.cs
+    startLine: 216
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves a vertex from the graph.\n"
+  example: []
+  syntax:
+    content: public bool Remove(Vertex<TVertex, TEdge> item)
+    parameters:
+    - id: item
+      type: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+      description: The vertex to remove from the graph.
+    return:
+      type: System.Boolean
+      description: True if the vertex was successfully removed, false otherwise.
+    content.vb: Public Function Remove(item As Vertex(Of TVertex, TEdge)) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Remove(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  nameWithType.vb: Graph(Of TVertex, TEdge).Remove(Vertex(Of TVertex, TEdge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Remove(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Remove(Vertex(Of TVertex, TEdge))
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)
+  id: RemoveEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveEdge(TVertex, TVertex)
+  nameWithType: Graph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RemoveEdge
+    path: Graph/Graph.cs
+    startLine: 222
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves an edge from the graph, disconnecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: public bool RemoveEdge(TVertex v1, TVertex v2)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex to be disconnected.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex to be disconnected.
+    return:
+      type: System.Boolean
+      description: True if the edge was successfully removed, false otherwise.
+    content.vb: Public Function RemoveEdge(v1 As TVertex, v2 As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.RemoveEdge*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.RemoveEdge({TVertex},{TVertex})
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)
+  id: RemoveVertex(`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveVertex(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RemoveVertex
+    path: Graph/Graph.cs
+    startLine: 233
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves a vertex from the graph.\n"
+  example: []
+  syntax:
+    content: public bool RemoveVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be removed.
+    return:
+      type: System.Boolean
+      description: True if the vertex was successfully removed, false otherwise.
+    content.vb: Public Function RemoveVertex(vertex As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.Graph`2.RemoveVertex*
+  implements:
+  - GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.RemoveVertex({TVertex})
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: Graph<TVertex, TEdge>.IEnumerable.GetEnumerator()
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: Graph/Graph.cs
+    startLine: 242
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nReturns an enumerator that iterates through the graph.\n"
+  example: []
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator that can be used to iterate through the graph.
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: GenericCollectionsExtension.Graph.Graph`2.Successors(`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Successors(`0)
+  id: Successors(`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Successors(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.Successors(TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Successors(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Successors
+    path: Graph/Graph.cs
+    startLine: 254
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nReturns an enumerable of vertexes that are the successors of the specified vertex in the graph.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex<TVertex, TEdge>> Successors(TVertex v)
+    parameters:
+    - id: v
+      type: '{TVertex}'
+      description: The vertex whose successors are to be returned.
+    return:
+      type: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+      description: An enumerable of vertexes that are the successors of the specified vertex in the graph.
+    content.vb: Public Function Successors(v As TVertex) As IEnumerable(Of Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.Successors*
+  exceptions:
+  - type: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+    commentId: T:GenericCollectionsExtension.Exceptions.NonExistentVertexException
+    description: Thrown if the specified vertex does not exist in the graph.
+  nameWithType.vb: Graph(Of TVertex, TEdge).Successors(TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Successors(TVertex)
+- uid: GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)
+  commentId: M:GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)
+  id: Predecessors(`0)
+  parent: GenericCollectionsExtension.Graph.Graph`2
+  langs:
+  - csharp
+  - vb
+  name: Predecessors(TVertex)
+  nameWithType: Graph<TVertex, TEdge>.Predecessors(TVertex)
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Predecessors(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Graph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Predecessors
+    path: Graph/Graph.cs
+    startLine: 271
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nReturns an enumerable of vertexes that are the predecessors of the specified vertex in the graph.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex<TVertex, TEdge>> Predecessors(TVertex v)
+    parameters:
+    - id: v
+      type: '{TVertex}'
+      description: The vertex whose predecessors are to be returned.
+    return:
+      type: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+      description: An enumerable of vertexes that are the predecessors of the specified vertex in the graph.
+    content.vb: Public Function Predecessors(v As TVertex) As IEnumerable(Of Vertex(Of TVertex, TEdge))
+  overload: GenericCollectionsExtension.Graph.Graph`2.Predecessors*
+  exceptions:
+  - type: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+    commentId: T:GenericCollectionsExtension.Exceptions.NonExistentVertexException
+    description: Thrown if the specified vertex does not exist in the graph.
+  nameWithType.vb: Graph(Of TVertex, TEdge).Predecessors(TVertex)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Predecessors(TVertex)
+references:
+- uid: GenericCollectionsExtension.Graph
+  commentId: N:GenericCollectionsExtension.Graph
+  name: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  commentId: T:GenericCollectionsExtension.Graph.IGraph{`0,`1}
+  parent: GenericCollectionsExtension.Graph
+  definition: GenericCollectionsExtension.Graph.IGraph`2
+  name: IGraph<TVertex, TEdge>
+  nameWithType: IGraph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>
+  nameWithType.vb: IGraph(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge)
+  name.vb: IGraph(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  commentId: T:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<Vertex<TVertex, TEdge>>
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: ICollection(Of Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  commentId: T:System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Vertex<TVertex, TEdge>>
+  nameWithType: IEnumerable<Vertex<TVertex, TEdge>>
+  fullName: System.Collections.Generic.IEnumerable<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>
+  nameWithType.vb: IEnumerable(Of Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: IEnumerable(Of Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GenericCollectionsExtension.Graph.IGraph`2
+  commentId: T:GenericCollectionsExtension.Graph.IGraph`2
+  name: IGraph<TVertex, TEdge>
+  nameWithType: IGraph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>
+  nameWithType.vb: IGraph(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge)
+  name.vb: IGraph(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: GenericCollectionsExtension.Graph.Graph`2.Vertexs*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Vertexs
+  name: Vertexs
+  nameWithType: Graph<TVertex, TEdge>.Vertexs
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Vertexs
+  nameWithType.vb: Graph(Of TVertex, TEdge).Vertexs
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Vertexs
+- uid: System.Collections.Generic.List{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  commentId: T:System.Collections.Generic.List{GenericCollectionsExtension.Graph.Vertex{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vertex<TVertex, TEdge>>
+  nameWithType: List<Vertex<TVertex, TEdge>>
+  fullName: System.Collections.Generic.List<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>
+  nameWithType.vb: List(Of Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.List(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: List(Of Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.Count*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Count
+  name: Count
+  nameWithType: Graph<TVertex, TEdge>.Count
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Count
+  nameWithType.vb: Graph(Of TVertex, TEdge).Count
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Count
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Count
+  commentId: P:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.Count
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.Count
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Count
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: GenericCollectionsExtension.Graph.Graph`2.IsReadOnly*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.IsReadOnly
+  name: IsReadOnly
+  nameWithType: Graph<TVertex, TEdge>.IsReadOnly
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.IsReadOnly
+  nameWithType.vb: Graph(Of TVertex, TEdge).IsReadOnly
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).IsReadOnly
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.IsReadOnly
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: GenericCollectionsExtension.Graph.Graph`2.#ctor*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.#ctor
+  name: Graph
+  nameWithType: Graph<TVertex, TEdge>.Graph
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Graph
+  nameWithType.vb: Graph(Of TVertex, TEdge).Graph
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Graph
+- uid: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}
+  commentId: T:GenericCollectionsExtension.Graph.Vertex{`0,`1}
+  parent: GenericCollectionsExtension.Graph
+  definition: GenericCollectionsExtension.Graph.Vertex`2
+  name: Vertex<TVertex, TEdge>
+  nameWithType: Vertex<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>
+  nameWithType.vb: Vertex(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)
+  name.vb: Vertex(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Vertex`2
+  commentId: T:GenericCollectionsExtension.Graph.Vertex`2
+  parent: GenericCollectionsExtension.Graph
+  name: Vertex<T, U>
+  nameWithType: Vertex<T, U>
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>
+  nameWithType.vb: Vertex(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U)
+  name.vb: Vertex(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Exceptions.ExistentVertexException
+  commentId: T:GenericCollectionsExtension.Exceptions.ExistentVertexException
+  name: ExistentVertexException
+  nameWithType: ExistentVertexException
+  fullName: GenericCollectionsExtension.Exceptions.ExistentVertexException
+- uid: GenericCollectionsExtension.Graph.Graph`2.Add*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Add
+  name: Add
+  nameWithType: Graph<TVertex, TEdge>.Add
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Add
+  nameWithType.vb: Graph(Of TVertex, TEdge).Add
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Add
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Add(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  commentId: M:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(Vertex<TVertex, TEdge>)
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.Add(Vertex<TVertex, TEdge>)
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Add(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).Add(Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Add(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Add(Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<Vertex<TVertex, TEdge>>.Add
+    fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of Vertex(Of TVertex, TEdge)).Add
+    fullName: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  name: AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+    name: AddEdge
+    nameWithType: IGraph<TVertex, TEdge>.AddEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+    name: AddEdge
+    nameWithType: IGraph(Of TVertex, TEdge).AddEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.AddEdge
+  name: AddEdge
+  nameWithType: Graph<TVertex, TEdge>.AddEdge
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddEdge
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.AddEdge({TVertex},{TVertex},{TEdge})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.AddEdge(`0,`0,`1)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  name: AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+    name: AddEdge
+    nameWithType: IGraph<TVertex, TEdge>.AddEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+    name: AddEdge
+    nameWithType: IGraph(Of TVertex, TEdge).AddEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TVertex}'
+  commentId: '!:TVertex'
+  definition: TVertex
+  name: TVertex
+  nameWithType: TVertex
+  fullName: TVertex
+- uid: '{TEdge}'
+  commentId: '!:TEdge'
+  definition: TEdge
+  name: TEdge
+  nameWithType: TEdge
+  fullName: TEdge
+- uid: TVertex
+  name: TVertex
+  nameWithType: TVertex
+  fullName: TVertex
+- uid: TEdge
+  name: TEdge
+  nameWithType: TEdge
+  fullName: TEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  name: AddVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+    name: AddVertex
+    nameWithType: IGraph<TVertex, TEdge>.AddVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+    name: AddVertex
+    nameWithType: IGraph(Of TVertex, TEdge).AddVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.AddVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.AddVertex
+  name: AddVertex
+  nameWithType: Graph<TVertex, TEdge>.AddVertex
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.AddVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).AddVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).AddVertex
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.AddVertex({TVertex})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.AddVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  name: AddVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+    name: AddVertex
+    nameWithType: IGraph<TVertex, TEdge>.AddVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+    name: AddVertex
+    nameWithType: IGraph(Of TVertex, TEdge).AddVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.Clear*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Clear
+  name: Clear
+  nameWithType: Graph<TVertex, TEdge>.Clear
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Clear
+  nameWithType.vb: Graph(Of TVertex, TEdge).Clear
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Clear
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.Clear
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.Clear()
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Clear()
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<Vertex<TVertex, TEdge>>.Clear
+    fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of Vertex(Of TVertex, TEdge)).Clear
+    fullName: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.Contains*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Contains
+  name: Contains
+  nameWithType: Graph<TVertex, TEdge>.Contains
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Contains
+  nameWithType.vb: Graph(Of TVertex, TEdge).Contains
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Contains
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Contains(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  commentId: M:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(Vertex<TVertex, TEdge>)
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.Contains(Vertex<TVertex, TEdge>)
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Contains(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).Contains(Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Contains(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Contains(Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<Vertex<TVertex, TEdge>>.Contains
+    fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of Vertex(Of TVertex, TEdge)).Contains
+    fullName: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.CopyTo*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.CopyTo
+  name: CopyTo
+  nameWithType: Graph<TVertex, TEdge>.CopyTo
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.CopyTo
+  nameWithType.vb: Graph(Of TVertex, TEdge).CopyTo
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).CopyTo
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.CopyTo(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.CopyTo(Vertex<TVertex, TEdge>[], Int32)
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.CopyTo(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>[], System.Int32)
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).CopyTo(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)(), System.Int32)
+  name.vb: CopyTo(Vertex(Of TVertex, TEdge)(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<Vertex<TVertex, TEdge>>.CopyTo
+    fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of Vertex(Of TVertex, TEdge)).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}[]
+  isExternal: true
+  name: Vertex<TVertex, TEdge>[]
+  nameWithType: Vertex<TVertex, TEdge>[]
+  fullName: GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>[]
+  nameWithType.vb: Vertex(Of TVertex, TEdge)()
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)()
+  name.vb: Vertex(Of TVertex, TEdge)()
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.GetEnumerator
+  name: GetEnumerator
+  nameWithType: Graph<TVertex, TEdge>.GetEnumerator
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Vertex<TVertex, TEdge>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Vertex(Of TVertex, TEdge)).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<Vertex<TVertex, TEdge>>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of Vertex(Of TVertex, TEdge)).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  commentId: T:System.Collections.Generic.IEnumerator{GenericCollectionsExtension.Graph.Vertex{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<Vertex<TVertex, TEdge>>
+  nameWithType: IEnumerator<Vertex<TVertex, TEdge>>
+  fullName: System.Collections.Generic.IEnumerator<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>
+  nameWithType.vb: IEnumerator(Of Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: IEnumerator(Of Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  name: HasEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+    name: HasEdge
+    nameWithType: IGraph<TVertex, TEdge>.HasEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+    name: HasEdge
+    nameWithType: IGraph(Of TVertex, TEdge).HasEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.HasEdge
+  name: HasEdge
+  nameWithType: Graph<TVertex, TEdge>.HasEdge
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasEdge
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.HasEdge({TVertex},{TVertex})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.HasEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  name: HasEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+    name: HasEdge
+    nameWithType: IGraph<TVertex, TEdge>.HasEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+    name: HasEdge
+    nameWithType: IGraph(Of TVertex, TEdge).HasEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Edge{{TVertex},{TEdge}}
+  commentId: T:GenericCollectionsExtension.Graph.Edge{`0,`1}
+  parent: GenericCollectionsExtension.Graph
+  definition: GenericCollectionsExtension.Graph.Edge`2
+  name: Edge<TVertex, TEdge>
+  nameWithType: Edge<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.Edge<TVertex, TEdge>
+  nameWithType.vb: Edge(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of TVertex, TEdge)
+  name.vb: Edge(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Edge`2
+  commentId: T:GenericCollectionsExtension.Graph.Edge`2
+  name: Edge<T, U>
+  nameWithType: Edge<T, U>
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>
+  nameWithType.vb: Edge(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U)
+  name.vb: Edge(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  name: HasVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+    name: HasVertex
+    nameWithType: IGraph<TVertex, TEdge>.HasVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+    name: HasVertex
+    nameWithType: IGraph(Of TVertex, TEdge).HasVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.HasVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.HasVertex
+  name: HasVertex
+  nameWithType: Graph<TVertex, TEdge>.HasVertex
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.HasVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).HasVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).HasVertex
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.HasVertex({TVertex})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.HasVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  name: HasVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+    name: HasVertex
+    nameWithType: IGraph<TVertex, TEdge>.HasVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+    name: HasVertex
+    nameWithType: IGraph(Of TVertex, TEdge).HasVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.Remove*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Remove
+  name: Remove
+  nameWithType: Graph<TVertex, TEdge>.Remove
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Remove
+  nameWithType.vb: Graph(Of TVertex, TEdge).Remove
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Remove
+- uid: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}.Remove(GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}})
+  commentId: M:System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{`0,`1}}.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})
+  parent: System.Collections.Generic.ICollection{GenericCollectionsExtension.Graph.Vertex{{TVertex},{TEdge}}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(Vertex<TVertex, TEdge>)
+  nameWithType: ICollection<Vertex<TVertex, TEdge>>.Remove(Vertex<TVertex, TEdge>)
+  fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Remove(GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>)
+  nameWithType.vb: ICollection(Of Vertex(Of TVertex, TEdge)).Remove(Vertex(Of TVertex, TEdge))
+  fullName.vb: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Remove(GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge))
+  name.vb: Remove(Vertex(Of TVertex, TEdge))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<Vertex<TVertex, TEdge>>.Remove
+    fullName: System.Collections.Generic.ICollection<GenericCollectionsExtension.Graph.Vertex<TVertex, TEdge>>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of Vertex(Of TVertex, TEdge)).Remove
+    fullName: System.Collections.Generic.ICollection(Of GenericCollectionsExtension.Graph.Vertex(Of TVertex, TEdge)).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  name: RemoveEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+    name: RemoveEdge
+    nameWithType: IGraph<TVertex, TEdge>.RemoveEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+    name: RemoveEdge
+    nameWithType: IGraph(Of TVertex, TEdge).RemoveEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.RemoveEdge
+  name: RemoveEdge
+  nameWithType: Graph<TVertex, TEdge>.RemoveEdge
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveEdge
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveEdge
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveEdge
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.RemoveEdge({TVertex},{TVertex})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.RemoveEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  name: RemoveEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+    name: RemoveEdge
+    nameWithType: IGraph<TVertex, TEdge>.RemoveEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+    name: RemoveEdge
+    nameWithType: IGraph(Of TVertex, TEdge).RemoveEdge
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  name: RemoveVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+    name: RemoveVertex
+    nameWithType: IGraph<TVertex, TEdge>.RemoveVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+    name: RemoveVertex
+    nameWithType: IGraph(Of TVertex, TEdge).RemoveVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.RemoveVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.RemoveVertex
+  name: RemoveVertex
+  nameWithType: Graph<TVertex, TEdge>.RemoveVertex
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.RemoveVertex
+  nameWithType.vb: Graph(Of TVertex, TEdge).RemoveVertex
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).RemoveVertex
+- uid: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}.RemoveVertex({TVertex})
+  commentId: M:GenericCollectionsExtension.Graph.IGraph{`0,`1}.RemoveVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph{{TVertex},{TEdge}}
+  definition: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  name: RemoveVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+    name: RemoveVertex
+    nameWithType: IGraph<TVertex, TEdge>.RemoveVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+    name: RemoveVertex
+    nameWithType: IGraph(Of TVertex, TEdge).RemoveVertex
+    fullName: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator
+  nameWithType: Graph<TVertex, TEdge>.IEnumerable.GetEnumerator
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+  commentId: T:GenericCollectionsExtension.Exceptions.NonExistentVertexException
+  name: NonExistentVertexException
+  nameWithType: NonExistentVertexException
+  fullName: GenericCollectionsExtension.Exceptions.NonExistentVertexException
+- uid: GenericCollectionsExtension.Graph.Graph`2.Successors*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Successors
+  name: Successors
+  nameWithType: Graph<TVertex, TEdge>.Successors
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Successors
+  nameWithType.vb: Graph(Of TVertex, TEdge).Successors
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Successors
+- uid: GenericCollectionsExtension.Graph.Graph`2.Predecessors*
+  commentId: Overload:GenericCollectionsExtension.Graph.Graph`2.Predecessors
+  name: Predecessors
+  nameWithType: Graph<TVertex, TEdge>.Predecessors
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>.Predecessors
+  nameWithType.vb: Graph(Of TVertex, TEdge).Predecessors
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge).Predecessors

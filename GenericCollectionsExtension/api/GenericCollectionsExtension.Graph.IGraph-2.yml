@@ -1,0 +1,361 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Graph.IGraph`2
+  commentId: T:GenericCollectionsExtension.Graph.IGraph`2
+  id: IGraph`2
+  parent: GenericCollectionsExtension.Graph
+  children:
+  - GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  - GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  - GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  - GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  - GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  - GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  langs:
+  - csharp
+  - vb
+  name: IGraph<TVertex, TEdge>
+  nameWithType: IGraph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>
+  type: Interface
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: IGraph
+    path: Graph/IGraph.cs
+    startLine: 9
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRepresents a interface graph data structure.\n"
+  example: []
+  syntax:
+    content: >-
+      public interface IGraph<TVertex, TEdge>
+          where TEdge : IComparable<TEdge>
+    typeParameters:
+    - id: TVertex
+      description: The type of the vertices in the graph.
+    - id: TEdge
+      description: The type of the edges in the graph.
+    content.vb: Public Interface IGraph(Of TVertex, TEdge As IComparable(Of TEdge))
+  nameWithType.vb: IGraph(Of TVertex, TEdge)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge)
+  name.vb: IGraph(Of TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddVertex(`0)
+  id: AddVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: AddVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddVertex
+    path: Graph/IGraph.cs
+    startLine: 16
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nAdds a vertex to the graph.\n"
+  example: []
+  syntax:
+    content: void AddVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be added.
+    content.vb: Sub AddVertex(vertex As TVertex)
+  overload: GenericCollectionsExtension.Graph.IGraph`2.AddVertex*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.AddEdge(`0,`0,`1)
+  id: AddEdge(`0,`0,`1)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: AddEdge(TVertex, TVertex, TEdge)
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge(TVertex, TVertex, TEdge)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: AddEdge
+    path: Graph/IGraph.cs
+    startLine: 24
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nAdds an edge to the graph, connecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: void AddEdge(TVertex v1, TVertex v2, TEdge cost)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex to be connected.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex to be connected.
+    - id: cost
+      type: '{TEdge}'
+      description: The cost connecting the two vertices.
+    content.vb: Sub AddEdge(v1 As TVertex, v2 As TVertex, cost As TEdge)
+  overload: GenericCollectionsExtension.Graph.IGraph`2.AddEdge*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge(TVertex, TVertex, TEdge)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex(`0)
+  id: RemoveVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RemoveVertex
+    path: Graph/IGraph.cs
+    startLine: 31
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves a vertex from the graph.\n"
+  example: []
+  syntax:
+    content: bool RemoveVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be removed.
+    return:
+      type: System.Boolean
+      description: True if the vertex was successfully removed, false otherwise.
+    content.vb: Function RemoveVertex(vertex As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge(`0,`0)
+  id: RemoveEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge(TVertex, TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: RemoveEdge
+    path: Graph/IGraph.cs
+    startLine: 39
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRemoves an edge from the graph, disconnecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: bool RemoveEdge(TVertex v1, TVertex v2)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex to be disconnected.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex to be disconnected.
+    return:
+      type: System.Boolean
+      description: True if the edge was successfully removed, false otherwise.
+    content.vb: Function RemoveEdge(v1 As TVertex, v2 As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge(TVertex, TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasVertex(`0)
+  id: HasVertex(`0)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: HasVertex(TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex(TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasVertex
+    path: Graph/IGraph.cs
+    startLine: 46
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines whether the graph contains a specific vertex.\n"
+  example: []
+  syntax:
+    content: bool HasVertex(TVertex vertex)
+    parameters:
+    - id: vertex
+      type: '{TVertex}'
+      description: The vertex to be searched for.
+    return:
+      type: System.Boolean
+      description: <xref uid="langword_csharp_true" name="true" href=""></xref> if the vertex is found; <xref uid="langword_csharp_false" name="false" href=""></xref> otherwise.
+    content.vb: Function HasVertex(vertex As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.IGraph`2.HasVertex*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex(TVertex)
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  commentId: M:GenericCollectionsExtension.Graph.IGraph`2.HasEdge(`0,`0)
+  id: HasEdge(`0,`0)
+  parent: GenericCollectionsExtension.Graph.IGraph`2
+  langs:
+  - csharp
+  - vb
+  name: HasEdge(TVertex, TVertex)
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge(TVertex, TVertex)
+  type: Method
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/IGraph.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: HasEdge
+    path: Graph/IGraph.cs
+    startLine: 54
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nDetermines whether the graph contains an edge connecting the two specified vertices.\n"
+  example: []
+  syntax:
+    content: bool HasEdge(TVertex v1, TVertex v2)
+    parameters:
+    - id: v1
+      type: '{TVertex}'
+      description: The first vertex of the edge.
+    - id: v2
+      type: '{TVertex}'
+      description: The second vertex of the edge.
+    return:
+      type: System.Boolean
+      description: <xref uid="langword_csharp_true" name="true" href=""></xref> if the edge is found; <xref uid="langword_csharp_false" name="false" href=""></xref> otherwise.
+    content.vb: Function HasEdge(v1 As TVertex, v2 As TVertex) As Boolean
+  overload: GenericCollectionsExtension.Graph.IGraph`2.HasEdge*
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge(TVertex, TVertex)
+references:
+- uid: GenericCollectionsExtension.Graph
+  commentId: N:GenericCollectionsExtension.Graph
+  name: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.AddVertex
+  name: AddVertex
+  nameWithType: IGraph<TVertex, TEdge>.AddVertex
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddVertex
+- uid: '{TVertex}'
+  commentId: '!:TVertex'
+  definition: TVertex
+  name: TVertex
+  nameWithType: TVertex
+  fullName: TVertex
+- uid: TVertex
+  name: TVertex
+  nameWithType: TVertex
+  fullName: TVertex
+- uid: GenericCollectionsExtension.Graph.IGraph`2.AddEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.AddEdge
+  name: AddEdge
+  nameWithType: IGraph<TVertex, TEdge>.AddEdge
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.AddEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).AddEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).AddEdge
+- uid: '{TEdge}'
+  commentId: '!:TEdge'
+  definition: TEdge
+  name: TEdge
+  nameWithType: TEdge
+  fullName: TEdge
+- uid: TEdge
+  name: TEdge
+  nameWithType: TEdge
+  fullName: TEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.RemoveVertex
+  name: RemoveVertex
+  nameWithType: IGraph<TVertex, TEdge>.RemoveVertex
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveVertex
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.RemoveEdge
+  name: RemoveEdge
+  nameWithType: IGraph<TVertex, TEdge>.RemoveEdge
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.RemoveEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).RemoveEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).RemoveEdge
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasVertex*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.HasVertex
+  name: HasVertex
+  nameWithType: IGraph<TVertex, TEdge>.HasVertex
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasVertex
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasVertex
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasVertex
+- uid: GenericCollectionsExtension.Graph.IGraph`2.HasEdge*
+  commentId: Overload:GenericCollectionsExtension.Graph.IGraph`2.HasEdge
+  name: HasEdge
+  nameWithType: IGraph<TVertex, TEdge>.HasEdge
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>.HasEdge
+  nameWithType.vb: IGraph(Of TVertex, TEdge).HasEdge
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge).HasEdge

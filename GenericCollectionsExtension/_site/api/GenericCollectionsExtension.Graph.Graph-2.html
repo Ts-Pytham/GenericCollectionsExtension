@@ -1,0 +1,1266 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Graph&lt;TVertex, TEdge&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Graph&lt;TVertex, TEdge&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GenericCollectionsExtension.Graph.Graph`2">
+  
+  
+  <h1 id="GenericCollectionsExtension_Graph_Graph_2" data-uid="GenericCollectionsExtension.Graph.Graph`2" class="text-break">Class Graph&lt;TVertex, TEdge&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a graph data structure, composed of vertices and edges connecting them.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Graph&lt;TVertex, TEdge&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GenericCollectionsExtension.Graph.IGraph-2.html">IGraph</a>&lt;TVertex, TEdge&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GenericCollectionsExtension.Graph.html">GenericCollectionsExtension.Graph</a></h6>
+  <h6><strong>Assembly</strong>: GenericCollectionsExtension.dll</h6>
+  <h5 id="GenericCollectionsExtension_Graph_Graph_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Graph&lt;TVertex, TEdge&gt; : IGraph&lt;TVertex, TEdge&gt;, ICollection&lt;Vertex&lt;TVertex, TEdge&gt;&gt;, IEnumerable&lt;Vertex&lt;TVertex, TEdge&gt;&gt;, IEnumerable where TEdge : IComparable&lt;TEdge&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertices in the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEdge</span></td>
+        <td><p>The type of the edges in the graph (cost).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2__ctor.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L35">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2__ctor_" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2__ctor" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor">Graph()</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the graph with no vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graph()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2__ctor_GenericCollectionsExtension_Graph_Vertex__0__1__.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.%23ctor(GenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L44">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2__ctor_" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2__ctor_GenericCollectionsExtension_Graph_Vertex__0__1__" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1})">Graph(Vertex&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the graph with a single vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graph(Vertex&lt;TVertex, TEdge&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The vertex to be added to the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2__ctor_System_Collections_Generic_IEnumerable_GenericCollectionsExtension_Graph_Vertex__0__1___.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.%23ctor(System.Collections.Generic.IEnumerable%7BGenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L55">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2__ctor_" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2__ctor_System_Collections_Generic_IEnumerable_GenericCollectionsExtension_Graph_Vertex__0__1___" data-uid="GenericCollectionsExtension.Graph.Graph`2.#ctor(System.Collections.Generic.IEnumerable{GenericCollectionsExtension.Graph.Vertex{`0,`1}})">Graph(IEnumerable&lt;Vertex&lt;TVertex, TEdge&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the graph with a collection of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graph(IEnumerable&lt;Vertex&lt;TVertex, TEdge&gt;&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The vertices to be added to the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Count.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L25">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Count_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Count*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Count" data-uid="GenericCollectionsExtension.Graph.Graph`2.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of vertices in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_IsReadOnly.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L30">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_IsReadOnly_" data-uid="GenericCollectionsExtension.Graph.Graph`2.IsReadOnly*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_IsReadOnly" data-uid="GenericCollectionsExtension.Graph.Graph`2.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the graph is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Vertexs.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Vertexs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L20">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Vertexs_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Vertexs*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Vertexs" data-uid="GenericCollectionsExtension.Graph.Graph`2.Vertexs">Vertexs</h4>
+  <div class="markdown level1 summary"><p>Gets the list of vertices in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Vertex&lt;TVertex, TEdge&gt;&gt; Vertexs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Add_GenericCollectionsExtension_Graph_Vertex__0__1__.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Add(GenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L70">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Add_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Add*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Add_GenericCollectionsExtension_Graph_Vertex__0__1__" data-uid="GenericCollectionsExtension.Graph.Graph`2.Add(GenericCollectionsExtension.Graph.Vertex{`0,`1})">Add(Vertex&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a vertex to the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(Vertex&lt;TVertex, TEdge&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The vertex to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Exceptions.ExistentVertexException.html">ExistentVertexException</a></td>
+        <td><p>Thrown if the vertex already exists in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_AddEdge__0__0__1_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.AddEdge(%600%2C%600%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L81">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_AddEdge_" data-uid="GenericCollectionsExtension.Graph.Graph`2.AddEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_AddEdge__0__0__1_" data-uid="GenericCollectionsExtension.Graph.Graph`2.AddEdge(`0,`0,`1)">AddEdge(TVertex, TVertex, TEdge)</h4>
+  <div class="markdown level1 summary"><p>Adds an edge to the graph, connecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEdge(TVertex v1, TVertex v2, TEdge cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex to be connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex to be connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEdge</span></td>
+        <td><span class="parametername">cost</span></td>
+        <td><p>The cost connecting the two vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_AddVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.AddVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L93">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_AddVertex_" data-uid="GenericCollectionsExtension.Graph.Graph`2.AddVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_AddVertex__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.AddVertex(`0)">AddVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Adds a vertex to the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Clear.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L106">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Clear_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Clear*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Clear" data-uid="GenericCollectionsExtension.Graph.Graph`2.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Removes all vertices from the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Contains_GenericCollectionsExtension_Graph_Vertex__0__1__.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Contains(GenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L116">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Contains_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Contains*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Contains_GenericCollectionsExtension_Graph_Vertex__0__1__" data-uid="GenericCollectionsExtension.Graph.Graph`2.Contains(GenericCollectionsExtension.Graph.Vertex{`0,`1})">Contains(Vertex&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the graph contains a specific vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Vertex&lt;TVertex, TEdge&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The vertex to locate in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the vertex is found in the graph; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_CopyTo_GenericCollectionsExtension_Graph_Vertex__0__1____System_Int32_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.CopyTo(GenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L126">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_CopyTo_" data-uid="GenericCollectionsExtension.Graph.Graph`2.CopyTo*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_CopyTo_GenericCollectionsExtension_Graph_Vertex__0__1____System_Int32_" data-uid="GenericCollectionsExtension.Graph.Graph`2.CopyTo(GenericCollectionsExtension.Graph.Vertex{`0,`1}[],System.Int32)">CopyTo(Vertex&lt;TVertex, TEdge&gt;[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the elements of the graph to an array, starting at a particular array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(Vertex&lt;TVertex, TEdge&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The one-dimensional array that is the destination of the elements copied from the graph. The array must have zero-based indexing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The zero-based index in array at which copying begins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L135">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_GetEnumerator_" data-uid="GenericCollectionsExtension.Graph.Graph`2.GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_GetEnumerator" data-uid="GenericCollectionsExtension.Graph.Graph`2.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Vertex&lt;TVertex, TEdge&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</td>
+        <td><p>An enumerator that can be used to iterate through the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.HasEdge(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L141">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_HasEdge_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0)">HasEdge(TVertex, TVertex)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the graph contains an edge connecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEdge(TVertex v1, TVertex v2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex of the edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the edge is found; <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Edge__0__1___.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.HasEdge(%600%2C%600%2CGenericCollectionsExtension.Graph.Edge%7B%600%2C%601%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L158">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_HasEdge_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Edge__0__1___" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Edge{`0,`1}@)">HasEdge(TVertex, TVertex, out Edge&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an edge between two vertices and returns it if found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Edge&lt;TVertex, TEdge&gt; HasEdge(TVertex v1, TVertex v2, out Edge&lt;TVertex, TEdge&gt; edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The starting vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The ending vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Edge-2.html">Edge</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>If found, the edge connecting the two vertices; otherwise, the default value of TEdge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Edge-2.html">Edge</a>&lt;TVertex, TEdge&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Edge__0__1___.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.HasEdge(%600%2C%600%2CGenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D%40%2CGenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D%40%2CGenericCollectionsExtension.Graph.Edge%7B%600%2C%601%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L179">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_HasEdge_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_HasEdge__0__0_GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Vertex__0__1___GenericCollectionsExtension_Graph_Edge__0__1___" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasEdge(`0,`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Vertex{`0,`1}@,GenericCollectionsExtension.Graph.Edge{`0,`1}@)">HasEdge(TVertex, TVertex, out Vertex&lt;TVertex, TEdge&gt;, out Vertex&lt;TVertex, TEdge&gt;, out Edge&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an edge between two vertices and returns it, along with the starting vertex, if found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Edge&lt;TVertex, TEdge&gt; HasEdge(TVertex v1, TVertex v2, out Vertex&lt;TVertex, TEdge&gt; vertex, out Vertex&lt;TVertex, TEdge&gt; vertex2, out Edge&lt;TVertex, TEdge&gt; edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The starting vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The ending vertex of the edge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>If found, the starting vertex of the edge; otherwise, the default value of TVertex.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">vertex2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Edge-2.html">Edge</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>If found, the edge connecting the two vertices; otherwise, the default value of TEdge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Edge-2.html">Edge</a>&lt;TVertex, TEdge&gt;</td>
+        <td><p>The edge if it is found; otherwise, <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.HasVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L194">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_HasVertex_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0)">HasVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the graph contains a specific vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be searched for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the vertex is found; <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_GenericCollectionsExtension_Graph_Vertex__0__1___.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.HasVertex(%600%2CGenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L205">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_HasVertex_" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_HasVertex__0_GenericCollectionsExtension_Graph_Vertex__0__1___" data-uid="GenericCollectionsExtension.Graph.Graph`2.HasVertex(`0,GenericCollectionsExtension.Graph.Vertex{`0,`1}@)">HasVertex(TVertex, out Vertex&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines if the graph has a vertex with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vertex&lt;TVertex, TEdge&gt; HasVertex(TVertex name, out Vertex&lt;TVertex, TEdge&gt; vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the vertex to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex with the given name, if it exists in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><p>The vertex with the given name, if it exists in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Predecessors__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Predecessors(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L272">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Predecessors_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Predecessors*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Predecessors__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Predecessors(`0)">Predecessors(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerable of vertexes that are the predecessors of the specified vertex in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Vertex&lt;TVertex, TEdge&gt;&gt; Predecessors(TVertex v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vertex whose predecessors are to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</td>
+        <td><p>An enumerable of vertexes that are the predecessors of the specified vertex in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Exceptions.NonExistentVertexException.html">NonExistentVertexException</a></td>
+        <td><p>Thrown if the specified vertex does not exist in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Remove_GenericCollectionsExtension_Graph_Vertex__0__1__.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Remove(GenericCollectionsExtension.Graph.Vertex%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L217">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Remove_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Remove*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Remove_GenericCollectionsExtension_Graph_Vertex__0__1__" data-uid="GenericCollectionsExtension.Graph.Graph`2.Remove(GenericCollectionsExtension.Graph.Vertex{`0,`1})">Remove(Vertex&lt;TVertex, TEdge&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes a vertex from the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(Vertex&lt;TVertex, TEdge&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The vertex to remove from the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the vertex was successfully removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_RemoveEdge__0__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.RemoveEdge(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L223">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_RemoveEdge_" data-uid="GenericCollectionsExtension.Graph.Graph`2.RemoveEdge*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_RemoveEdge__0__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.RemoveEdge(`0,`0)">RemoveEdge(TVertex, TVertex)</h4>
+  <div class="markdown level1 summary"><p>Removes an edge from the graph, disconnecting the two specified vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveEdge(TVertex v1, TVertex v2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td><p>The first vertex to be disconnected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td><p>The second vertex to be disconnected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the edge was successfully removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_RemoveVertex__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.RemoveVertex(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L234">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_RemoveVertex_" data-uid="GenericCollectionsExtension.Graph.Graph`2.RemoveVertex*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_RemoveVertex__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.RemoveVertex(`0)">RemoveVertex(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Removes a vertex from the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveVertex(TVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td><p>The vertex to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the vertex was successfully removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_Successors__0_.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.Successors(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L255">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_Successors_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Successors*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_Successors__0_" data-uid="GenericCollectionsExtension.Graph.Graph`2.Successors(`0)">Successors(TVertex)</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerable of vertexes that are the successors of the specified vertex in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Vertex&lt;TVertex, TEdge&gt;&gt; Successors(TVertex v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TVertex</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vertex whose successors are to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GenericCollectionsExtension.Graph.Vertex-2.html">Vertex</a>&lt;TVertex, TEdge&gt;&gt;</td>
+        <td><p>An enumerable of vertexes that are the successors of the specified vertex in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GenericCollectionsExtension.Exceptions.NonExistentVertexException.html">NonExistentVertexException</a></td>
+        <td><p>Thrown if the specified vertex does not exist in the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L243">View Source</a>
+  </span>
+  <a id="GenericCollectionsExtension_Graph_Graph_2_System_Collections_IEnumerable_GetEnumerator_" data-uid="GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="GenericCollectionsExtension_Graph_Graph_2_System_Collections_IEnumerable_GetEnumerator" data-uid="GenericCollectionsExtension.Graph.Graph`2.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>An enumerator that can be used to iterate through the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GenericCollectionsExtension.Graph.IGraph-2.html">IGraph&lt;TVertex, TEdge&gt;</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/new/master/apiSpec/new?filename=GenericCollectionsExtension_Graph_Graph_2.md&amp;value=---%0Auid%3A%20GenericCollectionsExtension.Graph.Graph%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Ts-Pytham/GenericCollectionsExtension/blob/master/GenericCollectionsExtension/Graph/Graph.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

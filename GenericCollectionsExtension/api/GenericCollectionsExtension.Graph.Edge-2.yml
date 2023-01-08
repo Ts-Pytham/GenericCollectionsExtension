@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Graph.Edge`2
+  commentId: T:GenericCollectionsExtension.Graph.Edge`2
+  id: Edge`2
+  parent: GenericCollectionsExtension.Graph
+  children:
+  - GenericCollectionsExtension.Graph.Edge`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)
+  - GenericCollectionsExtension.Graph.Edge`2.Cost
+  - GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  - GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  langs:
+  - csharp
+  - vb
+  name: Edge<T, U>
+  nameWithType: Edge<T, U>
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>
+  type: Class
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Edge.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Edge
+    path: Graph/Edge.cs
+    startLine: 9
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nRepresents an edge in a graph, connecting two vertices and having a cost associated with it.\n"
+  example: []
+  syntax:
+    content: >-
+      public class Edge<T, U>
+          where U : IComparable<U>
+    typeParameters:
+    - id: T
+      description: The type of the vertices connected by the edge.
+    - id: U
+      description: The type of the cost associated with the edge.
+    content.vb: Public Class Edge(Of T, U As IComparable(Of U))
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Edge(Of T, U)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U)
+  name.vb: Edge(Of T, U)
+- uid: GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  id: Sucessor
+  parent: GenericCollectionsExtension.Graph.Edge`2
+  langs:
+  - csharp
+  - vb
+  name: Sucessor
+  nameWithType: Edge<T, U>.Sucessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Sucessor
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Edge.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Sucessor
+    path: Graph/Edge.cs
+    startLine: 15
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nGets or sets the vertex that the edge connects to.\n"
+  example: []
+  syntax:
+    content: public Vertex<T, U> Sucessor { get; set; }
+    parameters: []
+    return:
+      type: GenericCollectionsExtension.Graph.Vertex{{T},{U}}
+    content.vb: Public Property Sucessor As Vertex(Of T, U)
+  overload: GenericCollectionsExtension.Graph.Edge`2.Sucessor*
+  nameWithType.vb: Edge(Of T, U).Sucessor
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Sucessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  id: Predecessor
+  parent: GenericCollectionsExtension.Graph.Edge`2
+  langs:
+  - csharp
+  - vb
+  name: Predecessor
+  nameWithType: Edge<T, U>.Predecessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Predecessor
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Edge.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Predecessor
+    path: Graph/Edge.cs
+    startLine: 20
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nThe predecessor of this vertex in the graph.\n"
+  example: []
+  syntax:
+    content: public Vertex<T, U> Predecessor { get; set; }
+    parameters: []
+    return:
+      type: GenericCollectionsExtension.Graph.Vertex{{T},{U}}
+    content.vb: Public Property Predecessor As Vertex(Of T, U)
+  overload: GenericCollectionsExtension.Graph.Edge`2.Predecessor*
+  nameWithType.vb: Edge(Of T, U).Predecessor
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Predecessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Cost
+  commentId: P:GenericCollectionsExtension.Graph.Edge`2.Cost
+  id: Cost
+  parent: GenericCollectionsExtension.Graph.Edge`2
+  langs:
+  - csharp
+  - vb
+  name: Cost
+  nameWithType: Edge<T, U>.Cost
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Cost
+  type: Property
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Edge.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: Cost
+    path: Graph/Edge.cs
+    startLine: 25
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nGets or sets the cost of the edge.\n"
+  example: []
+  syntax:
+    content: public U Cost { get; set; }
+    parameters: []
+    return:
+      type: '{U}'
+    content.vb: Public Property Cost As U
+  overload: GenericCollectionsExtension.Graph.Edge`2.Cost*
+  nameWithType.vb: Edge(Of T, U).Cost
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Cost
+- uid: GenericCollectionsExtension.Graph.Edge`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)
+  commentId: M:GenericCollectionsExtension.Graph.Edge`2.#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)
+  id: '#ctor(GenericCollectionsExtension.Graph.Vertex{`0,`1},GenericCollectionsExtension.Graph.Vertex{`0,`1},`1)'
+  parent: GenericCollectionsExtension.Graph.Edge`2
+  langs:
+  - csharp
+  - vb
+  name: Edge(Vertex<T, U>, Vertex<T, U>, U)
+  nameWithType: Edge<T, U>.Edge(Vertex<T, U>, Vertex<T, U>, U)
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Edge(GenericCollectionsExtension.Graph.Vertex<T, U>, GenericCollectionsExtension.Graph.Vertex<T, U>, U)
+  type: Constructor
+  source:
+    remote:
+      path: GenericCollectionsExtension/Graph/Edge.cs
+      branch: master
+      repo: https://github.com/Ts-Pytham/GenericCollectionsExtension.git
+    id: .ctor
+    path: Graph/Edge.cs
+    startLine: 33
+  assemblies:
+  - GenericCollectionsExtension
+  namespace: GenericCollectionsExtension.Graph
+  summary: "\nInitializes a new instance of the Edge class with the specified sucessor vertex, predecessor vertex, and cost.\n"
+  example: []
+  syntax:
+    content: public Edge(Vertex<T, U> predecessor, Vertex<T, U> sucessor, U cost)
+    parameters:
+    - id: predecessor
+      type: GenericCollectionsExtension.Graph.Vertex{{T},{U}}
+      description: The predecessor vertex of the edge.
+    - id: sucessor
+      type: GenericCollectionsExtension.Graph.Vertex{{T},{U}}
+      description: The sucessor vertex of the edge.
+    - id: cost
+      type: '{U}'
+      description: The cost of the edge.
+    content.vb: Public Sub New(predecessor As Vertex(Of T, U), sucessor As Vertex(Of T, U), cost As U)
+  overload: GenericCollectionsExtension.Graph.Edge`2.#ctor*
+  nameWithType.vb: Edge(Of T, U).Edge(Vertex(Of T, U), Vertex(Of T, U), U)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Edge(GenericCollectionsExtension.Graph.Vertex(Of T, U), GenericCollectionsExtension.Graph.Vertex(Of T, U), U)
+  name.vb: Edge(Vertex(Of T, U), Vertex(Of T, U), U)
+references:
+- uid: GenericCollectionsExtension.Graph
+  commentId: N:GenericCollectionsExtension.Graph
+  name: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GenericCollectionsExtension.Graph.Edge`2.Sucessor*
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Sucessor
+  name: Sucessor
+  nameWithType: Edge<T, U>.Sucessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Sucessor
+  nameWithType.vb: Edge(Of T, U).Sucessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Sucessor
+- uid: GenericCollectionsExtension.Graph.Vertex{{T},{U}}
+  commentId: T:GenericCollectionsExtension.Graph.Vertex{`0,`1}
+  parent: GenericCollectionsExtension.Graph
+  definition: GenericCollectionsExtension.Graph.Vertex`2
+  name: Vertex<T, U>
+  nameWithType: Vertex<T, U>
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>
+  nameWithType.vb: Vertex(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U)
+  name.vb: Vertex(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Vertex`2
+  commentId: T:GenericCollectionsExtension.Graph.Vertex`2
+  parent: GenericCollectionsExtension.Graph
+  name: Vertex<T, U>
+  nameWithType: Vertex<T, U>
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>
+  nameWithType.vb: Vertex(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U)
+  name.vb: Vertex(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Edge`2.Predecessor*
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Predecessor
+  name: Predecessor
+  nameWithType: Edge<T, U>.Predecessor
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Predecessor
+  nameWithType.vb: Edge(Of T, U).Predecessor
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Predecessor
+- uid: GenericCollectionsExtension.Graph.Edge`2.Cost*
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.Cost
+  name: Cost
+  nameWithType: Edge<T, U>.Cost
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Cost
+  nameWithType.vb: Edge(Of T, U).Cost
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Cost
+- uid: '{U}'
+  commentId: '!:U'
+  definition: U
+  name: U
+  nameWithType: U
+  fullName: U
+- uid: U
+  name: U
+  nameWithType: U
+  fullName: U
+- uid: GenericCollectionsExtension.Graph.Edge`2.#ctor*
+  commentId: Overload:GenericCollectionsExtension.Graph.Edge`2.#ctor
+  name: Edge
+  nameWithType: Edge<T, U>.Edge
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>.Edge
+  nameWithType.vb: Edge(Of T, U).Edge
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U).Edge

@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: GenericCollectionsExtension.Graph
+  commentId: N:GenericCollectionsExtension.Graph
+  id: GenericCollectionsExtension.Graph
+  children:
+  - GenericCollectionsExtension.Graph.Edge`2
+  - GenericCollectionsExtension.Graph.Graph`2
+  - GenericCollectionsExtension.Graph.IGraph`2
+  - GenericCollectionsExtension.Graph.Vertex`2
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
+  type: Namespace
+  assemblies:
+  - GenericCollectionsExtension
+references:
+- uid: GenericCollectionsExtension.Graph.Edge`2
+  commentId: T:GenericCollectionsExtension.Graph.Edge`2
+  name: Edge<T, U>
+  nameWithType: Edge<T, U>
+  fullName: GenericCollectionsExtension.Graph.Edge<T, U>
+  nameWithType.vb: Edge(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Edge(Of T, U)
+  name.vb: Edge(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Edge`2
+    name: Edge
+    nameWithType: Edge
+    fullName: GenericCollectionsExtension.Graph.Edge
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Graph`2
+  commentId: T:GenericCollectionsExtension.Graph.Graph`2
+  name: Graph<TVertex, TEdge>
+  nameWithType: Graph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.Graph<TVertex, TEdge>
+  nameWithType.vb: Graph(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.Graph(Of TVertex, TEdge)
+  name.vb: Graph(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Graph`2
+    name: Graph
+    nameWithType: Graph
+    fullName: GenericCollectionsExtension.Graph.Graph
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Graph`2
+    name: Graph
+    nameWithType: Graph
+    fullName: GenericCollectionsExtension.Graph.Graph
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.IGraph`2
+  commentId: T:GenericCollectionsExtension.Graph.IGraph`2
+  name: IGraph<TVertex, TEdge>
+  nameWithType: IGraph<TVertex, TEdge>
+  fullName: GenericCollectionsExtension.Graph.IGraph<TVertex, TEdge>
+  nameWithType.vb: IGraph(Of TVertex, TEdge)
+  fullName.vb: GenericCollectionsExtension.Graph.IGraph(Of TVertex, TEdge)
+  name.vb: IGraph(Of TVertex, TEdge)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.IGraph`2
+    name: IGraph
+    nameWithType: IGraph
+    fullName: GenericCollectionsExtension.Graph.IGraph
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TVertex
+    nameWithType: TVertex
+    fullName: TVertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEdge
+    nameWithType: TEdge
+    fullName: TEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph.Vertex`2
+  commentId: T:GenericCollectionsExtension.Graph.Vertex`2
+  parent: GenericCollectionsExtension.Graph
+  name: Vertex<T, U>
+  nameWithType: Vertex<T, U>
+  fullName: GenericCollectionsExtension.Graph.Vertex<T, U>
+  nameWithType.vb: Vertex(Of T, U)
+  fullName.vb: GenericCollectionsExtension.Graph.Vertex(Of T, U)
+  name.vb: Vertex(Of T, U)
+  spec.csharp:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: GenericCollectionsExtension.Graph.Vertex`2
+    name: Vertex
+    nameWithType: Vertex
+    fullName: GenericCollectionsExtension.Graph.Vertex
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: GenericCollectionsExtension.Graph
+  commentId: N:GenericCollectionsExtension.Graph
+  name: GenericCollectionsExtension.Graph
+  nameWithType: GenericCollectionsExtension.Graph
+  fullName: GenericCollectionsExtension.Graph
