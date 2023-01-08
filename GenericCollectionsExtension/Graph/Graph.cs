@@ -78,14 +78,15 @@ namespace GenericCollectionsExtension.Graph
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.AddEdge(TVertex, TVertex, TEdge)"/>
-        public void AddEdge(TVertex v1, TVertex v2, TEdge edge)
+        public void AddEdge(TVertex v1, TVertex v2, TEdge cost)
         {
-            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null || HasVertex(v1, out Vertex<TVertex, TEdge> vertex2) is null)
+            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null || HasVertex(v2, out Vertex<TVertex, TEdge> vertex2) is null)
             {
                 throw new NonExistentVertexException();
             }
-
-            vertex.AddEdge(new Edge<TVertex, TEdge>(vertex, vertex2, edge));
+            var edge = new Edge<TVertex, TEdge>(vertex, vertex2, cost);
+            vertex.AddEdge(edge);
+            vertex2.AddEdge(edge);
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.AddVertex(TVertex)"/>
@@ -139,12 +140,13 @@ namespace GenericCollectionsExtension.Graph
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.HasEdge(TVertex, TVertex)"/>
         public bool HasEdge(TVertex v1, TVertex v2)
         {
-            if(HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null && !HasVertex(v2))
+            if(HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null ||
+               HasVertex(v2, out Vertex<TVertex, TEdge> vertex2) is null)
             {
                 return false;
             }
 
-            return vertex.Edges.Exists(x => x.Sucessor.Equals(v2));
+            return vertex.Edges.Exists(x => x.Sucessor.Equals(vertex2));
         }
 
         /// <summary>
@@ -156,12 +158,13 @@ namespace GenericCollectionsExtension.Graph
         public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Edge<TVertex, TEdge> edge)
         {
             edge = null;
-            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null && !HasVertex(v2))
+            if (HasVertex(v1, out Vertex<TVertex, TEdge> vertex) is null || 
+                HasVertex(v2, out Vertex<TVertex, TEdge> vertex2) is null)
             {
                 return null;
             }
 
-            edge = vertex.Edges.Find(x => x.Sucessor.Equals(v2));
+            edge = vertex.Edges.Find(x => x.Sucessor.Equals(vertex2));
             return edge;
         }
 
@@ -173,15 +176,17 @@ namespace GenericCollectionsExtension.Graph
         /// <param name="vertex">If found, the starting vertex of the edge; otherwise, the default value of TVertex.</param>
         /// <param name="edge">If found, the edge connecting the two vertices; otherwise, the default value of TEdge.</param>
         /// <returns>The edge if it is found; otherwise, <see langword="null"/>.</returns>
-        public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Vertex<TVertex, TEdge> vertex, out Edge<TVertex, TEdge> edge)
+        public Edge<TVertex, TEdge> HasEdge(TVertex v1, TVertex v2, out Vertex<TVertex, TEdge> vertex, out Vertex<TVertex, TEdge> vertex2, out Edge<TVertex, TEdge> edge)
         {
             edge = null;
-            if (HasVertex(v1, out vertex) is null && !HasVertex(v2))
+            var v = HasVertex(v2, out vertex2);
+            if (HasVertex(v1, out vertex) is null ||
+                vertex2 is null)
             {
                 return null;
             }
 
-            edge = vertex.Edges.Find(x => x.Sucessor.Equals(v2));
+            edge = vertex.Edges.Find(x => x.Sucessor.Equals(v));
             return edge;
         }
 
@@ -215,20 +220,20 @@ namespace GenericCollectionsExtension.Graph
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.RemoveEdge(TVertex, TVertex)"/>
-        public void RemoveEdge(TVertex v1, TVertex v2)
+        public bool RemoveEdge(TVertex v1, TVertex v2)
         {
-            if(HasEdge(v1, v2, out Vertex<TVertex, TEdge> vertex,out Edge<TVertex, TEdge> edge) is null)
+            if(HasEdge(v1, v2, out Vertex<TVertex, TEdge> vertex, out Vertex<TVertex, TEdge> vertex2, out Edge <TVertex, TEdge> edge) is null)
             {
                 throw new NonExistentVertexException();
             }
 
-            vertex.Edges.Remove(edge);
+            return vertex.Edges.Remove(edge) && vertex2.Edges.Remove(edge);
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.RemoveVertex(TVertex)"/>
-        public void RemoveVertex(TVertex vertex)
+        public bool RemoveVertex(TVertex vertex)
         {
-            Vertexs.Remove(HasVertex(vertex, out _));
+            return Vertexs.Remove(HasVertex(vertex, out _));
         }
 
         /// <summary>

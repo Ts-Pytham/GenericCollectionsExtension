@@ -31,7 +31,7 @@ namespace GenericCollectionsExtension.Graph
         /// <param name="sucessor">The sucessor vertex of the edge.</param>
         /// <param name="predecessor">The predecessor vertex of the edge.</param>
         /// <param name="cost">The cost of the edge.</param>
-        public Edge(Vertex<T, U> sucessor, Vertex<T, U> predecessor, U cost)
+        public Edge(Vertex<T, U> predecessor, Vertex<T, U> sucessor, U cost)
         {
             Sucessor = sucessor;
             Predecessor = predecessor;

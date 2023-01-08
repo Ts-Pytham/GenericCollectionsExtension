@@ -28,6 +28,7 @@ namespace GenericCollectionsExtension.Graph
         /// <param name="Vertex">The name of the vertex.</param>
         public Vertex(T Vertex)
         {
+            Edges = new List<Edge<T, U>>();
             VertexName = Vertex;
         }
 

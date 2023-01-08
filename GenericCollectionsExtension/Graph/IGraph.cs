@@ -21,21 +21,23 @@ namespace GenericCollectionsExtension.Graph
         /// </summary>
         /// <param name="v1">The first vertex to be connected.</param>
         /// <param name="v2">The second vertex to be connected.</param>
-        /// <param name="edge">The edge connecting the two vertices.</param>
-        public void AddEdge(TVertex v1, TVertex v2, TEdge edge);
+        /// <param name="cost">The cost connecting the two vertices.</param>
+        public void AddEdge(TVertex v1, TVertex v2, TEdge cost);
 
         /// <summary>
         /// Removes a vertex from the graph.
         /// </summary>
         /// <param name="vertex">The vertex to be removed.</param>
-        public void RemoveVertex(TVertex vertex);
+        /// <returns>True if the vertex was successfully removed, false otherwise.</returns>
+        public bool RemoveVertex(TVertex vertex);
 
         /// <summary>
         /// Removes an edge from the graph, disconnecting the two specified vertices.
         /// </summary>
         /// <param name="v1">The first vertex to be disconnected.</param>
         /// <param name="v2">The second vertex to be disconnected.</param>
-        public void RemoveEdge(TVertex v1, TVertex v2);
+        /// <returns>True if the edge was successfully removed, false otherwise.</returns>
+        public bool RemoveEdge(TVertex v1, TVertex v2);
 
         /// <summary>
         /// Determines whether the graph contains a specific vertex.
