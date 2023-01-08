@@ -216,7 +216,7 @@ namespace GenericCollectionsExtension.Graph
         /// <returns>True if the vertex was successfully removed, false otherwise.</returns>
         public bool Remove(Vertex<TVertex, TEdge> item)
         {
-            return Vertexs.Remove(item);
+            return Vertexs.Remove(HasVertex(item.VertexName, out _));
         }
 
         /// <inheritdoc cref="IGraph{TVertex, TEdge}.RemoveEdge(TVertex, TVertex)"/>
@@ -224,7 +224,7 @@ namespace GenericCollectionsExtension.Graph
         {
             if(HasEdge(v1, v2, out Vertex<TVertex, TEdge> vertex, out Vertex<TVertex, TEdge> vertex2, out Edge <TVertex, TEdge> edge) is null)
             {
-                throw new NonExistentVertexException();
+                return false;
             }
 
             return vertex.Edges.Remove(edge) && vertex2.Edges.Remove(edge);

@@ -118,10 +118,21 @@ public class GraphTests
             new Vertex<string, int>("C"),
             new Vertex<string, int>("D")
         };
-        
-        graph.RemoveVertex("A");
+
+        Assert.True(graph.RemoveVertex("A"));
         Assert.Equal(3, graph.Count);
         Assert.Equal(new List<string> { "B", "C", "D" }, graph.Select(x => x.VertexName));
+    }
+
+    [Fact] 
+    public void RemoveNonExistentVertice() 
+    {
+        var graph = new Graph<string, int>()
+        {
+            new Vertex<string, int>("A")
+        };
+
+        Assert.False(graph.RemoveVertex("B"));
     }
 
     [Fact]
@@ -134,7 +145,7 @@ public class GraphTests
         };
 
         graph.AddEdge("A", "B", 20);
-        graph.RemoveEdge("A", "B");
+        Assert.True(graph.RemoveEdge("A", "B"));
         Assert.Empty(graph.Vertexs[0].Edges);
         Assert.Empty(graph.Vertexs[1].Edges);
     }
@@ -153,10 +164,23 @@ public class GraphTests
         graph.AddEdge("B", "C", 0);
         graph.AddEdge("A", "C", 10);
 
-        graph.RemoveEdge("A", "B");
-        graph.RemoveEdge("A", "C");
+        Assert.True(graph.RemoveEdge("A", "B"));
+        Assert.True(graph.RemoveEdge("A", "C"));
 
         Assert.Empty(graph.Vertexs[0].Edges);
         Assert.Single(graph.Vertexs[2].Edges);
+    }
+
+    [Fact]
+    public void RemoveNonExistentEdge()
+    {
+        var graph = new Graph<string, int>()
+        {
+            new Vertex<string, int>("A"),
+            new Vertex<string, int>("B"),
+        };
+
+        Assert.False(graph.RemoveEdge("A", "B"));
+        Assert.False(graph.RemoveEdge("C", "D")); 
     }
 }
