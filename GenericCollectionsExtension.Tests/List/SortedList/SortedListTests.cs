@@ -218,6 +218,8 @@ public class SortedListTests
     {
         //Arrange
         SortedList<int> list = new();
+        var synchronizedList = list.Synchronized();
+
         var expected = new SortedList<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         int len = 10;
         ParallelOptions options = new()
@@ -226,10 +228,7 @@ public class SortedListTests
         };
 
         //Act
-        Parallel.For(0, len, options, i =>
-        {
-            list.Add(i);
-        });
+        Parallel.For(0, len, options, synchronizedList.Add);
 
         //Asserts
         Assert.Equal(len, list.Count);
