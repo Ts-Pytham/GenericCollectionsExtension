@@ -18,6 +18,7 @@ namespace GenericCollectionsExtension.List
         /// </summary>
         public Criterion Criterion { get; private set; }
 
+
         public T this[int index]
         {
             get
@@ -92,12 +93,23 @@ namespace GenericCollectionsExtension.List
             }
         }
 
+        /// <summary>
+        /// Gets the number of elements contained in the sorted list.
+        /// </summary>
         public int Count
         {
             get => _sortedList.Count;
         }
 
+        /// <summary>
+        /// Gets a value indicating whether the sorted list is read-only.
+        /// </summary>
         public bool IsReadOnly => false;
+
+        /// <summary>
+        /// Gets a value indicating whether access to the sorted list is synchronized (thread-safe).
+        /// </summary>
+        public bool IsSynchronized => false;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SortedList{T}"/> class and initialize the criterion to ascending by default.
@@ -293,6 +305,132 @@ namespace GenericCollectionsExtension.List
             for (int i = 0, j = Count - 1; i <= j; ++i, --j)
             {
                 (_sortedList[j], _sortedList[i]) = (_sortedList[i], _sortedList[j]);
+            }
+        }
+
+        /// <summary>
+        /// Returns a synchronized (thread-safe) wrapper for the current instance of the sorted list.
+        /// </summary>
+        /// <returns>A synchronized wrapper for the current instance of the sorted list.</returns>
+        public ISortedList<T> Synchronized()
+        {
+            return new SynchronizedSortedList(this);
+        }
+
+        internal class SynchronizedSortedList : ISortedList<T>
+        {
+            private readonly SortedList<T> _sortedList;
+            private readonly object _lock;
+
+            internal SynchronizedSortedList(SortedList<T> sortedList)
+            {
+                _sortedList = sortedList;
+                _lock = new object();
+            }
+
+            public T this[int index] 
+            {
+                get
+                {
+                    lock (_lock)
+                    {
+                        return _sortedList[index];
+                    }
+                }
+                set
+                {
+                    lock (_lock)
+                    {
+                        _sortedList[index] = value;
+                    }
+                }
+            }
+
+            public int Count
+            {
+                get
+                {
+                    lock (_lock)
+                    {
+                        return _sortedList.Count;
+                    }
+                }
+            }
+
+            public bool IsReadOnly => _sortedList.IsReadOnly;
+
+            public bool IsSynchronized => true;
+
+            public void Add(T item)
+            {
+                lock (_lock)
+                {
+                    _sortedList.Add(item);
+                }
+            }
+
+            public void Clear()
+            {
+                lock (_lock)
+                {
+                    _sortedList.Clear();
+                }
+            }
+
+            public bool Contains(T item)
+            {
+                lock (_lock)
+                {
+                    return _sortedList.Contains(item);
+                }
+            }
+
+            public void CopyTo(T[] array, int arrayIndex)
+            {
+                lock (_lock)
+                {
+                    _sortedList.CopyTo(array, arrayIndex);
+                }
+            }
+
+            public IEnumerator<T> GetEnumerator()
+            {
+                lock (_lock) 
+                {
+                    return _sortedList.GetEnumerator();
+                }
+            }
+
+            public int IndexOf(T item)
+            {
+                lock (_lock)
+                {
+                    return _sortedList.IndexOf(item);
+                }
+            }
+
+            public bool Remove(T item)
+            {
+                lock (_lock)
+                {
+                    return _sortedList.Remove(item);
+                }
+            }
+
+            public void RemoveAt(int index)
+            {
+                lock (_lock)
+                {
+                    _sortedList.RemoveAt(index);
+                }
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                lock (_lock)
+                {
+                    return _sortedList.GetEnumerator();
+                }
             }
         }
     }

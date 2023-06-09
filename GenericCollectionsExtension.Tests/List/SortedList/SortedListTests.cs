@@ -211,4 +211,25 @@ public class SortedListTests
 
         Assert.Equal(new[] { -2, 2, 5, 10, 59 }, list);
     }
+
+    [Fact]
+    public void AddDataToListWithThreads_ShouldSucceed()
+    {
+        //Arrange
+        SortedList<int> list = new();
+        var synchronizedList = list.Synchronized();
+        var expected = new SortedList<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int len = 10;
+        ParallelOptions options = new()
+        {
+            MaxDegreeOfParallelism = len
+        };
+
+        //Act
+        Parallel.For(0, len, options, synchronizedList.Add);
+
+        //Asserts
+        Assert.Equal(len, list.Count);
+        Assert.Equal(expected, list);
+    }
 }
