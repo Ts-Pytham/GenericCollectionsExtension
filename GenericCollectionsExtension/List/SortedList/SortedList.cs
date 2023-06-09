@@ -18,6 +18,7 @@ namespace GenericCollectionsExtension.List
         /// </summary>
         public Criterion Criterion { get; private set; }
 
+
         public T this[int index]
         {
             get
@@ -92,14 +93,23 @@ namespace GenericCollectionsExtension.List
             }
         }
 
+        /// <summary>
+        /// Gets the number of elements contained in the sorted list.
+        /// </summary>
         public int Count
         {
             get => _sortedList.Count;
         }
 
+        /// <summary>
+        /// Gets a value indicating whether the sorted list is read-only.
+        /// </summary>
         public bool IsReadOnly => false;
 
-        public bool IsSynchronized { get; private set; } = false;
+        /// <summary>
+        /// Gets a value indicating whether access to the sorted list is synchronized (thread-safe).
+        /// </summary>
+        public bool IsSynchronized => false;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SortedList{T}"/> class and initialize the criterion to ascending by default.
@@ -298,6 +308,10 @@ namespace GenericCollectionsExtension.List
             }
         }
 
+        /// <summary>
+        /// Returns a synchronized (thread-safe) wrapper for the current instance of the sorted list.
+        /// </summary>
+        /// <returns>A synchronized wrapper for the current instance of the sorted list.</returns>
         public ISortedList<T> Synchronized()
         {
             return new SynchronizedSortedList(this);
@@ -311,7 +325,6 @@ namespace GenericCollectionsExtension.List
             internal SynchronizedSortedList(SortedList<T> sortedList)
             {
                 _sortedList = sortedList;
-                _sortedList.IsSynchronized = true;
                 _lock = new object();
             }
 
