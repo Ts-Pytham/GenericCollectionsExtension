@@ -132,4 +132,25 @@ public class DoublyLinkedListTests
         Assert.Equal(value, list[index]);
         Assert.True(list.Find(value) == index);
     }
+
+    [Fact]
+    public void AddDataToListWithThreads_ShouldSucceed()
+    {
+        //Arrange
+        DoublyLinkedList<int> list = new();
+        //var synchronizedList = list.Synchronized();
+        int len = 10;
+        ParallelOptions options = new()
+        {
+            MaxDegreeOfParallelism = len
+        };
+
+        //Act
+        //Parallel.For(0, len, options, synchronizedList.Add);
+        Parallel.For(0, len, options, list.Add);
+
+        //Asserts
+        Assert.Equal(len, list.Count);
+        Assert.Equal(len, list.Distinct().Count());
+    }
 }
