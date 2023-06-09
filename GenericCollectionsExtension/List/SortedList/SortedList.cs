@@ -40,8 +40,9 @@ namespace GenericCollectionsExtension.List
                 {
                     return;
                 }
-
-                if (index == 0)
+                if(index == 0  && Count == 1)
+                    _sortedList[index] = value;
+                else if (index == 0 && Count > 1)
                 {
                     if (value.CompareTo(this[1]) <= 0 && Criterion == Criterion.Ascending)
                     {

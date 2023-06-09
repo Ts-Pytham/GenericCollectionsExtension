@@ -232,4 +232,43 @@ public class SortedListTests
         Assert.Equal(len, list.Count);
         Assert.Equal(expected, list);
     }
+
+    [Fact]
+    public void IncrementANumberInList_ShouldSucceed()
+    {
+        var list = new SortedList<int>() { 0 };
+        int maxIter = 10;
+        for (int i = 0; i < maxIter; i++)
+            list[0]++;
+
+        Assert.Equal(maxIter, list[0]);
+    }
+
+    [Fact]
+    public void IncrementANumberInListWithThreads_ShouldSucceed()
+    {
+        //Arrange
+        SortedList<int> list = new()
+        {
+            0
+        };
+        var synchronizedList = list.Synchronized();
+        int len = 2, maxIter = 1;
+        ParallelOptions options = new()
+        {
+            MaxDegreeOfParallelism = len
+        };
+
+        //Act
+        Parallel.For(0, len, options, i =>
+        {
+            for (int j = 0; j != maxIter; ++j)
+            {
+                synchronizedList[0]++;
+            }
+        });
+
+        //Asserts
+        Assert.Equal(maxIter * len, list[0]);
+    }
 }

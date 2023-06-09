@@ -134,11 +134,22 @@ public class DoublyLinkedListTests
     }
 
     [Fact]
+    public void IncrementANumberInList_ShouldSucceed()
+    {
+        var list = new DoublyLinkedList<int>(0);
+        int maxIter = 10;
+        for (int i = 0; i < maxIter; i++)
+            list[0]= list[0] + 1; 
+
+        Assert.Equal(maxIter, list[0]);
+    }
+
+    [Fact]
     public void AddDataToListWithThreads_ShouldSucceed()
     {
         //Arrange
         DoublyLinkedList<int> list = new();
-        //var synchronizedList = list.Synchronized();
+        var synchronizedList = list.Synchronized();
         int len = 10;
         ParallelOptions options = new()
         {
@@ -146,11 +157,35 @@ public class DoublyLinkedListTests
         };
 
         //Act
-        //Parallel.For(0, len, options, synchronizedList.Add);
-        Parallel.For(0, len, options, list.Add);
+        Parallel.For(0, len, options, synchronizedList.Add);
 
         //Asserts
         Assert.Equal(len, list.Count);
         Assert.Equal(len, list.Distinct().Count());
+    }
+
+    [Fact]
+    public void IncrementANumberInListWithThreads_ShouldSucceed()
+    {
+        //Arrange
+        DoublyLinkedList<int> list = new(0);
+        var synchronizedList = DoublyLinkedList<int>.Synchronized(list);
+        int len = 2, maxIter = 1;
+        ParallelOptions options = new()
+        {
+            MaxDegreeOfParallelism = len
+        };
+
+        //Act
+        Parallel.For(0, len, options, i =>
+        {
+            for (int j = 0; j != maxIter; ++j)
+            {
+                synchronizedList[0]++;
+            }
+        });
+
+        //Asserts
+        Assert.Equal(maxIter * len, list[0]);
     }
 }

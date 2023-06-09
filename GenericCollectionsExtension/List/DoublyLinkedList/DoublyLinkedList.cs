@@ -41,6 +41,11 @@ namespace GenericCollectionsExtension.List
         public bool IsReadOnly => false;
 
         /// <summary>
+        /// Gets a value indicating whether access to the doubly linked list is synchronized (thread-safe).
+        /// </summary>
+        public bool IsSynchronized => false;
+
+        /// <summary>
         /// Constructs a new instance of the <see cref="DoublyLinkedList{T}"/> class.
         /// </summary>
         public DoublyLinkedList()
@@ -324,9 +329,18 @@ namespace GenericCollectionsExtension.List
         {
             if (index > Count || index < 0) throw new IndexOutOfRangeException();
 
-            if (index == 0) _head.Value = value;
+            if (index == 0) 
+            {
+                _head.Value = value;
+                return;
+            }
+            
 
-            if (index == Count - 1) _tail.Value = value;
+            if (index == Count - 1)
+            {
+                _tail.Value = value;
+                return;
+            }
 
             var aux = _head.Next;
 
@@ -338,6 +352,151 @@ namespace GenericCollectionsExtension.List
                     return;
                 }
                 aux = aux.Next;
+            }
+        }
+
+        /// <summary>
+        /// Returns a synchronized (thread-safe) wrapper for the current instance of the DoublyLinkedList.
+        /// </summary>
+        /// <returns>A synchronized wrapper for the current instance of the DoublyLinkedList.</returns>
+        public IDoublyLinkedList<T> Synchronized()
+        {
+            return new SynchronizedDoublyLinkedList(this);
+        }
+
+        public static IDoublyLinkedList<T> Synchronized(DoublyLinkedList<T> list)
+            => new SynchronizedDoublyLinkedList(list);
+
+        internal class SynchronizedDoublyLinkedList : IDoublyLinkedList<T>
+        {
+            private readonly DoublyLinkedList<T> _list;
+            private readonly object _lock;
+
+            internal SynchronizedDoublyLinkedList(DoublyLinkedList<T> list)
+            {
+                _list = new(list.AsEnumerable());
+                _lock = new object();
+            }
+
+            public T this[int index]
+            {
+                get
+                {
+                    lock (_lock)
+                    {
+                        return _list[index];
+                    }
+                }
+                set
+                {
+                    lock (_lock)
+                    {
+                        _list[index] = value;
+                    }
+                }
+            }
+
+            public int Count
+            {
+                get
+                {
+                    lock (_lock)
+                    {
+                        return _list.Count;
+                    }
+                }
+            }
+
+            public bool IsReadOnly => _list.IsReadOnly;
+
+            public bool IsSynchronized => true;
+
+            public void Add(T item)
+            {
+                lock (_lock)
+                {
+                    _list.Add(item);
+                }
+            }
+
+            public void AddLast(T item)
+            {
+                lock (_lock)
+                {
+                    _list.AddLast(item);
+                }
+            }
+
+            public void Clear()
+            {
+                lock (_lock)
+                {
+                    _list.Clear();
+                }
+            }
+
+            public bool Contains(T item)
+            {
+                lock (_lock)
+                {
+                    return _list.Contains(item);
+                }
+            }
+
+            public void CopyTo(T[] array, int arrayIndex)
+            {
+                lock (_lock)
+                {
+                    _list.CopyTo(array, arrayIndex);
+                }
+            }
+
+            public IEnumerator<T> GetEnumerator()
+            {
+                lock (_lock)
+                {
+                    return _list.GetEnumerator();
+                }
+            }
+
+            public int Find(T item)
+            {
+                lock (_lock)
+                {
+                    return _list.Find(item);
+                }
+            }
+
+            public T GetFirst()
+            {
+                lock (_lock)
+                {
+                    return _list.GetFirst();
+                }
+            }
+
+            public T GetLast()
+            {
+                lock (_lock)
+                {
+                    return _list.GetLast();
+                }
+            }
+
+            public bool Remove(T item)
+            {
+                lock (_lock)
+                {
+                    return _list.Remove(item);
+                }
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                lock (_lock)
+                {
+                    return _list.GetEnumerator();
+                }
             }
         }
     }
