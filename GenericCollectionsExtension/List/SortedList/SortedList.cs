@@ -1,6 +1,8 @@
-﻿using System;
+﻿using GenericCollectionsExtension.Concurrent;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace GenericCollectionsExtension.List
 {
@@ -8,10 +10,11 @@ namespace GenericCollectionsExtension.List
     /// Represents a sorted list each time you enter an item in the list.
     /// </summary>
     /// <typeparam name="T">T is type of element in the list and implements <see cref="IComparable{T}"/>.</typeparam>
-    public class SortedList<T> : ISortedList<T>, ICollection<T>, IEnumerable<T>, IReadOnlyList<T>
+    public class SortedList<T> : ISortedList<T>, ICollection<T>, IEnumerable<T>, IReadOnlyList<T>, ISynchronized
         where T : IComparable<T>
     {
         private readonly List<T> _sortedList;
+        private object _syncRoot;
 
         /// <summary>
         /// Criterion for sorting the list.
@@ -111,6 +114,18 @@ namespace GenericCollectionsExtension.List
         /// Gets a value indicating whether access to the sorted list is synchronized (thread-safe).
         /// </summary>
         public bool IsSynchronized => false;
+
+        public object SyncRoot
+        {
+            get
+            {
+                if (_syncRoot == null)
+                {
+                    Interlocked.CompareExchange<object>(ref _syncRoot, new object(), null);
+                }
+                return _syncRoot;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SortedList{T}"/> class and initialize the criterion to ascending by default.
@@ -326,7 +341,7 @@ namespace GenericCollectionsExtension.List
             internal SynchronizedSortedList(SortedList<T> sortedList)
             {
                 _sortedList = sortedList;
-                _lock = new object();
+                _lock = _sortedList.SyncRoot;
             }
 
             public T this[int index] 
