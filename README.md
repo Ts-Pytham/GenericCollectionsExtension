@@ -5,6 +5,21 @@
 [![](https://img.shields.io/badge/Nuget-1.4.0-blue)](https://www.nuget.org/packages/GenericCollectionsExtension/)
 [![PayPal-donate-button](https://img.shields.io/badge/Paypal-donate-orange)](https://paypal.me/johansanchezdl?locale.x=es_XC)
 
+------------------------
+⚠️ This project has been archived.
+
+A redesigned and significantly improved version is available here:
+
+👉 [https://github.com/tuusuario/AdvancedCollections](https://github.com/Ts-Pytham/DotNet.AdvancedCollections)
+
+The new version includes:
+- Better algorithmic guarantees
+- Improved performance
+- Cleaner architecture
+- More rigorous design decisions
+
+--------------------------
+
 **Generic Collections Extension** is a class library and  an extension of the data structures in .NET that adds new data structures such as binary search trees, stacks, queues, and a new type of list. 
 These data structures can be used to store and organize data efficiently in .NET applications. Therefore, it is an extension of the data structures of the System.Collections.Generic library.
 
